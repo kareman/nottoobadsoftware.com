@@ -20,8 +20,6 @@ In [The ultimate word processor](http://blog.nottoobadsoftware.com/2011/01/20/th
 
 It's a bit hard to classify, but here goes:
 
-
-
 	
   * **Integrated Writing Environment: **
 Like the Integrated Development Environments (IDE) programmers use, it tries to provide writers with all the tools they need, and lets them adapt it to their workflow.

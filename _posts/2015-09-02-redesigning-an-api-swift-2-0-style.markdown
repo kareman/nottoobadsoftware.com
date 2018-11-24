@@ -15,7 +15,6 @@ tags:
 
 [SwiftShell](https://github.com/kareman/SwiftShell/tree/master) (an OS X framework for shell scripting in Swift) is currently using the |> operator to combine shell commands, streams and functions, and |>> to print the results:
 
-
     
     <code class="swift">// SwiftShell 1
     
@@ -26,12 +25,9 @@ tags:
     standardinput.lines() |> map {line in "line \(i++): \(line)\n"} |>> standardoutput
     </code>
 
-
-
 But Swift 2.0 is here, and it's clear the way forward is protocols, method chaining and error handling. And being more explicit about what is going on. So for SwiftShell 2 I'm planning something like this:
 
 <!-- more -->
-
 
     
     <code class="swift">// SwiftShell 2
@@ -43,10 +39,7 @@ But Swift 2.0 is here, and it's clear the way forward is protocols, method chain
         .join().writeTo(main.stdout)
     </code>
 
-
-
 And this (listing all executables available in PATH):
-
 
     
     <code class="swift">// SwiftShell 1
@@ -58,7 +51,5 @@ And this (listing all executables available in PATH):
     main.env["PATH"]!.characters.split(":")
         .forEach { directory in try! runAndPrint(bash:"find \"\(String(directory))\" -type f -perm +ugo+x -print") }
     </code>
-
-
 
 Maybe SwiftShell 1 looks cooler ( |> is after all very cool), but I think [SwiftShell 2](https://github.com/kareman/SwiftShell/tree/SwiftShell2) is cleaner and shows more clearly what's going to happen. It also makes it easier to take advantage of the Swift standard library, and most importantly is more [in keeping with the spirit of Swift 2.0](http://airspeedvelocity.net/2015/06/23/protocol-extensions-and-the-death-of-the-pipe-forward-operator/).

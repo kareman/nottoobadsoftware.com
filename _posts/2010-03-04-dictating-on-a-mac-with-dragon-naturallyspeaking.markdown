@@ -18,8 +18,6 @@ As I have mentioned before I'm not a big fan of MacSpeech Dictate. So I use Drag
 
 It is very easy to setup, just follow these simple steps:
 
-
-
 	
   1. In the configuration for your Windows virtual machine in Parallels Desktop, under Network Adapter 1, select "Shared Networking" (or the equivalent for VMware Fusion).
 

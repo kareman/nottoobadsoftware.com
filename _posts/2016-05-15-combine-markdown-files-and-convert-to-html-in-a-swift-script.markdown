@@ -19,11 +19,7 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
 
 <!-- more -->
 
-
-
 ### The shell script
-
-
 
 
     
@@ -49,17 +45,11 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
     echo "Markdown conversion complete. Output located in $output_file"
     </code>
 
-
-
 It reads all the markdown files in the “chapters” directory, joins them together using each filename as a heading and converts everything to HTML. This is actually a very nice and clear* shell script, I especially like how the "for" loop is piped directly into the shell command so I did the same in the SwiftShell version.
 
 _* except for "%.*" in line 7, which leaves out the file extension_
 
-
-
 ### SwiftShell
-
-
 
 
     
@@ -86,19 +76,11 @@ _* except for "%.*" in line 7, which leaves out the file extension_
     }
     </code>
 
-
-
 I think this is more readable and more explicit about what is going on, though a lot wordier. I especially like how each "try" makes it clear where things can go wrong. Also this is mostly standard Swift and Foundation code, the only parts from SwiftShell are “open” and “run”.
 
 Note that top-level Swift code which can throw does not need to be enclosed in a "do ... catch" clause, but the resulting error messages printed to standard error are quite ugly and hard to read. The exit method from SwiftShell makes them prettier.
 
-
-
-
-
-  * _2016-11-02: updated to Swift 3._
-
-
-  * _2017_04_28: updated to SwiftShell 3.0 and added [FileSmith](https://github.com/kareman/FileSmith)_.
+* _2016-11-02: updated to Swift 3._
+* _2017_04_28: updated to SwiftShell 3.0 and added [FileSmith](https://github.com/kareman/FileSmith)_.
 
 

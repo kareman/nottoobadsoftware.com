@@ -16,10 +16,7 @@ tags:
 
 #### Update:
 
-
-
 As of Xcode 7 beta 6, Swift no longer requires variadic parameters to be last in the function definition. Also argument labels are no longer required when combined with parameters with default values. So this all works fine now:
-
 
     
     <code class="swift">public func run (executable: String, _ args: String ..., stdinput: String = "default")  {}
@@ -29,48 +26,30 @@ As of Xcode 7 beta 6, Swift no longer requires variadic parameters to be last in
     run("cmd", "arg1", "arg2")
     </code>
 
-
-
 The rest of this post is deprecated.
 
 <!-- more -->
 
-
-
-
-
-
-
 In [SwiftShell](https://github.com/kareman/SwiftShell/tree/Swift2.0) I would like to run a shell command with varying numbers of arguments and have some parameters with default values, like this:
-
 
     
     <code class="swift">run("cmd", "arg1", "arg2", stdinput: "not default")
     </code>
 
-
-
 which would be defined like so:
-
 
     
     <code class="swift">public func run (executable: String, stdinput:String = "default", _ args: String ...) {}
     </code>
 
-
-
 [Variadic](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID171) parameters must be last in the definition, but labelled parameters can go after them when calling:
-
 
     
     <code class="swift">run("cmd", stdinput: "not default", "arg1", "arg2")
     run("cmd", "arg1", "arg2", stdinput: "not default")
     </code>
 
-
-
 This however does not work:
-
 
     
     <code class="swift">run("cmd", "arg1", "arg2")
@@ -80,12 +59,9 @@ This however does not work:
     //            stdinput: 
     </code>
 
-
-
 It seems parameters with default values are no longer optional when used together with variadic parameters.
 
 Well not quite:
-
 
     
     <code class="swift">public func run2 (executable: String, stdinput:String = "default", args: String ...) {}
@@ -94,8 +70,6 @@ Well not quite:
     run2("cmd", args: "arg1", "arg2", stdinput: "not default")
     run2("cmd", args: "arg1", "arg2") 
     </code>
-
-
 
 It works, but `run("cmd", "arg1", "arg2")` is inarguably much prettier than `run2("cmd", args: "arg1", "arg2")`.
 

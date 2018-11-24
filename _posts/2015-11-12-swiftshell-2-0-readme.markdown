@@ -13,27 +13,13 @@ tags:
 - Swift
 ---
 
-I finally got around to updating the [SwiftShell 2.0 readme](https://github.com/kareman/SwiftShell/tree/SwiftShell2) with some actual usage instructions:
+_I finally got around to updating the [SwiftShell 2.0 readme](https://github.com/kareman/SwiftShell/tree/SwiftShell2) with some actual usage instructions:_
 
+SwiftShell: An OS X Framework for command line scripting in Swift.
 
-
-* * *
-
-
-
-
-
-# SwiftShell
-
-
-
-An OS X Framework for command line scripting in Swift.
-
-
+<!-- more -->
 
 ## Usage
-
-
 
 Put this at the beginning of each script file:
 
@@ -44,26 +30,14 @@ Put this at the beginning of each script file:
     import SwiftShell
     </code>
 
-
-
-
-
 ### Run commands
 
-
-
-
-
 #### Print output
-
-
 
 
     
     <code class="swift">try runAndPrint(bash: "cmd1 arg | cmd2 arg") 
     </code>
-
-
 
 Runs a shell command just like you would in the terminal. If the command returns with a non-zero exit code it will throw a ShellError.
 
@@ -71,11 +45,7 @@ _The name may seem a bit cumbersome, but it explains exactly what it does. Swift
 
 <!-- more -->
 
-
-
 #### In-line
-
-
 
 
     
@@ -83,15 +53,9 @@ _The name may seem a bit cumbersome, but it explains exactly what it does. Swift
     print("Today's date in UTC is " + date)
     </code>
 
-
-
 Similar to `$(cmd)` in bash, this just returns the output from the command as a string, ignoring any errors.
 
-
-
 #### Asynchronous
-
-
 
 
     
@@ -104,17 +68,11 @@ Similar to `$(cmd)` in bash, this just returns the output from the command as a 
     }
     </code>
 
-
-
 Launch a command and continue before it's finished. You can process standard output and standard error, and optionally wait until it's finished and handle any errors.
 
 If you read all of command.stderror or command.stdout it will automatically wait for the command to finish running. You can still call `finish()` to check for errors.
 
-
-
 #### Parameters
-
-
 
 The 3 `run` functions above take 2 different types of parameters:
 
@@ -134,17 +92,11 @@ The array of arguments can contain any type, since everything is convertible to 
     // echo But we are 5 arguments
     </code>
 
-
-
 **(bash bashcommand: String)**
 
 These are the commands you normally use in the Terminal. You can use pipes and redirection and all that good stuff. Support for other shell interpreters can easily be added.
 
-
-
 ### Output
-
-
 
 `main.stdout` is for normal output and `main.stderror` for errors:
 
@@ -155,13 +107,7 @@ These are the commands you normally use in the Terminal. You can use pipes and r
     main.stderror.write("something went wrong ...")
     </code>
 
-
-
-
-
 ### Input
-
-
 
 Use `main.stdin` to read from standard input:
 
@@ -170,13 +116,7 @@ Use `main.stdin` to read from standard input:
     <code class="swift">let input: String = main.stdin.read()
     </code>
 
-
-
-
-
 ### Main
-
-
 
 So what else can `main` do? It is the only global value in SwiftShell and contains all the contextual information about the outside world:
 
@@ -196,21 +136,11 @@ So what else can `main` do? It is the only global value in SwiftShell and contai
     lazy var name: String
     </code>
 
-
-
 Everything is mutable, so you can set e.g. the text encoding or reroute standard error to a file.
-
-
 
 ## Examples
 
-
-
-
-
 ### Print line numbers
-
-
 
 
     
@@ -228,47 +158,20 @@ Everything is mutable, so you can set e.g. the text encoding or reroute standard
     }
     </code>
 
-
-
 Launched with e.g. `cat long.txt | print_linenumbers.swift` or `print_linenumbers.swift long.txt` this will print the line number at the beginning of each line.
-
-
 
 ## Installation
 
-
-
-
-
-
-
-  * In the Terminal, go to where you want to download SwiftShell.
-
-
-  * Run
-
-
-    
-    <code>git clone https://github.com/kareman/SwiftShell.git
-    cd SwiftShell
-    git checkout SwiftShell2
-    </code>
-
-
-
-  * Copy/link `Misc/swiftshell` to your bin folder or anywhere in your PATH.
-
-
-
-  * To install the framework itself, either:
-
-
-
-    * run `xcodebuild install` from the project's root folder. This will install the SwiftShell framework in ~/Library/Frameworks.
-
-
-    * _or_ run `xcodebuild` and copy the resulting framework from the build folder to your library folder of choice. If that is not "~/Library/Frameworks", "/Library/Frameworks" or a folder mentioned in the $SWIFTSHELL_FRAMEWORK_PATH environment variable then you need to add your folder to $SWIFTSHELL_FRAMEWORK_PATH.
-
-
+* In the Terminal, go to where you want to download SwiftShell.
+* Run
+```bash    
+git clone https://github.com/kareman/SwiftShell.git
+cd SwiftShell
+git checkout SwiftShell2
+```
+* Copy/link `Misc/swiftshell` to your bin folder or anywhere in your PATH.
+* To install the framework itself, either:
+  * run `xcodebuild install` from the project's root folder. This will install the SwiftShell framework in ~/Library/Frameworks.
+  * _or_ run `xcodebuild` and copy the resulting framework from the build folder to your library folder of choice. If that is not "~/Library/Frameworks", "/Library/Frameworks" or a folder mentioned in the $SWIFTSHELL_FRAMEWORK_PATH environment variable then you need to add your folder to $SWIFTSHELL_FRAMEWORK_PATH.
 
 

@@ -16,11 +16,7 @@ tags:
 
 _This post is part of a [series on FootlessParser](/footlessparser/), a [parser combinator](http://en.wikipedia.org/wiki/Parser_combinator) written in Swift._
 
-
-
 * * *
-
-
 
 Before Swift my only contact with functional programming was a couple of half-hearted attempts at reading Erlang, all of them resulting in me running away screaming, clutching my aching head. But learning functional concepts in Swift proved far easier, probably because the syntax is closer to what I was used to. So I read [Functional Programming in Swift](http://www.objc.io/books/) and everything was well and good until one of the last chapters, "Parser Combinators", and the headache was back. Luckily I managed to stay quiet and in place this time. I downloaded the code for the chapter, turned it into a framework and hacked away until I had implemented a CSV parser, but I still didn't really understand it.
 

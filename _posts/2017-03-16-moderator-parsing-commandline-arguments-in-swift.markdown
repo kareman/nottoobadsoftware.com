@@ -15,16 +15,8 @@ tags:
 
 There are a lot of command line argument parsers written in Swift available on Github, so when I needed one for a client project I was surprised I could not find any which fulfilled these requirements: 
 
-
-
-
-
-  * handle `--tag=value`.
-
-
-  * treat unrecognised arguments as an error and list them.
-
-
+* handle `--tag=value`.
+* treat unrecognised arguments as an error and list them.
 
 Nor could I find any where it would be relatively easy to add these features, since most just loop through the arguments from first to last and have one big function trying to find out what to do with each of them. That becomes messy quickly.
 
@@ -34,34 +26,16 @@ Nor could I find any where it would be relatively easy to add these features, si
 
 So I created [Moderator](https://github.com/kareman/Moderator) with these goals:
 
-
-
-
-
-  * required arguments and those with default values should not produce optionals.
-
-
-  * easily combine parsers.
-
-
-  * type-safe.
-
-
-  * make it easy to ensure all provided arguments are valid before acting upon any of them.
-
-
+* required arguments and those with default values should not produce optionals.
+* easily combine parsers.
+* type-safe.
+* make it easy to ensure all provided arguments are valid before acting upon any of them.
 
 And as always:
 
-
-
-  * as simple as possible, but no simpler.
-
-
+* as simple as possible, but no simpler.
 
 And this is what it looks like (from [linuxmain-generator](https://github.com/kareman/linuxmain-generator)):
-
-
     
     <code class="swift">import Moderator
     import FileSmith
@@ -93,7 +67,5 @@ And this is what it looks like (from [linuxmain-generator](https://github.com/ka
         exit(Int32(error._code))
     }
     </code>
-
-
 
 For more, see [the project homepage](https://github.com/kareman/Moderator/#built-in-parsers).

@@ -18,16 +18,12 @@ I have been a bit harsh on MacSpeech in the past, but since then they have been 
 
 Here are the results of the first test:
 
-
 <blockquote>She sells seashells by the seashore.</blockquote>
 
-
 Impressive. How about this one:
-
 
 <blockquote>How much would be debuted chuck chuck if a woodchuck could chuck wood
 How much would with a booby-trapped truck if it would chop the truck would
 How much would really would truck truck even good truck woodchuck would</blockquote>
-
 
 The first one was pretty close, the rest not so much, but in all fairness it's a very tough phrase. And all in all the accuracy is outstanding. Even better than Dragon NaturallySpeaking 10, which is only natural considering it is using the same underlying engine as Dragon NaturallySpeaking 11. The editing commands are at first confusing for someone who is used to Dragon NaturallySpeaking (when I started this post I was actually planning on doing a fair bit of complaining about them), but by now I'm pretty happy about them. There are occasional crashes and bugs, like sometimes leaving out the last character when dictating single words or punctuation (which, in the latter case, leads to a whole lot of nothing). But when Nuance fixes those I think we finally, at long last, have a good dictation solution for the Mac.

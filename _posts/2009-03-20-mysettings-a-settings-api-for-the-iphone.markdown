@@ -24,12 +24,7 @@ and turns it into this:
 
 ![iPhone](http://bitbucket.org/karemorstol/mysettings/wiki/iPhone.jpg)
 
-
 ### Features
-
-
-
-
 
 	
   * Text fields, on/off switch button, integers and time intervals (with maximum/minimum values and custom format string for the integers).
@@ -43,6 +38,5 @@ _ More options are needed, obviously, like dates and select lists. Feel free to 
 
 	
   * And if you don't find blue pyjama stripes exciting, you can of course change the table view background.
-
 
 And that's it for the time being. A work in progress, obviously. I would also like to see support for custom table cells and dynamically filling a section with the contents of an array or a dictionary. And localisation. And sliders. And customising fonts and colours. And lots more cool stuff. So if you want to check it out, follow [these instructions](http://bitbucket.org/karemorstol/mysettings/wiki/Installation). And if you make any changes please let me know so I can merge them back into the repository.

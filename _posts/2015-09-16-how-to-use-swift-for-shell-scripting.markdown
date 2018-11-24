@@ -26,8 +26,6 @@ To be honest I'm not very good at shell scripting. It's very useful for automati
     fi
     </code>
 
-
-
 And here's how to check if the file referred to in the first argument is readable and not empty:
 
 
@@ -35,19 +33,13 @@ And here's how to check if the file referred to in the first argument is readabl
     <code class="bash">if [ -r $1 ] && [ -s $1 ]
     </code>
 
-
-
 Enough said.
 
 So I would much rather use Swift, as the syntax is nice, very nice indeed. But the things that bash shell scripts actually _are_ good at, like running shell commands and accessing the shell environment, are not that straightforward in Swift. Here's how you can perform the various tasks using only the Swift Standard Library and Foundation:
 
 <!-- more -->
 
-
-
 #### Run shell commands
-
-
 
 
     
@@ -55,17 +47,11 @@ So I would much rather use Swift, as the syntax is nice, very nice indeed. But t
     NSTask.launchedTaskWithLaunchPath("/bin/bash", arguments:["-c", cmd]).waitUntilExit()
     </code>
 
-
-
 NSTask ([Apple](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSTask_Class), [raywenderlich.com](http://www.raywenderlich.com/36537/nstask-tutorial)) is actually an excellent API which launches asynchronous external processes and has customisable environment, input and outputs. But it definitely needs some helper functions to make it easier to use.
 
 There is also the `system` function (which has been deprecated) and [`posix_spawn`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man2/posix_spawn.2.html) which is a C API with lots of inout parameters. Again; enough said.
 
-
-
 #### Read input and provide output
-
-
 
 Swift's [`readLine`](http://swiftdoc.org/swift-2/func/readLine/) function reads standard input line by line. And [`print`](http://swiftdoc.org/swift-2/func/print/) (previously known as `println`) prints to standard output.
 
@@ -83,13 +69,7 @@ For more direct control, like seeking and reading and writing binary data, you c
     stdout.writeData(output)
     </code>
 
-
-
-
-
 #### Use environment variables
-
-
 
 
     
@@ -97,28 +77,16 @@ For more direct control, like seeking and reading and writing binary data, you c
     let path = env["PATH"]!
     </code>
 
-
-
-
-
 #### Access arguments
-
-
 
 
     
     <code class="swift">let arguments: [String] = Process.arguments.count <= 1 ? [] : Array(Process.arguments.dropFirst())
     </code>
 
-
-
 The first element is discarded because it, as is the custom in shell scripting, contains the path to the script file itself.
 
-
-
 #### Read and write files
-
-
 
 
     
@@ -135,8 +103,6 @@ The first element is discarded because it, as is the custom in shell scripting, 
         file.writeData(text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:false)!)
     }
     </code>
-
-
 
 Or preferably:
 
@@ -184,14 +150,8 @@ Or preferably:
     }
     </code>
 
-
-
 `readSome` takes whatever text is available in the file handle and returns it, whereas `read` waits for the file handle to be closed and then returns all its contents. If the file handle is never closed it never returns.
 
-
-
 * * *
-
-
 
 Most of the code here is from [SwiftShell](https://github.com/kareman/SwiftShell), a library which makes shell scripting in Swift much simpler.

@@ -36,8 +36,6 @@ I recently needed a picker view with labels (like the one in the timer tab in th
     @end
     
 
-
-
 <!-- more -->... and the implementation:
 
 
@@ -159,8 +157,6 @@ I recently needed a picker view with labels (like the one in the timer tab in th
     
     @end
     
-
-
 
 A big thanks to dizy from [stackoverflow.com](http://stackoverflow.com/questions/367471/fixed-labels-in-the-selection-bar-of-a-uipickerview#616517) for showing how to add the labels below the selection indicator.
 

@@ -15,13 +15,7 @@ tags:
 ---
 
 
-
-
 The ultimate writing software should let you:
-
-
-
-
 
 
 	
@@ -42,15 +36,9 @@ The ultimate writing software should let you:
 	
   * collaborate with other people.
 
-
-
-
-
 In May 2004, Adam C. Engst wrote about [WriteRight: The Writer’s Word Processor](http://db.tidbits.com/article/07670) where he laid out his idea of the perfect word processor. Over 6 1/2 years later there is still no such thing. [Scrivener](http://www.literatureandlatte.com/scrivener.html) is a major leap forward but I feel it is still lacking in some areas, so here I have outlined my own ideas for the perfect writing software. Unfortunately all the good names are taken. The mediocre ones too. So I give you:
 
 <!-- more -->
-
-
 
 ### TextSmith
 
@@ -90,8 +78,6 @@ Namely by letting you add plugins for exporting, importing and syncing. They wil
 In order to use one editor to produce all these different types of documents there needs to be a very flexible way of organising and preparing the text so it can be properly formatted and exported later on. TextSmith lets you structure the text like in an outliner, and will then automatically detect headings and what level they are at. This leaves you with setting the type of the paragraphs (body, quote, info box, etc. plus any custom types). Words, paragraphs and sections can be tagged and annotated with any meta data you want.
 
 Since TextSmith can be used to import and export just about any type of text, it will need to handle the following:
-
-
 
 	
   * bulleted lists
@@ -142,10 +128,6 @@ You can of course limit people to only commenting, but with full access to the h
 
 #### Miscellaneous
 
-
-
-
-
 	
   * Needless to say TextSmith will autosave your work for you. New projects will be saved in the designated draft folder until you can be bothered to move them where they belong.
 
@@ -162,11 +144,7 @@ You can of course limit people to only commenting, but with full access to the h
   * You can set up a to do list which will not allow you to print or export until each item in it is checked. Some items can be automatically checked when completed, like making sure no adjacent paragraphs start with the same word.
 
 
-
-
 ### Other writing software
-
-
 
 
 #### Word, Pages, OpenOffice Writer
@@ -180,8 +158,6 @@ These focus primarily on formatting and page layout. Word in particular is loade
 
 I love Scrivener, but let’s face it, it’s no TextSmith:
 
-
-
 	
   * You can save snapshots, but they only contain the currently selected sections and not the entire project. If you forget to make a snapshot you’re left with the old linear undo.
 
@@ -192,14 +168,10 @@ I love Scrivener, but let’s face it, it’s no TextSmith:
   * In general I don’t think it’s strict enough, though most people probably consider that a good thing. You can do all kinds of formatting and layout right in the editor.
 
 
-
-
 ### Now what?
 
 
 I would love to see TextSmith developed, but that won’t be easy, fast or cheap. The editor will be a pretty complex bit of custom UI, and the backend datastore will have to handle very large amounts of text with lots of history, plus real-time collaboration. I think it should be possible to sell the basic application at a low price, and make money on the plug-ins.
-
-
 
 ### Update:
 

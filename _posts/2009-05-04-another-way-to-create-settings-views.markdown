@@ -15,7 +15,6 @@ tags:
 
 Craig Hockenberry has also created an API for Settings views. But unlike [mySettings](http://bitbucket.org/karemorstol/mysettings/wiki/Home) his API creates the views from code instead of plists. Like this:
 
-
     
     
     - (void)constructTableGroups
@@ -28,7 +27,5 @@ Craig Hockenberry has also created an API for Settings views. But unlike [mySett
     tableGroups = [[NSArray arrayWithObject:cells] retain];
     }
     
-
-
 
 Check it out at [http://furbo.org/2009/04/30/matt-gallagher-deserves-a-medal/](http://furbo.org/2009/04/30/matt-gallagher-deserves-a-medal/) .

@@ -52,6 +52,4 @@ If you're going to work on Foundation you will want to replace the last line wit
     cd swift-corelibs-foundation
     </code>
 
-
-
 Then just run `ninja` to build your changes and `ninja test` to test. Thankfully this is a lot faster than building swift.

@@ -19,17 +19,11 @@ In the [previous post](http://blog.nottoobadsoftware.com/swift/splitting-text-an
 
 [video width="960" height="540" m4v="/wp-content/uploads/2016/02/partialsource-vs-readall-lazy-splitting-of-lines.m4v"][/video]
 
-
-
 Both scripts start at the same time. The left one uses the functionality implemented below, while the right one reads the entire input into a string first, and therefore has to wait for the ‘linemaker’ command to finish before doing any actual work.
 
 <!-- more -->
 
-
-
 ## The problem
-
-
 
 This functionality can be used to split any collection over any Equatable element, but it is easier to visualise it if we think of it as splitting text over the newline character:
 
@@ -41,11 +35,7 @@ I struggled with coming up with a nice and clean implementation for this. When e
 
 The end result is a bit messy, but fairly simple. Though I'm not really satisfied with any code which feels like it needs comments to be comprehensible.
 
-
-
 ## The code
-
-
 
 
     
@@ -55,8 +45,6 @@ The end result is a bit messy, but fairly simple. Though I'm not really satisfie
         Base.SubSequence.Generator.Element==Base.Generator.Element,
         Base.SubSequence==Base.SubSequence.SubSequence>: GeneratorType, LazySequenceType {
     </code>
-
-
 
 First we repeat the monstrous generic ‘where’ clause from the previous post, except this time the subsequence must be a [RangeReplaceableCollectionType](http://swiftdoc.org/v2.1/protocol/RangeReplaceableCollectionType/) because we need to join subsequences together.
 
@@ -71,8 +59,6 @@ First we repeat the monstrous generic ‘where’ clause from the previous post,
                 }.generate()
         }
     </code>
-
-
 
 To keep this as generic and reusable as possible, input 'bases' is a function returning the next piece of the collection every time it is called, until it is empty and returns nil. `gs` is a generator of generators, lazily turning each input collection into a [LazySplitSequence](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/). `g` is the LazySplitSequence we are currently working on.
 
@@ -94,12 +80,8 @@ To keep this as generic and reusable as possible, input 'bases' is a function re
     }
     </code>
 
-
-
 If `g` is empty, get the next LazySplitSequence from `gs`. If `gs` is empty then we are done, return nil.
 
 If there is no remaining part of the current LazySplitSequence to split further, but there is more left in `gs`, then split off the first part of the next LazySplitSequence and join it with the current head, which is the last part of the current LazySplitSequence.
-
-
 
 [Here](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShell/General/Lazy-split.swift) is the complete code including LazySplitSequence, with [unit test](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShellTests/General/Collection_Tests.swift#L79).
