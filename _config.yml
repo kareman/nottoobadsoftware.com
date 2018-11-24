@@ -27,7 +27,8 @@ github_username:  kareman
 
 # Build settings
 markdown: kramdown
-#theme: minima
+kramdown:
+  header_offset: 1
 
 plugins:
   - jekyll-feed
@@ -50,3 +51,4 @@ collections:
     permalink: /blog/:categories/:title/
 
 excerpt_separator: <!-- more -->
+

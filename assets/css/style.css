@@ -8,16 +8,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Customized by NotTooBad Software */
-div .highlighter-rouge div .highlight {
-	padding: 1em;
-	white-space: pre-wrap;
-}
-
-div .highlighter-rouge {
-	margin-bottom: 1em;
-}
-
 /* Basic */
 
 	body,
@@ -39,7 +29,7 @@ div .highlighter-rouge {
 	}
 
 	body, input, select, textarea {
-		color: #474747;
+		/* color: #474747; */
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -850,3 +840,41 @@ div .highlighter-rouge {
 			text-align: center;
 			font-size: 0.9em;
 		}
+
+
+/* Customized by NotTooBad Software */
+div .highlighter-rouge div .highlight {
+	padding: 1em;
+	white-space: pre-wrap;
+}
+
+div .highlighter-rouge {
+	margin-bottom: 1em;
+}
+
+ul {
+	margin-left: 1.5em;
+	list-style: outside;
+}
+
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 170%;
+}
+
+h4 {
+	font-size: 130%;
+}
+
+h5 {
+	font-size: 110%;
+}
+
+h2, h3, h4, h5, p {
+	margin: 0 0 0.5em 0;
+}
+		
