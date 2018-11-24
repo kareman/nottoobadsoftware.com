@@ -48,3 +48,5 @@ collections:
   posts:
     output: true
     permalink: /blog/:categories/:title/
+
+excerpt_separator: <!-- more -->

@@ -1,0 +1,14 @@
+---
+author: kare.morstol@mac.com
+comments: true
+date: 2009-03-20 12:23:15+00:00
+layout: post
+link: http://blog.nottoobadsoftware.com/uncategorized/welcome/
+slug: welcome
+title: Welcome
+wordpress_id: 6
+---
+
+Hi, and welcome to my blog. It will almost exclusively be about programming (iPhone-programming to be specific), so if that's not your particular cup of tea then you're probably better off with [this one](http://anotherteablog.blogspot.com/). I'm aiming for two or three posts a month, so hopefully I won't be contributing too much to the unread count of your RSS reader.
+
+PS: I know I'm using the default theme for WordPress, but I really like it and I've only seen one other blog using it. If I should happen to come across a better one I might change, but for now I'm happy with this one.
