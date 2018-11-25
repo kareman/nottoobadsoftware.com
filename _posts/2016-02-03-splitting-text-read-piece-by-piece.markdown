@@ -39,18 +39,20 @@ The end result is a bit messy, but fairly simple. Though I'm not really satisfie
 
 
     
-    <code class="swift">public struct PartialSourceLazySplitSequence <Base: CollectionType where 
+    ```swift
+    public struct PartialSourceLazySplitSequence <Base: CollectionType where 
         Base.Generator.Element: Equatable,
         Base.SubSequence: RangeReplaceableCollectionType,
         Base.SubSequence.Generator.Element==Base.Generator.Element,
         Base.SubSequence==Base.SubSequence.SubSequence>: GeneratorType, LazySequenceType {
-    </code>
+    ```
 
 First we repeat the monstrous generic ‘where’ clause from the previous post, except this time the subsequence must be a [RangeReplaceableCollectionType](http://swiftdoc.org/v2.1/protocol/RangeReplaceableCollectionType/) because we need to join subsequences together.
 
 
     
-    <code class="swift">    private var gs: LazyMapGenerator<AnyGenerator<Base>, LazySplitSequence<Base>>
+    ```swift
+        private var gs: LazyMapGenerator<AnyGenerator<Base>, LazySplitSequence<Base>>
         private var g: LazySplitSequence<Base>?
     
         public init (bases: ()->Base?, separator: Base.Generator.Element) {
@@ -58,13 +60,14 @@ First we repeat the monstrous generic ‘where’ clause from the previous post,
                 LazySplitSequence($0, separator: separator, allowEmptySlices: true).generate()
                 }.generate()
         }
-    </code>
+    ```
 
 To keep this as generic and reusable as possible, input 'bases' is a function returning the next piece of the collection every time it is called, until it is empty and returns nil. `gs` is a generator of generators, lazily turning each input collection into a [LazySplitSequence](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/). `g` is the LazySplitSequence we are currently working on.
 
 
     
-    <code class="swift">    public mutating func next() -> Base.SubSequence? {
+    ```swift
+        public mutating func next() -> Base.SubSequence? {
             // Requires g handling repeated calls to next() after it is empty.
             // When g.remaining becomes nil there is always one item left in g.
             guard let head = g?.next() else {
@@ -78,7 +81,7 @@ To keep this as generic and reusable as possible, input 'bases' is a function re
             }
         }
     }
-    </code>
+    ```
 
 If `g` is empty, get the next LazySplitSequence from `gs`. If `gs` is empty then we are done, return nil.
 

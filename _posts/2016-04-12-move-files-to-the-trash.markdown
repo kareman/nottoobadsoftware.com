@@ -19,18 +19,19 @@ _Swift 3_
 I really don't like using the ‘rm’ shell command – one misplaced character and you can do some serious damage. But when working in the Finder I don't think twice about deleting files, because I know I can always get them back from the trash. So here is a Swift shell script which does exactly that – it moves files to the trash instead of deleting them permanently.
 
 The syntax is very simple – all parameters refer to file system items which should be moved to the trash:
-
     
-    <code class="bash">trash file.txt a_folder
+    ```bash
+    trash file.txt a_folder
     trash *.m *.h
-    </code>
+    ```
 
 <!-- more -->
 
 The code ([gist](https://gist.github.com/kareman/322c1091f3cc7e1078af))
 
     
-    <code class="swift">import SwiftShell
+    ```swift
+    import SwiftShell
     
     import Dispatch
     import Cocoa
@@ -59,7 +60,7 @@ The code ([gist](https://gist.github.com/kareman/322c1091f3cc7e1078af))
     }
     
     RunLoop.current.run()
-    </code>
+    ```
 
 The script is based on [this gist](https://gist.github.com/brentdax/4a48a5024dd01c1821b8) but updated for Swift 3 and uses SwiftShell for output to standard error. The actual work of moving the files to the trash is performed by [NSWorkspace.sharedWorkspace().recycleURLs](https://developer.apple.com/library/etc/redirect/xcode/mac/1153/documentation/Cocoa/Reference/ApplicationKit/Classes/NSWorkspace_Class/index.html#//apple_ref/swift/instm/NSWorkspace/c:objc(cs)NSWorkspace(im)recycleURLs:completionHandler:). Since this is an asynchronous method we need to launch it in a Grand Central Dispatch block and then have the [run loop wait](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSRunLoop_Class/index.html#//apple_ref/occ/instm/NSRunLoop/run) until the method is finished so we get a chance to print any errors before the script exits.
 

@@ -67,11 +67,9 @@ Note
 
 It's impossible to switch dwell clicking off in iTracker, as the checkbox in the preferences doesn't have any effect. You can work around this by setting the time required to keep your head still to a very high number. You can't set it to more than 20 seconds in the preferences but running this from the terminal will set it to 300:
 
-    
-    <code>defaults write com.eyetwig.iTracker stareClickTimeInSec 300
-    </code>
-
-
+```bash
+defaults write com.eyetwig.iTracker stareClickTimeInSec 300
+```
 
 _Dwell clicking_ in iTracker, which automatically clicks once when you hold your head – and therefore the pointer – still for a certain amount of time. This way you can control the pointer using only your head. The downside is you have to keep moving your head if you don't want to click, which can get tiresome after a while. Instead of automatically left clicking you can get a _click menu_ with left clicking, right clicking, middle-clicking, double-clicking and dragg
 
@@ -83,13 +81,11 @@ _Dwell clicking_ in iTracker, which automatically clicks once when you hold your
 
 [DwellClick](https://pilotmoon.com/dwellclick/) is pretty much the complete solution when it comes to dwell clicking. It can be enabled/disabled just by moving the mouse (no keyboard shortcuts needed), it drags automatically when the cursor is over something exclusively draggable like the border of a window, a scrollbar, a window title bar etc) and it has an easily accessible panel with double-clicking, dragging, right clicking (ctrl-clicking), alt-clicking, cmd-clicking and shift-clicking. These can also be combined for say alt-_dragging_ (for rectangular selection in a text editor). It has excellent support for scripting via AppleScript and is highly configurable.
 
-
 When using DwellClick together with iTracker and selecting right-clicking all subsequent clicks will be right-clicks. When I notified the developer of DwellClick about this he was extremely quick to come up with a workaround, even though the problem wasn't in his application. Just run this command from the terminal (requires version 2.2.1 or later):
-
     
-    <code>defaults write com.pilotmoon.DwellClick SuppressExternalModifiers -bool YES
-    </code>
-
+```bash
+defaults write com.pilotmoon.DwellClick SuppressExternalModifiers -bool YES
+ ```
 
 Note that this will make DwellClick ignore any modifier keys (alt, ctrl, cmd, shift) you press on the keyboard.
 

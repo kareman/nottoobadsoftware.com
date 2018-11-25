@@ -20,8 +20,9 @@ _This post is part of a [series on FootlessParser](/footlessparser/), a [parser 
 The goal is to define parsers like this:
 
     
-    <code class="swift">let parser = function1 <^> parser1 <*> parser2 <|> parser3
-    </code>
+```swift
+let parser = function1 <^> parser1 <*> parser2 <|> parser3
+```
 
 where `parser` will pass the input to `parser1` followed by `parser2`, pass their results to `function1` and return its result. If that fails it will pass the original input to `parser3` and return its result.
 

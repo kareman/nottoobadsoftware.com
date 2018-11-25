@@ -25,10 +25,11 @@ Put this at the beginning of each script file:
 
 
     
-    <code class="swift">#!/usr/bin/env swiftshell
+    ```swift
+    #!/usr/bin/env swiftshell
     
     import SwiftShell
-    </code>
+    ```
 
 ### Run commands
 
@@ -36,8 +37,9 @@ Put this at the beginning of each script file:
 
 
     
-    <code class="swift">try runAndPrint(bash: "cmd1 arg | cmd2 arg") 
-    </code>
+    ```swift
+    try runAndPrint(bash: "cmd1 arg | cmd2 arg") 
+    ```
 
 Runs a shell command just like you would in the terminal. If the command returns with a non-zero exit code it will throw a ShellError.
 
@@ -49,9 +51,10 @@ _The name may seem a bit cumbersome, but it explains exactly what it does. Swift
 
 
     
-    <code class="swift">let date: String = run("date", "-u")
+    ```swift
+    let date: String = run("date", "-u")
     print("Today's date in UTC is " + date)
-    </code>
+    ```
 
 Similar to `$(cmd)` in bash, this just returns the output from the command as a string, ignoring any errors.
 
@@ -59,14 +62,15 @@ Similar to `$(cmd)` in bash, this just returns the output from the command as a 
 
 
     
-    <code class="swift">let command = runAsync("cmd", "-n", 245)
+    ```swift
+    let command = runAsync("cmd", "-n", 245)
     // do something with command.stderror or command.stdout
     do {
         try command.finish()
     } catch {
         // deal with errors. or not.
     }
-    </code>
+    ```
 
 Launch a command and continue before it's finished. You can process standard output and standard error, and optionally wait until it's finished and handle any errors.
 
@@ -84,13 +88,14 @@ The array of arguments can contain any type, since everything is convertible to 
 
 
     
-    <code class="swift">run("echo", "We are", 4, "arguments")
+    ```swift
+    run("echo", "We are", 4, "arguments")
     // echo "We are" 4 arguments
     
     let array = ["But", "we", "are"]
     run("echo", array, array.count + 2, "arguments")
     // echo But we are 5 arguments
-    </code>
+    ```
 
 **(bash bashcommand: String)**
 
@@ -102,10 +107,11 @@ These are the commands you normally use in the Terminal. You can use pipes and r
 
 
     
-    <code class="swift">main.stdout.writeln("...")
+    ```swift
+    main.stdout.writeln("...")
     
     main.stderror.write("something went wrong ...")
-    </code>
+    ```
 
 ### Input
 
@@ -113,8 +119,9 @@ Use `main.stdin` to read from standard input:
 
 
     
-    <code class="swift">let input: String = main.stdin.read()
-    </code>
+    ```swift
+    let input: String = main.stdin.read()
+    ```
 
 ### Main
 
@@ -122,7 +129,8 @@ So what else can `main` do? It is the only global value in SwiftShell and contai
 
 
     
-    <code class="swift">var encoding: UInt
+    ```swift
+    var encoding: UInt
     lazy var env: [String : String]
     
     lazy var stdin: ReadableStream
@@ -134,7 +142,7 @@ So what else can `main` do? It is the only global value in SwiftShell and contai
     
     lazy var arguments: [String]
     lazy var name: String
-    </code>
+    ```
 
 Everything is mutable, so you can set e.g. the text encoding or reroute standard error to a file.
 
@@ -144,7 +152,8 @@ Everything is mutable, so you can set e.g. the text encoding or reroute standard
 
 
     
-    <code class="swift">do {
+    ```swift
+    do {
         let input = try main.arguments.first.map {try open($0)} ?? main.stdin
     
         input.read().characters.split("\n")
@@ -156,7 +165,7 @@ Everything is mutable, so you can set e.g. the text encoding or reroute standard
     } catch {
         exit(error)
     }
-    </code>
+    ```
 
 Launched with e.g. `cat long.txt | print_linenumbers.swift` or `print_linenumbers.swift long.txt` this will print the line number at the beginning of each line.
 

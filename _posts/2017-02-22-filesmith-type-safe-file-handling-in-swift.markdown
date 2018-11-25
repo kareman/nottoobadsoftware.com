@@ -29,7 +29,8 @@ Paths are like _potential_ files and directories, addresses to things that alrea
 
 
     
-    <code class="swift">let dirpath = DirectoryPath("dir/dir1")
+    ```swift
+    let dirpath = DirectoryPath("dir/dir1")
     var filepath: FilePath = "file.txt"
     filepath = FilePath(base: "dir", relative: "file.txt")
     filepath = FilePath("dir/file.txt")
@@ -37,7 +38,7 @@ Paths are like _potential_ files and directories, addresses to things that alrea
     dirpath.append(file: "file.txt")    // FilePath("dir/dir1/file.txt")
     dirpath.append(directory: "dir2")   // DirectoryPath("dir/dir1/dir2")
     let l: FilePath = dirpath + "file"
-    </code>
+    ```
 
 _Note that if you use the + operator with a String you need to define the return type, otherwise Swift won't know if it is a file path or a directory path. And you can only append to directory paths._
 
@@ -49,7 +50,8 @@ File and Directory objects on the other hand access the file system when they ar
 
 
     
-    <code class="swift">// ReadableFile
+    ```swift
+    // ReadableFile
     let file1 = try filepath.open()
     let file2 = try ReadableFile(open: "file2.txt")
     let file3 = try dir.open(file: "file3.txt")
@@ -59,7 +61,7 @@ File and Directory objects on the other hand access the file system when they ar
     var file2_edit = try WritableFile(create: "file2.txt", ifExists: .throwError)
     file2_edit = try WritableFile(open: "file2.txt")
     let file3_edit = try dir.create(file: "file3.txt", ifExists: .replace)
-    </code>
+    ```
 
 A `ReadableFile` can only be used for reading from a file, never to change, move or delete it. But you can do whatever you want with a `WritableFile`, including reading and overwriting it.
 
@@ -69,7 +71,8 @@ For directories there is just the Directory class for both reading and writing, 
 
 
     
-    <code class="swift">var dir1 = try dirpath.create(ifExists: .replace)
+    ```swift
+    var dir1 = try dirpath.create(ifExists: .replace)
     var dir2 = try Directory(create: "dir/dir2", ifExists: .throwError)
     var dir3 = try dir2.create(directory: "dir3", ifExists: .open)
     dir1 = try dirpath.open()
@@ -79,7 +82,7 @@ For directories there is just the Directory class for both reading and writing, 
     Directory.current.files(recursive: true)
     dir1.files("*3.*", recursive: true)
     Directory.current.directories(recursive: true)
-    </code>
+    ```
 
 ## Safety
 

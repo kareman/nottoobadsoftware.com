@@ -23,7 +23,8 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
 
 
     
-    <code class="sh">#!/bin/sh
+        ```bash
+     class="sh">#!/bin/sh
     
     # Extract and format chapter number and title
     extract_chapter_title()
@@ -43,7 +44,7 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
     done | python -m markdown > "$output_file"
     
     echo "Markdown conversion complete. Output located in $output_file"
-    </code>
+    ```
 
 It reads all the markdown files in the “chapters” directory, joins them together using each filename as a heading and converts everything to HTML. This is actually a very nice and clear* shell script, I especially like how the "for" loop is piped directly into the shell command so I did the same in the SwiftShell version.
 
@@ -53,7 +54,8 @@ _* except for "%.*" in line 7, which leaves out the file extension_
 
 
     
-    <code class="swift">#!/usr/bin/env swiftshell
+    ```swift
+    #!/usr/bin/env swiftshell
     
     import SwiftShell
     import FileSmith
@@ -74,7 +76,7 @@ _* except for "%.*" in line 7, which leaves out the file extension_
     } catch {
         exit(error)
     }
-    </code>
+    ```
 
 I think this is more readable and more explicit about what is going on, though a lot wordier. I especially like how each "try" makes it clear where things can go wrong. Also this is mostly standard Swift and Foundation code, the only parts from SwiftShell are “open” and “run”.
 

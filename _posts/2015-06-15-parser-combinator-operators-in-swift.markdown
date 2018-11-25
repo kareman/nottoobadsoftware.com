@@ -22,8 +22,9 @@ Parser combinators must be one of the best things to come out of functional prog
 Like this:
 
     
-    <code class="swift">let parser = function1 <^> parser1 <*> parser2 <|> parser3
-    </code>
+    ```swift
+    let parser = function1 <^> parser1 <*> parser2 <|> parser3
+    ```
 
 where `function1` and `parser3` return the same type.
 
@@ -53,25 +54,25 @@ The general idea is to combine very simple parsers into more complex ones. So `c
 
 #### <^> (map)
 
-    
-    <code>function <^> parser1
-    </code>
+```swift
+function <^> parser1
+```
 
 creates a new parser which runs parser1. If it succeeds it passes the output to `function` and returns the result.
 
 #### <*> (apply)
 
-    
-    <code>function <^> parser1 <*> parser2
-    </code>
+```swift
+function <^> parser1 <*> parser2
+```
 
 creates a new parser which first runs parser1. If it succeeds it runs parser2. If that also succeeds it passes both outputs to `function` and returns the result.
 
 The <*> operator requires its left parser to return a function and is normally used together with <^>. `function` must take 2 parameters of the correct types, and it must be [curried](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID363), like this:
 
-    
-    <code>func function (a:A)(b:B) -> C 
-    </code>
+```swift
+func function (a:A)(b:B) -> C 
+```
 
 This is because <*> returns the output of 2 parsers and it doesn't know what to do with them. If you want them returned in a tuple, an array or e.g. added together you can do so in the function before <^> .
 
@@ -87,9 +88,9 @@ The same as <* , but discards the result of the parser to its left.
 
 #### <|>  (choice)
 
-    
-    <code>parser1 <|> parser2 <|> parser3
-    </code>
+```swift
+parser1 <|> parser2 <|> parser3
+```
 
 This operator tries all the parsers in order and returns the result of the first one that succeeds.
 

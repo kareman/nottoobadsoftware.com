@@ -37,7 +37,8 @@ And as always:
 
 And this is what it looks like (from [linuxmain-generator](https://github.com/kareman/linuxmain-generator)):
     
-    <code class="swift">import Moderator
+    ```swift
+    import Moderator
     import FileSmith
     
     let arguments = Moderator(description: "Automatically add code to Swift Package Manager projects to run unit tests on Linux.")
@@ -66,6 +67,6 @@ And this is what it looks like (from [linuxmain-generator](https://github.com/ka
         WritableFile.stderror.print(error)
         exit(Int32(error._code))
     }
-    </code>
+    ```
 
 For more, see [the project homepage](https://github.com/kareman/Moderator/#built-in-parsers).

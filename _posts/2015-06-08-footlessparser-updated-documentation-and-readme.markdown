@@ -26,11 +26,10 @@ Also check out [a series of blog posts about the development](http://blog.nottoo
 ## Introduction
 
 In short, FootlessParser lets you define parsers like this:
-
-
-    
-    <code>let parser = function1 <^> parser1 <*> parser2 <|> parser3
-    </code>
+   
+```swift
+let parser = function1 <^> parser1 <*> parser2 <|> parser3
+ ```
 
 `function1` and `parser3` return the same type.
 
@@ -42,7 +41,8 @@ In short, FootlessParser lets you define parsers like this:
 
 
     
-    <code class="javascript">let delimiter = "," as Character
+    ```swift
+    let delimiter = "," as Character
     let quote = """ as Character
     let newline = "n" as Character
     
@@ -51,7 +51,7 @@ In short, FootlessParser lets you define parsers like this:
     
     let row = extend <^> cell <*> zeroOrMore( char(delimiter) *> cell ) <* char(newline)
     let csvparser = zeroOrMore(row)
-    </code>
+    ```
 
 Here a cell (or field) either:
 
@@ -62,17 +62,16 @@ Each row then consists of one or more cells, separated by commas and ended by a 
 Finally the `csvparser` collects zero or more rows into an array.
 
 To perform the actual parsing:
-
-
     
-    <code>let result = parse(csvparser, csvtext)
-    if let output = result.value {
-        // output is an array of all the rows, 
-        // where each row is an array of all its cells.
-    } else if let error = result.error {
-        println(error)
-    }
-    </code>
+```swift
+let result = parse(csvparser, csvtext)
+if let output = result.value {
+    // output is an array of all the rows, 
+    // where each row is an array of all its cells.
+} else if let error = result.error {
+    println(error)
+}
+```
 
 The `parse` function returns a [Result](https://github.com/antitypical/Result) which if successful contains the output from the parser, or in case of failure contains the error.
 
@@ -80,10 +79,9 @@ The `parse` function returns a [Result](https://github.com/antitypical/Result) w
 
 #### Using [Carthage](https://github.com/Carthage/Carthage)
 
-
-    
-    <code class="default">github "kareman/FootlessParser"
-    </code>
+ ```
+ github "kareman/FootlessParser"
+ ```
 
 Then run `carthage update`.
 

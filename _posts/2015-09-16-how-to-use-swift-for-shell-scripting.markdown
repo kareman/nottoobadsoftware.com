@@ -18,20 +18,22 @@ To be honest I'm not very good at shell scripting. It's very useful for automati
 
 
     
-    <code class="bash">#!/bin/bash
+    ```bash
+    #!/bin/bash
     
     if [ $var -gt 100 ]
     then
         <do some stuff>
     fi
-    </code>
+    ```
 
 And here's how to check if the file referred to in the first argument is readable and not empty:
 
 
     
-    <code class="bash">if [ -r $1 ] && [ -s $1 ]
-    </code>
+    ```bash
+    if [ -r $1 ] && [ -s $1 ]
+    ```
 
 Enough said.
 
@@ -43,9 +45,10 @@ So I would much rather use Swift, as the syntax is nice, very nice indeed. But t
 
 
     
-    <code class="swift">let cmd = "some shell command"
+    ```swift
+    let cmd = "some shell command"
     NSTask.launchedTaskWithLaunchPath("/bin/bash", arguments:["-c", cmd]).waitUntilExit()
-    </code>
+    ```
 
 NSTask ([Apple](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSTask_Class), [raywenderlich.com](http://www.raywenderlich.com/36537/nstask-tutorial)) is actually an excellent API which launches asynchronous external processes and has customisable environment, input and outputs. But it definitely needs some helper functions to make it easier to use.
 
@@ -59,7 +62,8 @@ For more direct control, like seeking and reading and writing binary data, you c
 
 
     
-    <code class="swift">let stdin    = NSFileHandle.fileHandleWithStandardInput()
+    ```swift
+    let stdin    = NSFileHandle.fileHandleWithStandardInput()
     let stdout   = NSFileHandle.fileHandleWithStandardOutput()
     let stderror = NSFileHandle.fileHandleWithStandardError()
     
@@ -67,22 +71,24 @@ For more direct control, like seeking and reading and writing binary data, you c
     
     let output: NSData = ...
     stdout.writeData(output)
-    </code>
+    ```
 
 #### Use environment variables
 
 
     
-    <code class="swift">let env = NSProcessInfo.processInfo().environment as [String: String]
+    ```swift
+    let env = NSProcessInfo.processInfo().environment as [String: String]
     let path = env["PATH"]!
-    </code>
+    ```
 
 #### Access arguments
 
 
     
-    <code class="swift">let arguments: [String] = Process.arguments.count <= 1 ? [] : Array(Process.arguments.dropFirst())
-    </code>
+    ```swift
+    let arguments: [String] = Process.arguments.count <= 1 ? [] : Array(Process.arguments.dropFirst())
+    ```
 
 The first element is discarded because it, as is the custom in shell scripting, contains the path to the script file itself.
 
@@ -90,7 +96,8 @@ The first element is discarded because it, as is the custom in shell scripting, 
 
 
     
-    <code class="swift">let filepath = "file.txt"
+    ```swift
+    let filepath = "file.txt"
     
     if let file = NSFileHandle(forUpdatingAtPath: filepath) {
     
@@ -102,13 +109,14 @@ The first element is discarded because it, as is the custom in shell scripting, 
         let text = "some text"
         file.writeData(text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:false)!)
     }
-    </code>
+    ```
 
 Or preferably:
 
 
     
-    <code class="swift">import Foundation
+    ```swift
+    import Foundation
     
     extension NSFileHandle {
     
@@ -148,7 +156,7 @@ Or preferably:
             self.write("\n", encoding: encoding)
         }
     }
-    </code>
+    ```
 
 `readSome` takes whatever text is available in the file handle and returns it, whereas `read` waits for the file handle to be closed and then returns all its contents. If the file handle is never closed it never returns.
 
