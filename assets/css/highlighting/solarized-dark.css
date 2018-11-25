@@ -16,7 +16,15 @@ cyan      #2aa198  strings, numbers
 green     #859900  operators, other keywords
 */
 
-div .highlighter-rouge div .highlight { background-color: #002b36; color: #93a1a1 }
+code.highlighter-rouge { font-family:'Courier New', Courier, monospace }
+
+div .highlighter-rouge div .highlight { 
+	background-color: #002b36; 
+	color: #93a1a1; 
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.9em;
+}
+
 .highlight .c { color: #586e75 } /* Comment */
 .highlight .err { color: #93a1a1 } /* Error */
 .highlight .g { color: #93a1a1 } /* Generic */
