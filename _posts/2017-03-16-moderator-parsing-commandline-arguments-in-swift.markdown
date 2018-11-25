@@ -37,36 +37,36 @@ And as always:
 
 And this is what it looks like (from [linuxmain-generator](https://github.com/kareman/linuxmain-generator)):
     
-    ```swift
-    import Moderator
-    import FileSmith
-    
-    let arguments = Moderator(description: "Automatically add code to Swift Package Manager projects to run unit tests on Linux.")
-    let overwrite = arguments.add(.option("o","overwrite", description: "Replace <test directory>/LinuxMain.swift if it already exists."))
-    let testdirarg = arguments.add(Argument<String?>
-        .optionWithValue("testdir", name: "test directory", description: "The path to the directory with the unit tests.")
-        .default("Tests"))
-    _ = arguments.add(Argument<String?>
-        .singleArgument(name: "directory", description: "The project root directory.")
-        .default("./")
-        .map { (projectpath: String) in
-            let projectdir = try Directory(open: projectpath)
-            try projectdir.verifyContains("Package.swift")
-            Directory.current = projectdir
-        })
-    
-    do {
-        try arguments.parse()
-    
-        let testdir = try Directory(open: testdirarg.value)
-        if !overwrite.value && testdir.contains("LinuxMain.swift") {
-            throw ArgumentError(errormessage: "\(testdir.path)/LinuxMain.swift already exists. Use -o/--overwrite to replace it.")
-        }
-        ...
-    } catch {
-        WritableFile.stderror.print(error)
-        exit(Int32(error._code))
+```swift
+import Moderator
+import FileSmith
+
+let arguments = Moderator(description: "Automatically add code to Swift Package Manager projects to run unit tests on Linux.")
+let overwrite = arguments.add(.option("o","overwrite", description: "Replace <test directory>/LinuxMain.swift if it already exists."))
+let testdirarg = arguments.add(Argument<String?>
+    .optionWithValue("testdir", name: "test directory", description: "The path to the directory with the unit tests.")
+    .default("Tests"))
+_ = arguments.add(Argument<String?>
+    .singleArgument(name: "directory", description: "The project root directory.")
+    .default("./")
+    .map { (projectpath: String) in
+        let projectdir = try Directory(open: projectpath)
+        try projectdir.verifyContains("Package.swift")
+        Directory.current = projectdir
+    })
+
+do {
+    try arguments.parse()
+
+    let testdir = try Directory(open: testdirarg.value)
+    if !overwrite.value && testdir.contains("LinuxMain.swift") {
+        throw ArgumentError(errormessage: "\(testdir.path)/LinuxMain.swift already exists. Use -o/--overwrite to replace it.")
     }
-    ```
+    ...
+} catch {
+    WritableFile.stderror.print(error)
+    exit(Int32(error._code))
+}
+```
 
 For more, see [the project homepage](https://github.com/kareman/Moderator/#built-in-parsers).

@@ -41,17 +41,17 @@ let parser = function1 <^> parser1 <*> parser2 <|> parser3
 
 
     
-    ```swift
-    let delimiter = "," as Character
-    let quote = """ as Character
-    let newline = "n" as Character
-    
-    let cell = char(quote) *> zeroOrMore(not(quote)) <* char(quote)
-        <|> zeroOrMore(noneOf([delimiter, newline]))
-    
-    let row = extend <^> cell <*> zeroOrMore( char(delimiter) *> cell ) <* char(newline)
-    let csvparser = zeroOrMore(row)
-    ```
+```swift
+let delimiter = "," as Character
+let quote = """ as Character
+let newline = "n" as Character
+
+let cell = char(quote) *> zeroOrMore(not(quote)) <* char(quote)
+    <|> zeroOrMore(noneOf([delimiter, newline]))
+
+let row = extend <^> cell <*> zeroOrMore( char(delimiter) *> cell ) <* char(newline)
+let csvparser = zeroOrMore(row)
+```
 
 Here a cell (or field) either:
 

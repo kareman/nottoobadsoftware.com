@@ -27,18 +27,16 @@ So I made the [FileSmith](https://github.com/kareman/FileSmith) library with Fil
 
 Paths are like _potential_ files and directories, addresses to things that already exist and things that soon will, if all goes well. They should be easy to create and combine:
 
+```swift
+let dirpath = DirectoryPath("dir/dir1")
+var filepath: FilePath = "file.txt"
+filepath = FilePath(base: "dir", relative: "file.txt")
+filepath = FilePath("dir/file.txt")
 
-    
-    ```swift
-    let dirpath = DirectoryPath("dir/dir1")
-    var filepath: FilePath = "file.txt"
-    filepath = FilePath(base: "dir", relative: "file.txt")
-    filepath = FilePath("dir/file.txt")
-    
-    dirpath.append(file: "file.txt")    // FilePath("dir/dir1/file.txt")
-    dirpath.append(directory: "dir2")   // DirectoryPath("dir/dir1/dir2")
-    let l: FilePath = dirpath + "file"
-    ```
+dirpath.append(file: "file.txt")    // FilePath("dir/dir1/file.txt")
+dirpath.append(directory: "dir2")   // DirectoryPath("dir/dir1/dir2")
+let l: FilePath = dirpath + "file"
+```
 
 _Note that if you use the + operator with a String you need to define the return type, otherwise Swift won't know if it is a file path or a directory path. And you can only append to directory paths._
 
@@ -48,20 +46,18 @@ There is also AnyPath for when you don't know or care what type a path is. All t
 
 File and Directory objects on the other hand access the file system when they are created, to verify that the file or directory they represent actually exists (otherwise they throw an error). This doesn't necessarily mean there is still something there when you start reading and writing obviously, but it's at least good to know there very recently was.
 
+```swift
+// ReadableFile
+let file1 = try filepath.open()
+let file2 = try ReadableFile(open: "file2.txt")
+let file3 = try dir.open(file: "file3.txt")
 
-    
-    ```swift
-    // ReadableFile
-    let file1 = try filepath.open()
-    let file2 = try ReadableFile(open: "file2.txt")
-    let file3 = try dir.open(file: "file3.txt")
-    
-    // WritableFile
-    var file1_edit = try filepath.create(ifExists: .open)
-    var file2_edit = try WritableFile(create: "file2.txt", ifExists: .throwError)
-    file2_edit = try WritableFile(open: "file2.txt")
-    let file3_edit = try dir.create(file: "file3.txt", ifExists: .replace)
-    ```
+// WritableFile
+var file1_edit = try filepath.create(ifExists: .open)
+var file2_edit = try WritableFile(create: "file2.txt", ifExists: .throwError)
+file2_edit = try WritableFile(open: "file2.txt")
+let file3_edit = try dir.create(file: "file3.txt", ifExists: .replace)
+```
 
 A `ReadableFile` can only be used for reading from a file, never to change, move or delete it. But you can do whatever you want with a `WritableFile`, including reading and overwriting it.
 
@@ -69,20 +65,18 @@ A `ReadableFile` can only be used for reading from a file, never to change, move
 
 For directories there is just the Directory class for both reading and writing, no WritableDirectory and ReadableDirectory like with files, because it's not really clear what that means. If you have a ReadableDirectory it should not be possible to make any changes with it, but you can still use it to get the paths of the files and directories it contains, turn them into writable files and writable directories and then make changes to them. The separation is much more clear-cut with files because they can't contain other files.
 
+```swift
+var dir1 = try dirpath.create(ifExists: .replace)
+var dir2 = try Directory(create: "dir/dir2", ifExists: .throwError)
+var dir3 = try dir2.create(directory: "dir3", ifExists: .open)
+dir1 = try dirpath.open()
+dir2 = try Directory(open: "dir/dir2")
+dir3 = try dir2.open(directory: "dir3")
 
-    
-    ```swift
-    var dir1 = try dirpath.create(ifExists: .replace)
-    var dir2 = try Directory(create: "dir/dir2", ifExists: .throwError)
-    var dir3 = try dir2.create(directory: "dir3", ifExists: .open)
-    dir1 = try dirpath.open()
-    dir2 = try Directory(open: "dir/dir2")
-    dir3 = try dir2.open(directory: "dir3")
-    
-    Directory.current.files(recursive: true)
-    dir1.files("*3.*", recursive: true)
-    Directory.current.directories(recursive: true)
-    ```
+Directory.current.files(recursive: true)
+dir1.files("*3.*", recursive: true)
+Directory.current.directories(recursive: true)
+```
 
 ## Safety
 

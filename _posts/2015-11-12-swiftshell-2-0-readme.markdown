@@ -25,21 +25,21 @@ Put this at the beginning of each script file:
 
 
     
-    ```swift
-    #!/usr/bin/env swiftshell
-    
-    import SwiftShell
-    ```
+```swift
+#!/usr/bin/env swiftshell
+
+import SwiftShell
+```
 
 ### Run commands
 
 #### Print output
 
 
-    
-    ```swift
-    try runAndPrint(bash: "cmd1 arg | cmd2 arg") 
-    ```
+
+```swift
+try runAndPrint(bash: "cmd1 arg | cmd2 arg") 
+```
 
 Runs a shell command just like you would in the terminal. If the command returns with a non-zero exit code it will throw a ShellError.
 
@@ -50,27 +50,27 @@ _The name may seem a bit cumbersome, but it explains exactly what it does. Swift
 #### In-line
 
 
-    
-    ```swift
-    let date: String = run("date", "-u")
-    print("Today's date in UTC is " + date)
-    ```
+
+```swift
+let date: String = run("date", "-u")
+print("Today's date in UTC is " + date)
+```
 
 Similar to `$(cmd)` in bash, this just returns the output from the command as a string, ignoring any errors.
 
 #### Asynchronous
 
 
-    
-    ```swift
-    let command = runAsync("cmd", "-n", 245)
-    // do something with command.stderror or command.stdout
-    do {
-        try command.finish()
-    } catch {
-        // deal with errors. or not.
-    }
-    ```
+
+```swift
+let command = runAsync("cmd", "-n", 245)
+// do something with command.stderror or command.stdout
+do {
+    try command.finish()
+} catch {
+    // deal with errors. or not.
+}
+```
 
 Launch a command and continue before it's finished. You can process standard output and standard error, and optionally wait until it's finished and handle any errors.
 
@@ -87,15 +87,15 @@ If the path to the executable is without any `/`, SwiftShell will try to find th
 The array of arguments can contain any type, since everything is convertible to strings in Swift. If it contains any arrays it will be flattened so only the elements will be used, not the arrays themselves.
 
 
-    
-    ```swift
-    run("echo", "We are", 4, "arguments")
-    // echo "We are" 4 arguments
-    
-    let array = ["But", "we", "are"]
-    run("echo", array, array.count + 2, "arguments")
-    // echo But we are 5 arguments
-    ```
+
+```swift
+run("echo", "We are", 4, "arguments")
+// echo "We are" 4 arguments
+
+let array = ["But", "we", "are"]
+run("echo", array, array.count + 2, "arguments")
+// echo But we are 5 arguments
+```
 
 **(bash bashcommand: String)**
 
@@ -106,43 +106,43 @@ These are the commands you normally use in the Terminal. You can use pipes and r
 `main.stdout` is for normal output and `main.stderror` for errors:
 
 
-    
-    ```swift
-    main.stdout.writeln("...")
-    
-    main.stderror.write("something went wrong ...")
-    ```
+
+```swift
+main.stdout.writeln("...")
+
+main.stderror.write("something went wrong ...")
+```
 
 ### Input
 
 Use `main.stdin` to read from standard input:
 
 
-    
-    ```swift
-    let input: String = main.stdin.read()
-    ```
+
+```swift
+let input: String = main.stdin.read()
+```
 
 ### Main
 
 So what else can `main` do? It is the only global value in SwiftShell and contains all the contextual information about the outside world:
 
 
-    
-    ```swift
-    var encoding: UInt
-    lazy var env: [String : String]
-    
-    lazy var stdin: ReadableStream
-    lazy var stdout: WriteableStream
-    lazy var stderror: WriteableStream
-    
-    var currentdirectory: String
-    lazy var tempdirectory: String
-    
-    lazy var arguments: [String]
-    lazy var name: String
-    ```
+
+```swift
+var encoding: UInt
+lazy var env: [String : String]
+
+lazy var stdin: ReadableStream
+lazy var stdout: WriteableStream
+lazy var stderror: WriteableStream
+
+var currentdirectory: String
+lazy var tempdirectory: String
+
+lazy var arguments: [String]
+lazy var name: String
+```
 
 Everything is mutable, so you can set e.g. the text encoding or reroute standard error to a file.
 
@@ -151,21 +151,21 @@ Everything is mutable, so you can set e.g. the text encoding or reroute standard
 ### Print line numbers
 
 
-    
-    ```swift
-    do {
-        let input = try main.arguments.first.map {try open($0)} ?? main.stdin
-    
-        input.read().characters.split("\n")
-            .enumerate().map { (linenr,line) in "\(linenr+1): " + String(line) }
-            .joinWithSeparator("\n").writeTo(&main.stdout)
-    
-        // add a newline at the end
-        print("")
-    } catch {
-        exit(error)
-    }
-    ```
+
+```swift
+do {
+    let input = try main.arguments.first.map {try open($0)} ?? main.stdin
+
+    input.read().characters.split("\n")
+        .enumerate().map { (linenr,line) in "\(linenr+1): " + String(line) }
+        .joinWithSeparator("\n").writeTo(&main.stdout)
+
+    // add a newline at the end
+    print("")
+} catch {
+    exit(error)
+}
+```
 
 Launched with e.g. `cat long.txt | print_linenumbers.swift` or `print_linenumbers.swift long.txt` this will print the line number at the beginning of each line.
 

@@ -24,16 +24,16 @@ _* OS X is POSIX compliant and so is Linux [(mostly)](https://en.m.wikipedia.org
 POSIX states that all options must be of the form `-a` and contain only one character. But `--long-name` is also widely used and often preferable. After all,
 
     
-    ```bash
-    transmogrify --input file1 --output file2
-    ```
+```bash
+transmogrify --input file1 --output file2
+```
 
 is easier to understand than
 
-    
-    ```bash
-    transmogrify -i file1 -o file2
-    ```
+
+```bash
+transmogrify -i file1 -o file2
+```
 
 Notably Apple does not follow this norm. Their command-line applications, like `swift`* and `xcodebuild`, use only one `-` in front of their long option names (as in `swift -help`). And, presumably to avoid ambiguity, they do not allow combining several single character options after a single `-`.
 
@@ -55,10 +55,10 @@ The [portable character set](http://pubs.opengroup.org/onlinepubs/9699919799/bas
 
 It is also quite common to join options and option arguments together:
 
-    
-    ```bash
-    transmogrify --input=file1 --output=file2
-    ```
+
+```bash
+transmogrify --input=file1 --output=file2
+```
 
 I even prefer this to the standard syntax because it makes it clear what is an option argument and what is a stand-alone argument. Also it makes it possible to have option arguments that begin with a `-` without being mistaken for an option.
 

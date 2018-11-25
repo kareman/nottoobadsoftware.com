@@ -22,9 +22,9 @@ Parser combinators must be one of the best things to come out of functional prog
 Like this:
 
     
-    ```swift
-    let parser = function1 <^> parser1 <*> parser2 <|> parser3
-    ```
+```swift
+let parser = function1 <^> parser1 <*> parser2 <|> parser3
+```
 
 where `function1` and `parser3` return the same type.
 
