@@ -13,7 +13,7 @@ tags:
 - Functional programming
 ---
 
-_This is part of a [series on FootlessParser](footlessparser/), a [parser combinator](http://en.wikipedia.org/wiki/Parser_combinator) written in Swift._
+_This is part of a [series on FootlessParser](/footlessparser/), a [parser combinator](http://en.wikipedia.org/wiki/Parser_combinator) written in Swift._
 
 * * *
 

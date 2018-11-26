@@ -8,7 +8,7 @@ slug: the-ultimate-word-processor
 title: The ultimate word processor
 wordpress_id: 328
 categories:
-- User Interface
+- user_interface
 tags:
 - Scrivener
 - TextSmith

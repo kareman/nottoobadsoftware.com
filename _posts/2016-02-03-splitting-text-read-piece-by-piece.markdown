@@ -15,7 +15,7 @@ tags:
 
 _Swift version 2.1._
 
-In the [previous post](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/) we implemented lazy splitting of collections, very useful for say splitting large texts into lines. But in SwiftShell I need the same functionality for text which is acquired piecemeal, like the output of a long-running shell command read sequentially, when needed. Because shell commands which are piped together in the terminal should get to work right away, and not just hang around waiting for the previous command to finish. Like this:
+In the [previous post](/blog/swift/splitting-text-and-collections-lazily-in-swift/) we implemented lazy splitting of collections, very useful for say splitting large texts into lines. But in SwiftShell I need the same functionality for text which is acquired piecemeal, like the output of a long-running shell command read sequentially, when needed. Because shell commands which are piped together in the terminal should get to work right away, and not just hang around waiting for the previous command to finish. Like this:
 
 <video preload='none' controls>
     <source src='/media/old/partialsource-vs-readall-lazy-splitting-of-lines.m4v' type='video/mp4' />
@@ -60,7 +60,7 @@ First we repeat the monstrous generic ‘where’ clause from the previous post,
     }
 ```
 
-To keep this as generic and reusable as possible, input 'bases' is a function returning the next piece of the collection every time it is called, until it is empty and returns nil. `gs` is a generator of generators, lazily turning each input collection into a [LazySplitSequence](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/). `g` is the LazySplitSequence we are currently working on.
+To keep this as generic and reusable as possible, input 'bases' is a function returning the next piece of the collection every time it is called, until it is empty and returns nil. `gs` is a generator of generators, lazily turning each input collection into a [LazySplitSequence](/blog/swift/splitting-text-and-collections-lazily-in-swift/). `g` is the LazySplitSequence we are currently working on.
 
 ```swift
     public mutating func next() -> Base.SubSequence? {

@@ -12,7 +12,7 @@ tags:
 - word processors
 ---
 
-In [The ultimate word processor](http://blog.nottoobadsoftware.com/2011/01/20/the-ultimate-word-processor/), I described my ideal application for writing. Here is a much more thorough description of its key features and basic workflow:[http://blog.nottoobadsoftware.com/textsmith/](http://blog.nottoobadsoftware.com/textsmith/)
+In [The ultimate word processor](/blog/user_interface/the-ultimate-word-processor/), I described my ideal application for writing. [Here](/textsmith/) is a much more thorough description of its key features and basic workflow.
 
 It's a bit hard to classify, but here goes:
 	
