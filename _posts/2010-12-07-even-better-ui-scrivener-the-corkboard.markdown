@@ -21,11 +21,11 @@ tags:
 
 The corkboard is probably one of the main reasons why so many people like Scrivener. There are two modes:
 
-![](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/tutorial-draft-1-2.jpg)
+![](/media/old/tutorial-draft-1-2.jpg)
 
 __Freeform__
 
-![](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/tutorial-draft.jpg)
+![](/media/old/tutorial-draft.jpg)
 
 __Linear__
 
@@ -35,15 +35,15 @@ Each card can represent as much text as you want, which sounds obvious, but sadl
 
 Scrivener is very customisable. This is good news for a program you’re likely to spend a lot of time in. The problem is, the options seem a bit… scattered. The corkboard, for example, is customised in 4 different places:
 
-![Preferences – Corkboard](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/corkboard.png)
+![Preferences – Corkboard](/media/old/corkboard.png)
 
 _Preferences – Corkboard_
 
-![It may seem a bit strange to put all the colour options in one place, but this saves so much screen estate it is probably the best solution.](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/appearance.png)
+![It may seem a bit strange to put all the colour options in one place, but this saves so much screen estate it is probably the best solution.](/media/old/appearance.png)
 
 _Preferences – Appearance – Card colours._
 
-![Corkboard customisation](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/tutorial-draft-1.png)
+![Corkboard customisation](/media/old/tutorial-draft-1.png)
 
 _Corkboard customisation_
 

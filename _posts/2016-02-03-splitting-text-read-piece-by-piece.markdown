@@ -17,7 +17,9 @@ _Swift version 2.1._
 
 In the [previous post](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/) we implemented lazy splitting of collections, very useful for say splitting large texts into lines. But in SwiftShell I need the same functionality for text which is acquired piecemeal, like the output of a long-running shell command read sequentially, when needed. Because shell commands which are piped together in the terminal should get to work right away, and not just hang around waiting for the previous command to finish. Like this:
 
-[video width="960" height="540" m4v="/wp-content/uploads/2016/02/partialsource-vs-readall-lazy-splitting-of-lines.m4v"][/video]
+<video preload='none' controls>
+    <source src='/media/old/partialsource-vs-readall-lazy-splitting-of-lines.m4v' type='video/mp4' />
+</video>
 
 Both scripts start at the same time. The left one uses the functionality implemented below, while the right one reads the entire input into a string first, and therefore has to wait for the ‘linemaker’ command to finish before doing any actual work.
 
@@ -27,7 +29,7 @@ Both scripts start at the same time. The left one uses the functionality impleme
 
 This functionality can be used to split any collection over any Equatable element, but it is easier to visualise it if we think of it as splitting text over the newline character:
 
-![Image of lines of text with non-square boxes with slightly different background colours signifying the different segments/collections](http://blog.nottoobadsoftware.com/wp-content/uploads/2016/02/Skjermbilde-2016-02-02-kl.-22.01.38.png)
+![Image of lines of text with non-square boxes with slightly different background colours signifying the different segments/collections](/media/old/Skjermbilde-2016-02-02-kl.-22.01.38.png)
 
 In how many pieces the text is read is completely arbitrary, it can take several of them just to complete a line or one piece can contain everything. All we know is we want the same results no matter how the text is divided.
 
@@ -36,8 +38,6 @@ I struggled with coming up with a nice and clean implementation for this. When e
 The end result is a bit messy, but fairly simple. Though I'm not really satisfied with any code which feels like it needs comments to be comprehensible.
 
 ## The code
-
-
     
 ```swift
 public struct PartialSourceLazySplitSequence <Base: CollectionType where 
@@ -48,8 +48,6 @@ public struct PartialSourceLazySplitSequence <Base: CollectionType where
 ```
 
 First we repeat the monstrous generic ‘where’ clause from the previous post, except this time the subsequence must be a [RangeReplaceableCollectionType](http://swiftdoc.org/v2.1/protocol/RangeReplaceableCollectionType/) because we need to join subsequences together.
-
-
 
 ```swift
     private var gs: LazyMapGenerator<AnyGenerator<Base>, LazySplitSequence<Base>>
@@ -63,8 +61,6 @@ First we repeat the monstrous generic ‘where’ clause from the previous post,
 ```
 
 To keep this as generic and reusable as possible, input 'bases' is a function returning the next piece of the collection every time it is called, until it is empty and returns nil. `gs` is a generator of generators, lazily turning each input collection into a [LazySplitSequence](http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/). `g` is the LazySplitSequence we are currently working on.
-
-
 
 ```swift
     public mutating func next() -> Base.SubSequence? {

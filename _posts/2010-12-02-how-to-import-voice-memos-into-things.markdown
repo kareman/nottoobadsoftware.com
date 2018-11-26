@@ -18,7 +18,7 @@ I usually write new ideas into the [Things](http://culturedcode.com/things/) app
 
     
   2. Enter these settings:
-[![](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/system-preferences.png)](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/12/system-preferences.png)
+[![](/media/old/system-preferences.png)](/media/old/system-preferences.png)
 
 Here is the script:
 

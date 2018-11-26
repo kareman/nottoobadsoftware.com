@@ -17,11 +17,11 @@ I've been working on my iPhone app lately (for performing physical exercises lik
 
 As an example, here's the configuration screen for my app:
 
-![Configuration screen](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2009/05/untitled.jpg)
+![Configuration screen](/media/old/untitled.jpg)
 
 <!-- more -->To do this I had to, of course, [install mySettings](http://bitbucket.org/karemorstol/mysettings/wiki/Installation). Then create this plist:
 
-![Plist configuration file](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2009/05/untitled-2.jpg)
+![Plist configuration file](/media/old/untitled-2.jpg)
 
 And configure the table view:
 

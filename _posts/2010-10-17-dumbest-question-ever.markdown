@@ -18,13 +18,13 @@ Some survey once showed that the dumbest question known to mankind is “Are you
 No the dumbest question ever must surely be this one:
 
 
-![](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/10/currentsave.jpg)
+![](/media/old/currentsave.jpg)
 
 
 It is also probably the one question computer users are asked most often. I feel this most pointless of all questions can only be properly answered like this (click to enlarge):
 
 
-[![](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/10/savedialog.jpg)](http://50.87.248.205/~nottooba/blog/wp-content/uploads/2010/10/savedialog.jpg)
+[![](/media/old/savedialog.jpg)](/media/old/savedialog.jpg)
 
 
 I recently started using [Scrivener](http://www.literatureandlatte.com/scrivener.html), and it is intelligent enough to just assume that you want to keep your changes when you close a document; it automatically saves while you're working on it. It also assumes that you are intelligent enough to use the "undo” command if you have made changes you don't want to keep. I wish more applications would have this kind of confidence in its users.
