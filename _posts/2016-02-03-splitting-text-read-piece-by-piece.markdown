@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2016-02-03 00:23:55+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/swift/splitting-text-read-piece-by-piece/
+old_link: http://blog.nottoobadsoftware.com/swift/splitting-text-read-piece-by-piece/
 slug: splitting-text-read-piece-by-piece
 title: Splitting text read piece by piece
 wordpress_id: 1078

@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-06-27 20:05:00+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/uncategorized/new-theme-and-new-host/
+old_link: http://blog.nottoobadsoftware.com/uncategorized/new-theme-and-new-host/
 slug: new-theme-and-new-host
 title: New theme and new host
 wordpress_id: 965

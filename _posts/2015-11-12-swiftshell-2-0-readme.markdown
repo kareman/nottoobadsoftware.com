@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-11-12 01:37:45+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/swiftshell/swiftshell-2-0-readme/
+old_link: http://blog.nottoobadsoftware.com/swiftshell/swiftshell-2-0-readme/
 slug: swiftshell-2-0-readme
 title: SwiftShell 2.0 Readme
 wordpress_id: 1046

@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-05-24 18:57:55+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/uncategorized/swift-associated-types/
+old_link: http://blog.nottoobadsoftware.com/uncategorized/swift-associated-types/
 slug: swift-associated-types
 title: 'Swift: Associated Types'
 wordpress_id: 814

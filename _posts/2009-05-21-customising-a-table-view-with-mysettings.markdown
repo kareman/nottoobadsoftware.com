@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2009-05-21 18:32:47+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/iphone-development/customising-a-table-view-with-mysettings/
+old_link: http://blog.nottoobadsoftware.com/iphone-development/customising-a-table-view-with-mysettings/
 slug: customising-a-table-view-with-mysettings
 title: Customising a table view with mySettings
 wordpress_id: 61

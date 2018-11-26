@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2010-10-12 22:55:46+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/dictation/dragon-dictate-2-0-for-the-mac/
+old_link: http://blog.nottoobadsoftware.com/dictation/dragon-dictate-2-0-for-the-mac/
 slug: dragon-dictate-2-0-for-the-mac
 title: Dragon Dictate 2.0 for the Mac
 wordpress_id: 184

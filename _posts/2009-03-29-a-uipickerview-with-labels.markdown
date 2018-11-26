@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2009-03-29 18:55:54+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/iphone-development/a-uipickerview-with-labels/
+old_link: http://blog.nottoobadsoftware.com/iphone-development/a-uipickerview-with-labels/
 slug: a-uipickerview-with-labels
 title: A UIPickerView with labels
 wordpress_id: 22

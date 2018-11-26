@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2010-03-04 00:07:36+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/dictation/dictating-on-a-mac-with-dragon-naturallyspeaking/
+old_link: http://blog.nottoobadsoftware.com/dictation/dictating-on-a-mac-with-dragon-naturallyspeaking/
 slug: dictating-on-a-mac-with-dragon-naturallyspeaking
 title: Dictating on a Mac with Dragon NaturallySpeaking
 wordpress_id: 143

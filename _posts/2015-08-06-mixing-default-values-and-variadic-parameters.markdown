@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-08-06 23:52:13+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/swift/mixing-default-values-and-variadic-parameters/
+old_link: http://blog.nottoobadsoftware.com/swift/mixing-default-values-and-variadic-parameters/
 slug: mixing-default-values-and-variadic-parameters
 title: 'Swift: mixing default values and variadic parameters.'
 wordpress_id: 968

@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-05-06 23:18:06+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/footlessparser/add-result-type-and-operators/
+old_link: http://blog.nottoobadsoftware.com/footlessparser/add-result-type-and-operators/
 slug: add-result-type-and-operators
 title: Add Result type and operators
 wordpress_id: 789

@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2010-10-26 14:49:41+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/user-interface/auto-saving-in-os-x/
+old_link: http://blog.nottoobadsoftware.com/user-interface/auto-saving-in-os-x/
 slug: auto-saving-in-os-x
 title: Auto-saving in OS X
 wordpress_id: 222

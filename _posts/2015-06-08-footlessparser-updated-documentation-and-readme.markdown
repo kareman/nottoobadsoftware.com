@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-06-08 00:25:16+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/footlessparser/footlessparser-updated-documentation-and-readme/
+old_link: http://blog.nottoobadsoftware.com/footlessparser/footlessparser-updated-documentation-and-readme/
 slug: footlessparser-updated-documentation-and-readme
 title: 'FootlessParser: updated documentation and readme'
 wordpress_id: 833

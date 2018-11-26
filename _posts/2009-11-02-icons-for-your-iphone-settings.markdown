@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2009-11-02 18:52:58+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/iphone-development/icons-for-your-iphone-settings/
+old_link: http://blog.nottoobadsoftware.com/iphone-development/icons-for-your-iphone-settings/
 slug: icons-for-your-iphone-settings
 title: Icons for your iPhone settings
 wordpress_id: 140

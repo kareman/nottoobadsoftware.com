@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2015-09-02 17:35:30+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/swiftshell/redesigning-an-api-swift-2-0-style/
+old_link: http://blog.nottoobadsoftware.com/swiftshell/redesigning-an-api-swift-2-0-style/
 slug: redesigning-an-api-swift-2-0-style
 title: Redesigning an API - Swift 2.0 style
 wordpress_id: 980

@@ -3,7 +3,7 @@ author: kare.morstol@mac.com
 comments: true
 date: 2016-04-24 22:12:12+00:00
 layout: post
-link: http://blog.nottoobadsoftware.com/swift/building-the-swift-compiler-and-foundation-on-linux/
+old_link: http://blog.nottoobadsoftware.com/swift/building-the-swift-compiler-and-foundation-on-linux/
 slug: building-the-swift-compiler-and-foundation-on-linux
 title: Building the Swift compiler and Foundation on Linux
 wordpress_id: 1123
