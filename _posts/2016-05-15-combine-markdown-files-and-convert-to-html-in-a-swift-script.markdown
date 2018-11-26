@@ -22,7 +22,7 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
 ### The shell script
     
 ```bash
-    class="sh">#!/bin/sh
+#!/bin/sh
 
 # Extract and format chapter number and title
 extract_chapter_title()
