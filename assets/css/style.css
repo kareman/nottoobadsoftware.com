@@ -865,6 +865,10 @@ ol {
 	list-style-type: decimal;
 }
 
+h2.title {
+	text-align: center;
+}
+
 h2 {
 	font-size: 200%;
 }
@@ -884,4 +888,42 @@ h5 {
 h2, h3, h4, h5, p {
 	margin: 0 0 0.5em 0;
 }
-		
+
+
+div.note {
+	background-color: #e8eef5;
+	float: right;
+	width: 30%;
+	padding: 1em;
+	font-size: .9em;
+	margin: 0 auto 1em 1em;
+	border: 1px solid #c7cfd5;
+}
+
+div.conclusion {
+	background-color: #e8eef5;
+	float: none;
+	padding: 1em;
+	font-size: .9em;
+	margin: 0 auto 1em;
+	border: 1px solid #c7cfd5;
+}
+
+div.conclusion::before {
+	content: "Conclusion";
+	display: block;
+	font-weight: bold;
+}
+
+p.admonition-title {
+	font-weight: bold;
+}
+
+div.note p.admonition-title {
+	display: none;
+	font-weight: bold;
+}
+
+div.note p:last-of-type {
+	margin-bottom: 0;
+}
