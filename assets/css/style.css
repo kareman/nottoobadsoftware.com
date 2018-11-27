@@ -889,6 +889,9 @@ h2, h3, h4, h5, p {
 	margin: 0 0 0.5em 0;
 }
 
+div.toc {
+ 	float: right; margin: 2em;
+}
 
 div.note {
 	background-color: #e8eef5;
@@ -926,4 +929,34 @@ div.note p.admonition-title {
 
 div.note p:last-of-type {
 	margin-bottom: 0;
+}
+
+/*
+    MOBILE
+*/
+@media only screen and (max-device-width: 480px) {
+	div.toc {
+		float: none;
+   }
+
+	div.container, div#primary {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 2px;
+		margin-right: 0;
+	}
+	
+	div#disqus_thread {
+		margin: 0% 6%
+		/*background-color: black;*/
+	}
+
+	div.conclusion, div.note {
+		width: 90%;
+		float: none;
+	}
+	
+	#secondary .widget {
+		padding-left: 7px;
+	}
 }

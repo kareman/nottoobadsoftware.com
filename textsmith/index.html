@@ -8,7 +8,7 @@ layout: default
 	<div class="container">
 		<div id="content">
 			<article>
-				<div class="toc" style="float: right; margin: 2em;">
+				<div class="toc">
 					<ul>
 						<li><a href="#Introduction">1 Introduction</a></li>
 						<li><a href="#Key-Features">2 Key Features</a>
@@ -68,19 +68,19 @@ layout: default
 
 				<h3 id="The-Basics">3 The Basics</h3>
 				<p>At its core, TextSmith is basically an advanced outliner. Without any plug-ins it can still be used as a powerful outliner and text editor. To use TextSmith in its most basic form, create a new project and select the “blank” template.</p>
-				<p><img src="http://50.87.248.205/~nottooba/blog/wp-content/uploads/2012/12/intro.png" alt="Source list with 'Draft' text item and 'Research' folder. At top of editor: crumb trail saying 'unnamed' > 'draft'."></p>
+				<p><img src="intro.png" alt="Source list with 'Draft' text item and 'Research' folder. At top of editor: crumb trail saying 'unnamed' > 'draft'."></p>
 				<p>In the source list to the left there is a “draft” item with a text icon. This is a <em>text item</em>, the core building block that everything else relies upon. Text items are either headings, which can contain other items, or paragraphs, which obviously cannot. Only headings show up in the source list.</p>
 				<p>There is also a “Research” folder in the source list. As all folders this can contain anything. Folders are purely for the benefit of the author and are not included in the final output. For instance in screenplays you can group scenes into folders named Act 1, 2 and 3, and the names of these folders won’t show when you print the screenplay.</p>
 
 				<h4 id="Outlining">3.1 Outlining</h4>
-				<p><img src="http://50.87.248.205/~nottooba/blog/wp-content/uploads/2012/12/outlining.png" alt="The editor with some example outlining."></p>
+				<p><img src="outlining.png" alt="The editor with some example outlining."></p>
 				<p>When writing it can often be helpful to outline your thoughts first. Select “Draft” in the source list and start typing. Press enter to create a new item, press Tab to indent the current item and press Shift Tab to outdent it.</p>
 				<div class="note">There is no need to move the cursor to the beginning of the line before you press Tab or Shift-Tab. And there is no way to insert the <em>tab character itself</em> into the text, but then again why would you ever need to?</div>
 				<p>The disclosure triangle is visible whenever the pointer is over a heading. You can use it to show or hide everything under that heading, and to move it around. When the pointer is over a paragraph a bullet point shows up instead.</p>
 				<p>If you select several items with the mouse, check-boxes appear in front of all the headers and paragraphs. This way you can make non-consecutive selections using just the mouse.</p>
 
 				<h4 id="Annotating">3.2 Annotating</h4>
-				<p><img src="http://50.87.248.205/~nottooba/blog/wp-content/uploads/2012/12/annotating-comments.png" alt="Sample paragraphs and different types of comments. Text comments have the same colour as the commented text. Item comments have a light grey border."></p>
+				<p><img src="annotating-comments.png" alt="Sample paragraphs and different types of comments. Text comments have the same colour as the commented text. Item comments have a light grey border."></p>
 				<p>While writing you may want to add some <em>comments</em> to the different parts of your document. Double click in the right margin (or press Control-Tab) and start typing to create a new comment. A comment is a text item and can contain anything the rest of the document can, i.e. headings, paragraphs, images etc. So to create a synopsis of a section (i.e. a heading and <em>all the items it contains</em>), double-click to the right of the heading, write “Synopsis:”, press enter and tab, and write the synopsis itself.</p>
 				<div class="note">If there is a part of the main text you're not sure about and want to put aside for now, you can just drag it to the right margin and turn it into a comment.</div>
 				<p>What part of the document a new comment applies to depends on several things:</p>
@@ -90,14 +90,14 @@ layout: default
 					<li>In a heading, if no text was selected the comment applies to the entire section.</li>
 				</ul>
 				<p>&nbsp;</p>
-				<p><img src="http://50.87.248.205/~nottooba/blog/wp-content/uploads/2012/12/annotating-tags.png" alt="tags with and without values."></p>
+				<p><img src="annotating-tags.png" alt="tags with and without values."></p>
 				<p>You can use <em>tags</em> to mark different parts of the text for follow up later on. There might be some factoid you need to investigate further or a sentence that needs to be rewritten. Tags are created the same way as comments, except they start with a “#”. So select the factoid or sentence, press Control-Tab or double-click in the right margin, and write e.g.”#google” or “#rewrite”. Or click the “Add Tag”-button in the toolbar. If no text is selected the entire paragraph or header is tagged.</p>
 				<div class="note">Tags can have their own colour. Tagged text gets the same background colour as the tag, but tagged paragraphs and headers do not.</div>
 				<p>You can also provide additional information in a tag. For instance the exact phrase you should Google, like “#google: best outliner”. Or if you’re working on a story that leaps back and forth in time you can tag each scene with its date, e.g. “#date: 12/04/2002”. Later you can sort all of the scenes by date to see if you've got the chronology right.</p>
 				<p>Tags are particularly useful for marking text that should be formatted in a particular way. So if you want a paragraph to end up in a box titled “Note:”, you can mark it “#note” and then format all paragraphs marked “#note” accordingly when exporting.</p>
 
 				<h4 id="Viewing">3.3 Viewing</h4>
-				<p><img src="http://50.87.248.205/~nottooba/blog/wp-content/uploads/2012/12/viewing.png" alt="additional 'synopsis' and 'status'-columns to the right of the right margin"></p>
+				<p><img src="viewing.png" alt="additional 'synopsis' and 'status'-columns to the right of the right margin"></p>
 				<p>After some extensive writing and annotating the right margin can get pretty crowded, so lets clean it up a little. Drag one of the comments titled “Synopsis” to the right and let go when you see the outline of a column. A new column appears, and all the synopses are moved to it. You can do the same with any of the tags, and different tags and types of comments can share the same column.</p>
 				<p>To create a new column from scratch, double-click to the right of the rightmost column, enter the title and press enter. If you want to reuse a type of column you've created before, instead of entering the title you can click the down arrow to the right of the empty title, which displays a list of your most commonly used columns. It also contains the predefined columns “Status”, which can contain values like “outlined”, “first draft”, “revised”, “done” etc, and “To-do”, where each item has a checkbox in front of it.</p>
 				<p>Use the columns to get an overview of the text. Click the title of a column to sort by that column. Click again to sort the other way. Or right click the title of the “Status” column, go to the “filter” submenu and select “outlined” and “first draft” to show only those items. If you want to show all items that have been annotated, you can right click in the right margin, go to the “filter” submenu and select both “all tags” and “all comments”.</p>
