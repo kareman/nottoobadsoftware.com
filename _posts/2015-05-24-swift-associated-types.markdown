@@ -9,6 +9,8 @@ title: 'Swift: Associated Types'
 wordpress_id: 814
 post_format:
 - Link
+categories: 
+- uncategorized
 tags:
 - Swift
 ---

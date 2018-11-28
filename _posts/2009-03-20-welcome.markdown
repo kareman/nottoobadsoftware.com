@@ -7,6 +7,8 @@ old_link: http://blog.nottoobadsoftware.com/uncategorized/welcome/
 slug: welcome
 title: Welcome
 wordpress_id: 6
+categories: 
+- uncategorized
 ---
 
 Hi, and welcome to my blog. It will almost exclusively be about programming (iPhone-programming to be specific), so if that's not your particular cup of tea then you're probably better off with [this one](http://anotherteablog.blogspot.com/). I'm aiming for two or three posts a month, so hopefully I won't be contributing too much to the unread count of your RSS reader.

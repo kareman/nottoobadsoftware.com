@@ -9,6 +9,8 @@ title: Cross-platform command line arguments syntax
 wordpress_id: 1098
 tags:
 - shell
+categories: 
+- uncategorized
 ---
 
 I'm rewriting [Moderator](https://github.com/kareman/Moderator) (yet another command-line argument parser), and with Swift now being available for both OS X and Linux (Ubuntu) it should support a syntax which enables applications to fit in on both platforms.

@@ -7,6 +7,8 @@ old_link: http://blog.nottoobadsoftware.com/uncategorized/my-dream-gadget-a-real
 slug: my-dream-gadget-a-really-big-ipod-touch
 title: 'My Dream Gadget: A Really Big iPod Touch'
 wordpress_id: 55
+categories: 
+- uncategorized
 tags:
 - devices
 ---

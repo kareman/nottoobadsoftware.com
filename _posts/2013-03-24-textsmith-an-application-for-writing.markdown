@@ -7,6 +7,8 @@ old_link: http://blog.nottoobadsoftware.com/uncategorized/textsmith-an-applicati
 slug: textsmith-an-application-for-writing
 title: TextSmith - an application for writing
 wordpress_id: 615
+categories: 
+- uncategorized
 tags:
 - TextSmith
 - word processors

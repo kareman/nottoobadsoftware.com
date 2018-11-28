@@ -9,6 +9,8 @@ title: Making a Numeric Type in Swift
 wordpress_id: 824
 post_format:
 - Link
+categories: 
+- uncategorized
 tags:
 - Swift
 ---
