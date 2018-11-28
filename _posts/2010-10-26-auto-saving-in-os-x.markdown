@@ -8,12 +8,12 @@ slug: auto-saving-in-os-x
 title: Auto-saving in OS X
 wordpress_id: 222
 categories:
-- user_interface
+- user-interface
 tags:
 - os x
 ---
 
-As I [mentioned a week ago](/blog/user_interface/dumbest-question-ever/), I have a strong dislike for the “Save” dialogue boxes that pop up every time you close a document. It seems someone at Apple, and by someone I mean you–know–who, agrees with me. The [next version of Mac OS X](http://www.apple.com/macosx/lion/) will include auto-saving and applications will automatically resume where they were when they closed.
+As I [mentioned a week ago](/blog/user-interface/dumbest-question-ever/), I have a strong dislike for the “Save” dialogue boxes that pop up every time you close a document. It seems someone at Apple, and by someone I mean you–know–who, agrees with me. The [next version of Mac OS X](http://www.apple.com/macosx/lion/) will include auto-saving and applications will automatically resume where they were when they closed.
 
 ![](/media/old/030726-resume.jpg)
 

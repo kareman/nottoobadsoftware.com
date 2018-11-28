@@ -8,14 +8,14 @@ slug: even-better-ui-scrivener
 title: 'Even better UI: Scrivener'
 wordpress_id: 319
 categories:
-- user_interface
+- user-interface
 tags:
 - Scrivener
 ---
 
 	
 
-Continuing from [last week's ideas](/blog/user_interface/even-better-ui-scrivener-the-corkboard/) for [Scrivener](http://www.literatureandlatte.com/scrivener.html)'s corkboard, here are some suggestions for the rest of the application.
+Continuing from [last week's ideas](/blog/user-interface/even-better-ui-scrivener-the-corkboard/) for [Scrivener](http://www.literatureandlatte.com/scrivener.html)'s corkboard, here are some suggestions for the rest of the application.
 
 
 	

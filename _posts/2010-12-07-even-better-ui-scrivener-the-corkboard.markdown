@@ -8,7 +8,7 @@ slug: even-better-ui-scrivener-the-corkboard
 title: 'Even better UI: Scrivener – The Corkboard'
 wordpress_id: 301
 categories:
-- user_interface
+- user-interface
 tags:
 - Scrivener
 ---

@@ -8,7 +8,7 @@ slug: dumbest-question-ever
 title: Dumbest question ever
 wordpress_id: 192
 categories:
-- user_interface
+- user-interface
 tags:
 - os x
 ---
