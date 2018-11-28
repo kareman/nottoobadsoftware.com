@@ -8,7 +8,7 @@ slug: added-mysettings-to-github
 title: Added mySettings to GitHub
 wordpress_id: 126
 categories:
-- iPhone development
+- iphone-development
 tags:
 - mySettings
 ---

@@ -8,7 +8,7 @@ slug: a-uipickerview-with-labels
 title: A UIPickerView with labels
 wordpress_id: 22
 categories:
-- iPhone development
+- iphone-development
 tags:
 - iPhone
 - mySettings

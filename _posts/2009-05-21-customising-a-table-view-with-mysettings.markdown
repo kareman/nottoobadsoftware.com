@@ -8,7 +8,7 @@ slug: customising-a-table-view-with-mysettings
 title: Customising a table view with mySettings
 wordpress_id: 61
 categories:
-- iPhone development
+- iphone-development
 tags:
 - mySettings
 ---

@@ -8,7 +8,7 @@ slug: mysettings-a-settings-api-for-the-iphone
 title: 'mySettings: A Settings API for the iPhone'
 wordpress_id: 7
 categories:
-- iPhone development
+- iphone-development
 tags:
 - iPhone
 - mySettings

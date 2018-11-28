@@ -8,7 +8,7 @@ slug: finally-released-my-first-app
 title: Finally released my first App
 wordpress_id: 137
 categories:
-- iPhone development
+- iphone-development
 tags:
 - Repetitions
 ---
