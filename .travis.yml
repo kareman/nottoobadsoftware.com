@@ -1,8 +1,8 @@
 language: ruby
 cache: bundler
 install: bundle install
-script: bundle exec jekyll build
-after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bundle exec s3_website push
+script: 
+  - bundle exec jekyll build || travis_terminate 1
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then bundle exec s3_website push; fi
 notifications:
   email: false
