@@ -846,6 +846,7 @@
 div .highlighter-rouge div .highlight {
 	padding: 1em;
 	white-space: pre-wrap;
+	overflow-wrap: break-word;
 }
 
 div .highlighter-rouge {
@@ -929,6 +930,10 @@ div.note p.admonition-title {
 
 div.note p:last-of-type {
 	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 /*
