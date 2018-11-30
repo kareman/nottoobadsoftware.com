@@ -31,7 +31,7 @@ The rest of this post is deprecated.
 
 <!-- more -->
 
-In [SwiftShell](https://github.com/kareman/SwiftShell/tree/Swift2.0) I would like to run a shell command with varying numbers of arguments and have some parameters with default values, like this:
+In [SwiftShell](https://github.com/kareman/SwiftShell) I would like to run a shell command with varying numbers of arguments and have some parameters with default values, like this:
 
 ```swift
 run("cmd", "arg1", "arg2", stdinput: "not default")

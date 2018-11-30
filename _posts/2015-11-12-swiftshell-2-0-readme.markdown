@@ -13,7 +13,7 @@ tags:
 - Swift
 ---
 
-_I finally got around to updating the [SwiftShell 2.0 readme](https://github.com/kareman/SwiftShell/tree/SwiftShell2) with some actual usage instructions:_
+_I finally got around to updating the [SwiftShell 2.0 readme](https://github.com/kareman/SwiftShell/tree/2.1) with some actual usage instructions:_
 
 SwiftShell: An OS X Framework for command line scripting in Swift.
 

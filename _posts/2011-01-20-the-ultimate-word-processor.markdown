@@ -36,7 +36,7 @@ The ultimate writing software should let you:
 	
   * collaborate with other people.
 
-In May 2004, Adam C. Engst wrote about [WriteRight: The Writer’s Word Processor](http://db.tidbits.com/article/07670) where he laid out his idea of the perfect word processor. Over 6 1/2 years later there is still no such thing. [Scrivener](http://www.literatureandlatte.com/scrivener.html) is a major leap forward but I feel it is still lacking in some areas, so here I have outlined my own ideas for the perfect writing software. Unfortunately all the good names are taken. The mediocre ones too. So I give you:
+In May 2004, Adam C. Engst wrote about [WriteRight: The Writer’s Word Processor](http://db.tidbits.com/article/07670) where he laid out his idea of the perfect word processor. Over 6 1/2 years later there is still no such thing. [Scrivener](https://www.literatureandlatte.com/scrivener/overview) is a major leap forward but I feel it is still lacking in some areas, so here I have outlined my own ideas for the perfect writing software. Unfortunately all the good names are taken. The mediocre ones too. So I give you:
 
 <!-- more -->
 

@@ -1,4 +1,6 @@
 language: ruby
+env:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
 cache: bundler
 install: bundle install
 script: 
