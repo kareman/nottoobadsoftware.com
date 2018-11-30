@@ -26,7 +26,7 @@ I find these steps helpful when setting up any new open source framework project
 
 Create a new project in Xcode, and select OS X framework if it is for both iOS and OS X. The iOS framework target can be added later, besides OS X frameworks are more practical for unit testing. No simulators needed.
 
-Do _not_ select to add it to Git right away. [Because of this](/2015/01/18/adding-an-xcode-project-to-git/).
+Do _not_ select to add it to Git right away. [Because of this](/uncategorized/adding-an-xcode-project-to-git/).
 
 And that's it. I so do love a fresh project.
 

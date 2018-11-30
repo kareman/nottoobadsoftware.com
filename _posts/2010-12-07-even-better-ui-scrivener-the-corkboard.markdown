@@ -13,7 +13,7 @@ tags:
 - Scrivener
 ---
 
-[Scrivener](http://www.literatureandlatte.com/scrivener.html) is an excellent application and the closest anything has come to a great word processor (as opposed to a page layout application, which is what most word processors really are). Fiction and non-fiction writers alike love it, and I fully recommend it for writing anything longer than a blog post. But it’s so full of functionality and customisation options that it can be a bit unintuitive at times. So here are a few ideas for improvements.
+[Scrivener](https://www.literatureandlatte.com/scrivener/overview) is an excellent application and the closest anything has come to a great word processor (as opposed to a page layout application, which is what most word processors really are). Fiction and non-fiction writers alike love it, and I fully recommend it for writing anything longer than a blog post. But it’s so full of functionality and customisation options that it can be a bit unintuitive at times. So here are a few ideas for improvements.
 
 <!-- more -->
 

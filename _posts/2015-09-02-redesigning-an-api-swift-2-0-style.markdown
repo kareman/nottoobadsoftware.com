@@ -54,4 +54,4 @@ main.env["PATH"]!.characters.split(":")
     .forEach { directory in try! runAndPrint(bash:"find \"\(String(directory))\" -type f -perm +ugo+x -print") }
 ```
 
-Maybe SwiftShell 1 looks cooler ( |> is after all very cool), but I think [SwiftShell 2](https://github.com/kareman/SwiftShell/tree/SwiftShell2) is cleaner and shows more clearly what's going to happen. It also makes it easier to take advantage of the Swift standard library, and most importantly is more [in keeping with the spirit of Swift 2.0](http://airspeedvelocity.net/2015/06/23/protocol-extensions-and-the-death-of-the-pipe-forward-operator/).
+Maybe SwiftShell 1 looks cooler ( |> is after all very cool), but I think [SwiftShell 2](https://github.com/kareman/SwiftShell/tree/2.1) is cleaner and shows more clearly what's going to happen. It also makes it easier to take advantage of the Swift standard library, and most importantly is more [in keeping with the spirit of Swift 2.0](http://airspeedvelocity.net/2015/06/23/protocol-extensions-and-the-death-of-the-pipe-forward-operator/).

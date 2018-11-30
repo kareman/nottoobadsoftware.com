@@ -15,7 +15,7 @@ tags:
 
 	
 
-Continuing from [last week's ideas](/blog/user-interface/even-better-ui-scrivener-the-corkboard/) for [Scrivener](http://www.literatureandlatte.com/scrivener.html)'s corkboard, here are some suggestions for the rest of the application.
+Continuing from [last week's ideas](/blog/user-interface/even-better-ui-scrivener-the-corkboard/) for [Scrivener](https://www.literatureandlatte.com/scrivener/overview)'s corkboard, here are some suggestions for the rest of the application.
 
 
 	

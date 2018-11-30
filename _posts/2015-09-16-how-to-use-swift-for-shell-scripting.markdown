@@ -52,7 +52,7 @@ NSTask.launchedTaskWithLaunchPath("/bin/bash", arguments:["-c", cmd]).waitUntilE
 
 NSTask ([Apple](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSTask_Class), [raywenderlich.com](http://www.raywenderlich.com/36537/nstask-tutorial)) is actually an excellent API which launches asynchronous external processes and has customisable environment, input and outputs. But it definitely needs some helper functions to make it easier to use.
 
-There is also the `system` function (which has been deprecated) and [`posix_spawn`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man2/posix_spawn.2.html) which is a C API with lots of inout parameters. Again; enough said.
+There is also the `system` function (which has been deprecated) and [`posix_spawn`](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/posix_spawn.2.html) which is a C API with lots of inout parameters. Again; enough said.
 
 #### Read input and provide output
 
