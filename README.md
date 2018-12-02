@@ -1,7 +1,8 @@
 The Jekyll source for the nottoobadsoftware.com website. Based on the Arcana by HTML5 UP theme, heavily modified.
 
+A demo of the original theme is available at https://jekyll-demos.github.io/Arcana-Jekyll-Theme/.
 
-#### Original theme
+#### Original theme readme
 
 Arcana by HTML5 UP
 html5up.net | @n33co
