@@ -14,7 +14,7 @@ tags:
 - Swift
 ---
 
-_This post is part of a [series on FootlessParser](/footlessparser/), a [parser combinator](http://en.wikipedia.org/wiki/Parser_combinator) written in Swift._
+_This post is part of a [series on FootlessParser](/blog/footlessparser/), a [parser combinator](http://en.wikipedia.org/wiki/Parser_combinator) written in Swift._
 
 * * *
 
@@ -24,6 +24,6 @@ The parser library from the book has 6 swift files and more than 50 functions (i
 
 The name comes from the scientific name for Swifts, ["Apodidae"](http://en.wikipedia.org/wiki/Swift), from Greek "apous" meaning "without feet". The word also has [alternate meanings](http://dictionary.reference.com/browse/footless), depending on how the parser turns out it will either be apt or self-deprecating, in any case two of my favourite things.
 
-I will write about the development [here](/footlessparser/). There doesn't seem to be any complete parser combinator frameworks in Swift out there, hopefully this will be useful to others as well.
+I will write about the development [here](/blog/footlessparser/). There doesn't seem to be any complete parser combinator frameworks in Swift out there, hopefully this will be useful to others as well.
 
 BTW I really do recommend [the book](http://www.objc.io/books/) for anyone interested in functional programming and Swift, it is well written (and offers a real challenge in the last chapters).
