@@ -941,6 +941,10 @@ div#disqus_thread {
 	border-top: 1px solid black;
 }
 
+header p a {
+	color: #999999;
+}
+
 /*
     MOBILE
 */

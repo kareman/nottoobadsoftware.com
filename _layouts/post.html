@@ -1,4 +1,6 @@
 {% include header.html %}
+<!--h2 class="title">{{ page.title }}</h2-->
+
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
@@ -8,7 +10,13 @@
 			<article>
 				<header>
 					<h2>{{ page.title }}</h2>
-					<p>{{ page.date | date_to_string }}</p>
+					<p>{{ page.date | date_to_string }}
+					<span style="float: right">
+						{%- for category in page.categories -%}
+						&nbsp;<a href="/blog/{{ category }}/">{{ category }}</a>
+						{%- endfor -%}
+					</span>
+					</p>
 				</header>
 				{% if page.featured %}
 				<a href="#" class="image left"><img src="{{ site.baseurl }}{{ page.featured }}" alt="" /></a>
