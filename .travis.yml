@@ -6,5 +6,3 @@ install: bundle install
 script: 
   - bundle exec jekyll build || travis_terminate 1
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then bundle exec s3_website push; fi
-notifications:
-  email: false
