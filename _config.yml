@@ -32,7 +32,8 @@ kramdown:
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-sitemap  # must be after everything it should include
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -51,6 +52,14 @@ collections:
     output: true
     permalink: /blog/:categories/:title/
     comments: true
+
+jekyll-archives:
+  enabled:
+    - categories
+  layouts: 
+    category: category
+  permalinks:
+    category: '/blog/:name/'
 
 excerpt_separator: <!-- more -->
 
