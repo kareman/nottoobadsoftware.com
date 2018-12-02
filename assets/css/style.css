@@ -973,4 +973,9 @@ header p a {
 	#secondary .widget {
 		padding-left: 7px;
 	}
+
+	p, li, ul {
+		/* miminum size of 12 */
+		font-size:calc(12px + 1.5vw); 
+	}
 }

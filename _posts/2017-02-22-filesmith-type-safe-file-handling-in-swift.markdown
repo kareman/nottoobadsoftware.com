@@ -13,6 +13,8 @@ categories:
 
 Dealing with file paths in Swift is cumbersome. Using only the standard library leaves us with Strings, which we can join together or split by `/`. It gets the job done but it's not pretty, and we need a separate type so our methods can accept file paths exclusively and not just any old String. Foundation gives us this in NSURL/URL, which are also used for internet URLs so their method names are very general and long. E.g. `url.deletingPathExtension().lastPathComponent` to return the file name without the extension.
 
+<!-- more -->
+
 The Swift Package Manager has [separate types for absolute paths and relative paths](https://github.com/apple/swift-package-manager/blob/e223d9f6dadc65e63d81c86c305295dc70c4b16c/Sources/Basic/Path.swift), because in their opinion these are fundamentally different. I can see their point, but I think it should be up to the callers of an API and not the creators whether to use absolute or relative paths.
 
 The best alternative I've been able to find is [JohnSundell/Files](https://github.com/JohnSundell/Files), because it gets an important thing right: it differentiates between files and directories. These are fundamentally different things (even though the internal representation of their paths are identical) and should have different types with different functionalities. You can't read from or write to a directory itself, nor can you add a directory to a file.
@@ -20,8 +22,6 @@ The best alternative I've been able to find is [JohnSundell/Files](https://githu
 What I am looking for however has separate types not only for files and folders, but also for paths (which may or may not exist) and filesystem items (which do), and for files you just want to read from and not change and files you want to write to, rename, move and/or delete. Because filesystem access, maybe more than any other task solved by programming, has the potential to irrevocably mess things up. And one way to prevent this is extra type safety, leading to fewer programmer errors.
 
 So I made the [FileSmith](https://github.com/kareman/FileSmith) library with FilePath/DirectoryPath, ReadableFile/WritableFile and Directory.
-
-<!-- more -->
 
 ## Paths
 
