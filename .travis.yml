@@ -1,6 +1,10 @@
 language: ruby
 env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true 
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
 cache: bundler
 install: bundle install
 script: 
