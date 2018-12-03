@@ -20,7 +20,7 @@ I usually write new ideas into the [Things](http://culturedcode.com/things/) app
 
     
   2. Enter these settings:
-[![](/media/old/system-preferences.png)](/media/old/system-preferences.png)
+[![Screenshot of settings in Hazel](/media/old/system-preferences.png)](/media/old/system-preferences.png)
 
 Here is the script:
 

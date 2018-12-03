@@ -21,11 +21,11 @@ tags:
 
 The corkboard is probably one of the main reasons why so many people like Scrivener. There are two modes:
 
-![](/media/old/tutorial-draft-1-2.jpg)
+![Screenshot of Scrivener's free-form corkboard view](/media/old/tutorial-draft-1-2.jpg)
 
 __Freeform__
 
-![](/media/old/tutorial-draft.jpg)
+![Screenshot of Scrivener's linear corkboard view](/media/old/tutorial-draft.jpg)
 
 __Linear__
 
