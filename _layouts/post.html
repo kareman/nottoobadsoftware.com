@@ -13,7 +13,7 @@
 					<p>{{ page.date | date_to_string }}
 					<span style="float: right">
 						{%- for category in page.categories -%}
-						&nbsp;<a href="/blog/{{ category }}/">{{ category }}</a>
+						&nbsp;<a href="/blog/{{ category | downcase }}/">{{ category }}</a>
 						{%- endfor -%}
 					</span>
 					</p>
