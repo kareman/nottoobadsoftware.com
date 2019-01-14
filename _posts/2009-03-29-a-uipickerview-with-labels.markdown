@@ -16,7 +16,7 @@ tags:
 
 I recently needed a picker view with labels (like the one in the timer tab in the Clock app) to select minutes and seconds for a time interval. So I made the following subclass of UIPickerView:
 
- ```obj-c
+```obj-c
 
 #import
 
@@ -33,11 +33,11 @@ NB: has only been tested with less than four wheels.
 - (void) addLabel:(NSString *)labeltext forComponent:(NSUInteger)component;
 
 @end
- ```
+```
 
 <!-- more -->... and the implementation:
 
- ```obj-c    
+```obj-c    
 /*******************************************************************************
 * Copyright (c) 2009 Kåre Morstøl (NotTooBad Software).
 * All rights reserved. This program and the accompanying materials
@@ -153,7 +153,7 @@ else
 }
 
 @end
- ```
+```
 
 A big thanks to dizy from [stackoverflow.com](http://stackoverflow.com/questions/367471/fixed-labels-in-the-selection-bar-of-a-uipickerview#616517) for showing how to add the labels below the selection indicator.
 
