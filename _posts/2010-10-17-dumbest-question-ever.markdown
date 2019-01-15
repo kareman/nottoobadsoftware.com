@@ -17,6 +17,8 @@ Some survey once showed that the dumbest question known to mankind is “Are you
 
 No the dumbest question ever must surely be this one:
 
+<!-- more -->
+
 ![Screenshot of a dialogue box with the question "do you want to save your changes…"](/media/old/currentsave.jpg)
 
 It is also probably the one question computer users are asked most often. I feel this most pointless of all questions can only be properly answered like this (click to enlarge):

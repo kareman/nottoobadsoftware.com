@@ -16,8 +16,6 @@ tags:
 
 To be honest I'm not very good at shell scripting. It's very useful for automation so I would like to be, but I just don't like the syntax. For instance, this is how you check if a variable is greater than 100:
 
-
-    
 ```bash
 #!/bin/bash
 
@@ -27,9 +25,9 @@ then
 fi
 ```
 
+<!-- more -->
+
 And here's how to check if the file referred to in the first argument is readable and not empty:
-
-
 
 ```bash
 if [ -r $1 ] && [ -s $1 ]
@@ -38,8 +36,6 @@ if [ -r $1 ] && [ -s $1 ]
 Enough said.
 
 So I would much rather use Swift, as the syntax is nice, very nice indeed. But the things that bash shell scripts actually _are_ good at, like running shell commands and accessing the shell environment, are not that straightforward in Swift. Here's how you can perform the various tasks using only the Swift Standard Library and Foundation:
-
-<!-- more -->
 
 #### Run shell commands
 

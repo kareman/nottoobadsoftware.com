@@ -14,7 +14,11 @@ tags:
 - mySettings
 ---
 
-NB: Unfortunately I am not able to do any more development on this or any other projects. I am hoping that someone else will take over the project and update it. There is also [this similar project](http://bitbucket.org/keegan3d/inappsettings/wiki/Home).A lot of iPhone apps have their own settings views similar to the ones in the Settings App on the iPhone home screen. But to my surprise I couldn't find any general API for it. So I made my own and published it [here](http://bitbucket.org/karemorstol/mysettings). It uses a plist configuration file like the one used by the Settings App, with some added options (and some removed ones, but they will hopefully be implemented in the near future).
+<em>Update: Unfortunately I am not able to do any more development on this or any other projects. I am hoping that someone else will take over the project and update it.</em>
+
+A lot of iPhone apps have their own settings views similar to the ones in the Settings App on the iPhone home screen. But to my surprise I couldn't find any general API for it. So I made my own and published it [here](http://bitbucket.org/karemorstol/mysettings). It uses a plist configuration file like the one used by the Settings App, with some added options (and some removed ones, but they will hopefully be implemented in the near future).
+
+<!-- more -->
 
 In a nutshell it takes a plist like this:
 

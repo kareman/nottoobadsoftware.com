@@ -15,6 +15,8 @@ tags:
 
 As I [mentioned a week ago](/blog/user-interface/dumbest-question-ever/), I have a strong dislike for the “Save” dialogue boxes that pop up every time you close a document. It seems someone at Apple, and by someone I mean you–know–who, agrees with me. The [next version of Mac OS X](http://www.apple.com/macosx/lion/) will include auto-saving and applications will automatically resume where they were when they closed.
 
+<!-- more -->
+
 ![ Slide onstage at an Apple keynote event where they introduce auto saving in macOS ](/media/old/030726-resume.jpg)
 
 In other words; just like on the iPhone. This looks very promising, as long as they still let the rest of us organise our own work in whatever way we want. The iPhone way of having each document exist “inside” the application that created it works fine for casual use, but for any project or task that requires the use of more than one application it is very restricting. We need to be able to keep different types of files that belong together in the same place.

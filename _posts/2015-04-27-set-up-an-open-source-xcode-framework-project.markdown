@@ -30,6 +30,8 @@ Do _not_ select to add it to Git right away. [Because of this](/blog/uncategoriz
 
 And that's it. I so do love a fresh project.
 
+<!-- more -->
+
 ### Create root folders “tests” and “source” and move stuff in place in Xcode
 
 [https://github.com/kareman/FootlessParser/commit/9e43f2f3d284c960c011aa2eecb646df4eb75d15](https://github.com/kareman/FootlessParser/commit/9e43f2f3d284c960c011aa2eecb646df4eb75d15)

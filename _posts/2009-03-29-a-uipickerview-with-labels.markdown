@@ -35,7 +35,9 @@ NB: has only been tested with less than four wheels.
 @end
 ```
 
-<!-- more -->... and the implementation:
+<!-- more -->
+
+... and the implementation:
 
 ```obj-c    
 /*******************************************************************************

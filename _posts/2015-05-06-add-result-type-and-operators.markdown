@@ -25,6 +25,8 @@ Footlessparser is using operators for map ( <^> ), flatmap/bind ( >>- ) and app
 
 Each parse returns a `Result`, which has either a tuple containing the output and the remaining unparsed part of the input, or an error description if parsing fails. The `Result` enum is in the [Llamakit framework](https://github.com/LlamaKit/LlamaKit), later replaced by [antitypical/Result](https://github.com/antitypical/Result).
 
+<!-- more -->
+
 ### Add Runes+Result.swift
 
 [https://github.com/kareman/FootlessParser/commit/c49709d9bb17291fac6b82a0fe136d6d10e1bd9f](https://github.com/kareman/FootlessParser/commit/c49709d9bb17291fac6b82a0fe136d6d10e1bd9f)

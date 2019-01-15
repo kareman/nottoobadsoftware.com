@@ -15,6 +15,7 @@ tags:
 
 I usually write new ideas into the [Things](http://culturedcode.com/things/) app on my iPhone straight away, but sometimes it’s better to just dictate into the Voice Memo app instead of typing. Here’s how you automatically add those voice memos to the Things inbox:
 
+<!-- more -->
     
   1. Add the folder /Users/<your username>/Music/iTunes/iTunes Music/Voice Memos to [Hazel](http://www.noodlesoft.com/hazel.php).
 
