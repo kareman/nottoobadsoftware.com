@@ -20,9 +20,9 @@ There are a lot of command line argument parsers written in Swift available on G
 
 Nor could I find any where it would be relatively easy to add these features, since most just loop through the arguments from first to last and have one big function trying to find out what to do with each of them. That becomes messy quickly.
 
- I think it's much simpler to create multiple small argument parsers, where each one in turn takes in the list of arguments, removes the ones it wants to handle and passes the rest on to the next one. Any arguments left over are then unrecognised and can be handled accordingly. This way the end user does not need to worry about the order of the arguments. The developer however needs to be careful about the order of the parsers.
-
 <!-- more -->
+
+I think it's much simpler to create multiple small argument parsers, where each one in turn takes in the list of arguments, removes the ones it wants to handle and passes the rest on to the next one. Any arguments left over are then unrecognised and can be handled accordingly. This way the end user does not need to worry about the order of the arguments. The developer however needs to be careful about the order of the parsers.
 
 So I created [Moderator](https://github.com/kareman/Moderator) with these goals:
 
