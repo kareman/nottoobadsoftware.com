@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,21 +19,10 @@
 		<meta name="description" content="{{ page.description }}" />
 		<meta name="keywords" content="{{ page.keywords }}" />
 		{% feed_meta %}
+		<link rel="stylesheet" href="/assets/normalize.css">
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
-		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
-		</noscript>
-		{% if page.css %}<link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
-		
+        {% if page.css %}<link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
+
 		<!-- MailerLite Universal -->
 		<script>
 			(function (m, a, i, l, e, r) {
@@ -57,7 +41,7 @@
 	<body>
 
 		<!-- Header -->
-			<div id="header">
+			<header id="header">
 			
 				<!-- Nav -->
 					<nav id="nav">
@@ -70,4 +54,4 @@
 						</ul>
 					</nav>
 
-			</div>
+			</header>
