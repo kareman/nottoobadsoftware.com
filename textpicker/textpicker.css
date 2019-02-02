@@ -1,0 +1,49 @@
+
+body {
+	/*margin-left: 5%;
+	margin-right: 5%;*/
+	background-color: #F2F2F2;
+	text-align: center;
+	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	/*font-size: 1px;*/
+}
+
+main > div {
+	margin-bottom: 1em;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.columns div { 
+	text-align: center;
+	background-color: white;
+}
+
+.cta {
+	padding: 1em;
+	color: white;
+	background-image: linear-gradient(#4AD0FF, #4AA6F8);
+}
+
+.cta h3 {
+	display: inline-block;
+}
+
+button {
+	background-color: #F2F2F2;
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 0.5em 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-weight: bold;
+}
