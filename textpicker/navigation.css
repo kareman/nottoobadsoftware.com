@@ -23,7 +23,7 @@ nav a {
 }
 
 nav .active {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #F2F2F2;
 }
 
 nav .icon {
