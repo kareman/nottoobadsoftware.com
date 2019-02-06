@@ -20,9 +20,15 @@ header {
 }
 
 
+.boxes {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1em;
+	margin: 1em;
+}
+
 .boxes div {
 	background-color: white;
-	margin: 1em;
 	padding: 0.5em;
 	border-radius: 10px;
 }
@@ -51,6 +57,7 @@ header {
 .cta {
 	color: white;
 	background-image: linear-gradient(#4AD0FF, #4AA6F8);
+	margin-bottom: 2em;
 }
 
 .cta p {
