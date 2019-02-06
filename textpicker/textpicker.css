@@ -9,6 +9,22 @@ main > div, header {
 	margin-bottom: 1em;
 }
 
+.close {
+	margin: 0;
+}
+
+
+.boxes div {
+	background-color: white;
+	margin: 1em;
+	padding: 0.5em;
+	border-radius: 10px;
+}
+
+.boxes p {
+	color: rgb(119, 119, 119);
+}
+
 
 .columns {
     display: grid;
@@ -16,21 +32,12 @@ main > div, header {
     grid-gap: 0em;
 }
 
-.columns div { 
-	text-align: center;
-	/*background-color: white;*/
-}
-
 .columns img {
 	max-width: 100%;
 	margin: 0;
 }
 
-.columns p {
-	margin: 0;
-}
-
-.columns h2 {
+.columns h2, h3, h4 {
 	margin-bottom: 0.1em;
 }
 
