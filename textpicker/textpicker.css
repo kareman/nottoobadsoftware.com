@@ -9,6 +9,12 @@ main > div, header {
 	margin-bottom: 1em;
 }
 
+header {
+	padding: 0.1em;
+	color: white;
+	background-image: linear-gradient(#4AA6F8, #4AD0FF);
+}
+
 .close {
 	margin: 0;
 }
@@ -22,7 +28,7 @@ main > div, header {
 }
 
 .boxes p {
-	color: rgb(119, 119, 119);
+	color: gray;
 }
 
 
