@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,6 +89,23 @@
 			</div>
 		</div>
 	</main>
+	<footer>
+		<p>&copy; Kåre Morstøl</p>
+		<div>
+			{%- if site.twitter_username -%}
+			<a href="https://twitter.com/{{site.twitter_username}}"><img src="Twitter_Logo_WhiteOnImage.png" alt="Twitter icon" /></a>
+			{%- endif -%}
+			{%- if site.facebook_username -%}
+			<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
+			{%- endif -%}
+			{%- if site.github_username -%}
+			<a href="https://github.com/{{site.github_username}}"><img src="GitHub-Mark-Light-64px.png" alt="GitHub icon" /></a>
+			{%- endif -%}
+			{%- if site.linkedin_username -%}
+			<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
+			{%- endif -%}
+		</div>
+	</footer>
 </body>
 
 </html>
