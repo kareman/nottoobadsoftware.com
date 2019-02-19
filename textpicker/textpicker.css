@@ -3,6 +3,7 @@ body {
 	background-color: #F2F2F2;
 	text-align: center;
 	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	margin: 0;
 }
 
 main > div, header {
@@ -15,10 +16,15 @@ header {
 	background-image: linear-gradient(#4AA6F8, #4AD0FF);
 }
 
+header h1 {
+	font-weight: normal;
+}
+
 footer {
 	background-color: #4AA6F8;
 	color: whitesmoke;
 	margin-top: 4em;
+	min-height: 5em;
 }
 
 footer * {
@@ -62,7 +68,7 @@ footer * {
 .columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0em;
+	grid-gap: 0em;
 }
 
 .columns img {
@@ -78,7 +84,7 @@ footer * {
 .cta {
 	color: whitesmoke;
 	background-image: linear-gradient(#4AD0FF, #4AA6F8);
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 
 .cta p {
@@ -95,4 +101,5 @@ button {
 	padding: 0.5em 2em;
 	margin: 0em 1em 1em 1em;
 	font-weight: bold;
+	font-size: 120%;
 }
