@@ -9,6 +9,27 @@ main > div, header {
 	margin-bottom: 4em;
 }
 
+.list {
+	text-align: left;
+	padding: 1em;
+	line-height: 140%;
+	background-color: white;
+}
+
+.list li {
+}
+
+.label {
+	background-color: pink;
+	border-radius: 15pt;
+	padding: 1pt 5pt 1pt 5pt;
+	margin: 2pt;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
 header {
 	padding: 0.1em;
 	color: whitesmoke;
