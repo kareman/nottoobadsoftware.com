@@ -1,11 +1,15 @@
 
 :root {
-	--blue: #4AD0FF;
+	--blue: #4AA6F8;
 	--darker-blue: #4AA6F8;
+	--background-color: #f2f2f2;
+	--background-color-light: rgba(255, 255, 255, 0.8); 
 }
 
 body {
-	background-color: #F2F2F2;
+	/* E3E3E4 CFD3D8 */
+	background-color: var(--background-color); 
+	color: #323840;
 	text-align: center;
 	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
 }
@@ -61,7 +65,7 @@ footer * {
     display: inline-block;
     height: 1.25em;
     width: 1.25em;
-	fill: white;
+	fill: whitesmoke;
 }
 
 
@@ -76,11 +80,11 @@ footer * {
 	grid-gap: 1em;
 	margin-left: 1em;
 	margin-right: 1em;
-	color: gray;
+	color: #676F7B;
 }
 
 .boxes div {
-	background-color: white;
+	background-color: var(--background-color-light);
 	padding: 0.5em;
 	border-radius: 10px;
 }
@@ -117,9 +121,8 @@ footer * {
 }
 
 button {
-	background-color: whitesmoke;
+	background-color: white;
 	border: none;
-	color: black;
 	cursor: pointer;
 	border-radius: 10px;
 	padding: 0.5em 2em;
