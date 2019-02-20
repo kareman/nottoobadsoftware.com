@@ -11,7 +11,8 @@ main > div, header {
 
 .list {
 	text-align: left;
-	line-height: 145%;
+	line-height: 150%;
+	padding-left: 5% !important;
 }
 
 .label {
@@ -68,7 +69,8 @@ footer * {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 1em;
-	margin: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
 	color: gray;
 }
 
