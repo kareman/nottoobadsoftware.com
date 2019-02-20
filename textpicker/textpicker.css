@@ -1,6 +1,15 @@
 
+:root {
+	--blue: #4AA6F8;
+	--darker-blue: #4AA6F8;
+	--background-color: #f2f2f2;
+	--background-color-light: rgba(255, 255, 255, 0.8); 
+}
+
 body {
-	background-color: #F2F2F2;
+	/* E3E3E4 CFD3D8 */
+	background-color: var(--background-color); 
+	color: #323840;
 	text-align: center;
 	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
 }
@@ -9,20 +18,45 @@ main > div, header {
 	margin-bottom: 4em;
 }
 
+main > div:last-child {
+	margin-bottom: 0em !important;
+}
+
+
+.list {
+	text-align: left;
+	line-height: 150%;
+	padding-left: 5% !important;
+}
+
+.label {
+	background-color: pink;
+	color: initial;
+	border-radius: 15pt;
+	padding: 1pt 5pt 1pt 5pt;
+	margin: 2pt;
+	word-break: keep-all;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+
 header {
 	padding: 0.1em;
 	color: whitesmoke;
-	background-image: linear-gradient(#4AA6F8, #4AD0FF);
+	background-image: linear-gradient(var(--darker-blue), var(--blue));
 }
 
 header h1 {
 	font-weight: normal;
 }
 
+
 footer {
-	background-color: #4AA6F8;
+	background-color: var(--darker-blue);
 	color: whitesmoke;
-	margin-top: 4em;
 	min-height: 5em;
 }
 
@@ -37,7 +71,7 @@ footer * {
     display: inline-block;
     height: 1.25em;
     width: 1.25em;
-	fill: white;
+	fill: whitesmoke;
 }
 
 
@@ -50,17 +84,20 @@ footer * {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 1em;
-	margin: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: #676F7B;
 }
 
 .boxes div {
-	background-color: white;
+	background-color: var(--background-color-light);
 	padding: 0.5em;
 	border-radius: 10px;
+	border: 1pt solid #D9D9D9;
 }
 
-.boxes p {
-	color: gray;
+.boxes h2, h3, h4 {
+	color: initial;
 }
 
 
@@ -82,7 +119,7 @@ footer * {
 
 .cta {
 	color: whitesmoke;
-	background-image: linear-gradient(#4AD0FF, #4AA6F8);
+	background-image: linear-gradient(var(--blue), var(--darker-blue));
 }
 
 .cta p {
@@ -91,13 +128,13 @@ footer * {
 }
 
 button {
-	background-color: whitesmoke;
+	background-color: white;
 	border: none;
-	color: black;
 	cursor: pointer;
 	border-radius: 10px;
 	padding: 0.5em 2em;
 	margin: 0em 1em 1em 1em;
 	font-weight: bold;
 	font-size: 120%;
+	border: 1pt solid #D9D9D9;
 }
