@@ -11,19 +11,16 @@ main > div, header {
 
 .list {
 	text-align: left;
-	padding: 1em;
-	line-height: 140%;
-	background-color: white;
-}
-
-.list li {
+	line-height: 145%;
 }
 
 .label {
 	background-color: pink;
+	color: initial;
 	border-radius: 15pt;
 	padding: 1pt 5pt 1pt 5pt;
 	margin: 2pt;
+	word-break: keep-all;
 }
 
 .green {
@@ -72,6 +69,7 @@ footer * {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 1em;
 	margin: 1em;
+	color: gray;
 }
 
 .boxes div {
@@ -80,8 +78,8 @@ footer * {
 	border-radius: 10px;
 }
 
-.boxes p {
-	color: gray;
+.boxes h2, h3, h4 {
+	color: initial;
 }
 
 
