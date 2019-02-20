@@ -1,4 +1,9 @@
 
+:root {
+	--blue: #4AD0FF;
+	--darker-blue: #4AA6F8;
+}
+
 body {
 	background-color: #F2F2F2;
 	text-align: center;
@@ -31,7 +36,7 @@ main > div, header {
 header {
 	padding: 0.1em;
 	color: whitesmoke;
-	background-image: linear-gradient(#4AA6F8, #4AD0FF);
+	background-image: linear-gradient(var(--darker-blue), var(--blue));
 }
 
 header h1 {
@@ -39,7 +44,7 @@ header h1 {
 }
 
 footer {
-	background-color: #4AA6F8;
+	background-color: var(--darker-blue);
 	color: whitesmoke;
 	margin-top: 4em;
 	min-height: 5em;
@@ -103,7 +108,7 @@ footer * {
 
 .cta {
 	color: whitesmoke;
-	background-image: linear-gradient(#4AD0FF, #4AA6F8);
+	background-image: linear-gradient(var(--blue), var(--darker-blue));
 }
 
 .cta p {
