@@ -15,7 +15,7 @@ body {
 }
 
 main > div, header {
-	margin-bottom: 14vw;
+	margin-bottom: 4em;
 }
 
 main > div:last-child {
