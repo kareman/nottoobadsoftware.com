@@ -13,23 +13,30 @@
 
 body {
 	background-color: var(--main-background-color); 
-	color: var(--heading-text-color);
+	color: var(--text-color);
 	text-align: center;
 	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 4vw;
+	margin-right: 4vw;
 }
 
-p {
-	color: var(--text-color);
+h1, h2, h3, h4 {
+	color: var(--heading-text-color);
 }
 
-main > div, header {
-	margin-bottom: 4em;
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 0em;
 }
 
-main > div:last-child {
-	margin-bottom: 0em !important;
+.columns img {
+	max-width: 100%;
+	margin: 0;
+}
+
+.columns h2, h3, h4 {
+	margin-bottom: 0.1em;
 }
 
 
@@ -44,7 +51,7 @@ main > div:last-child {
 
 .mac-window > svg {
 	position: relative;
-	top: 3px;
+	top: 0px;
 	left: 7px;
 	z-index: 2;
 }
@@ -63,6 +70,16 @@ main > div:last-child {
 
 .green {
 	background-color: #67B165;
+}
+
+/*
+
+main > div, header {
+	margin-bottom: 4em;
+}
+
+main > div:last-child {
+	margin-bottom: 0em !important;
 }
 
 
@@ -139,21 +156,6 @@ footer * {
 }
 
 
-.columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 0em;
-}
-
-.columns img {
-	max-width: 100%;
-	margin: 0;
-}
-
-.columns h2, h3, h4 {
-	margin-bottom: 0.1em;
-}
-
 
 .cta {
 	color: whitesmoke;
@@ -182,3 +184,4 @@ button {
 	font-size: 120%;
 	border: 1pt solid #D9D9D9;
 }
+**/
