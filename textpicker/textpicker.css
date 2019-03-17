@@ -1,17 +1,27 @@
+/*
+	text-rendering: optimizeLegibility;
+*/
 
 :root {
-	--blue: #4AA6F8;
-	--darker-blue: #4AA6F8;
-	--background-color: #f2f2f2;
-	--background-color-light: rgba(255, 255, 255, 0.8); 
+	--main-background-color: #0F1530;
+	--box-background-color: #171E38;
+	--footer-background-color: #030816;
+	--text-color: #FFFFFF;
+	--heading-text-color: #FFFFFF;
+
 }
 
 body {
-	/* E3E3E4 CFD3D8 */
-	background-color: var(--background-color); 
-	color: #323840;
+	background-color: var(--main-background-color); 
+	color: var(--heading-text-color);
 	text-align: center;
 	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+p {
+	color: var(--text-color);
 }
 
 main > div, header {
@@ -23,15 +33,28 @@ main > div:last-child {
 }
 
 
-.list {
+.mac-window {
 	text-align: left;
-	line-height: 150%;
-	padding-left: 5% !important;
+	line-height: 2em;
+	background-color: #1D1D29;
+	border-radius: 5px;
+	border: 1pt solid #242635;
+	box-shadow: rgba(0, 0, 0, 0.54902) 0px 20px 68px 0px;
+}
+
+.mac-window > svg {
+	position: relative;
+	top: 3px;
+	left: 7px;
+	z-index: 2;
+}
+
+.mac-window > div {
+	margin: 2em;
 }
 
 .label {
-	background-color: pink;
-	color: initial;
+	background-color: #E8445A;
 	border-radius: 15pt;
 	padding: 1pt 5pt 1pt 5pt;
 	margin: 2pt;
@@ -39,14 +62,13 @@ main > div:last-child {
 }
 
 .green {
-	background-color: lightgreen;
+	background-color: #67B165;
 }
 
 
 header {
 	padding: 0.1em;
 	color: whitesmoke;
-	background-image: linear-gradient(var(--darker-blue), var(--blue));
 }
 
 header h1 {
