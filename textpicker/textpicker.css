@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
 	color: var(--heading-text-color);
 }
 
+
 /* Header */
 
 header {
@@ -52,6 +53,17 @@ header img {
 }
 
 
+/* TextPicker logo */
+
+#tplogo {
+	position: relative;
+	top: -2em;
+	text-align: center;
+}
+
+#tplogo img {
+	max-height: 2em;
+}
 
 
 
