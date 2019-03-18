@@ -3,8 +3,10 @@
 
 <!doctype html>
 <html>
-    <head>
-	<meta http-equiv="refresh" content="0; url={{page.newUrl}}">
-	<link rel="canonical" href="{{page.newUrl}}" />
-    </head>
+
+<head>
+	<meta http-equiv="refresh" content="0; url={{page.newUrl | absolute_url}}" />
+	<link rel="canonical" href="{{page.newUrl | absolute_url}}" />
+</head>
+
 </html>
