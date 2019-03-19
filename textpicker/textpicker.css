@@ -10,19 +10,19 @@
 	--main-background-color: #0F1530;
 	--box-background-color: #171E38;
 	--footer-background-color: #030816;
+	--form-background-color: #3873ED;
 	--text-color: #AEAEB9;
 	--heading-text-color: #FEFFFF;
-
 }
 
 body {
-	background-color: var(--main-background-color); 
+	background-color: var(--main-background-color);
 	color: var(--text-color);
 	text-align: center;
-	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	font-family: Camphor, Open Sans, Segoe UI, sans-serif;
 }
 
-body > * {
+body>* {
 	margin-left: 4vw;
 	margin-right: 4vw;
 }
@@ -35,7 +35,6 @@ h2 {
 h1, h2, h3, h4 {
 	color: var(--heading-text-color);
 }
-
 
 /* Header */
 
@@ -60,7 +59,6 @@ header img {
 	max-height: 1.5em;
 }
 
-
 /* TextPicker logo */
 
 #tplogo {
@@ -73,12 +71,11 @@ header img {
 	max-height: 2em;
 }
 
-
 /* Screenshots */
 
 .columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 0em;
 }
 
@@ -91,11 +88,10 @@ header img {
 	margin-bottom: 0.1em;
 }
 
-
 /* Button */
 
 button {
-	background-color: #3873ED;
+	background-color: var(--form-background-color);
 	color: var(--heading-text-color);
 	cursor: pointer;
 	border-radius: 5px;
@@ -105,7 +101,6 @@ button {
 	font-weight: bold;
 	font-size: 120%;
 }
-
 
 /* Copy text automatically */
 
@@ -118,14 +113,14 @@ button {
 	box-shadow: rgba(0, 0, 0, 0.54902) 0px 20px 68px 0px;
 }
 
-.mac-window > svg {
+.mac-window>svg {
 	position: relative;
 	top: 0px;
 	left: 7px;
 	z-index: 2;
 }
 
-.mac-window > div {
+.mac-window>div {
 	margin: 2em;
 }
 
@@ -150,16 +145,15 @@ button {
 	background-color: #67B165;
 }
 
-
 /* What can you use it for */
 
 .boxes {
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
 	grid-gap: 1em;
 }
 
-.boxes > div {
+.boxes>div {
 	background-color: var(--box-background-color);
 	padding: 0 1em;
 	border-radius: 5px;
@@ -171,6 +165,31 @@ button {
 	align-items: center;
 */
 
+/* Form */
+
+.form {
+	margin-top: 5em;
+	background-color: var(--form-background-color);
+	color: var(--heading-text-color);
+	border-radius: 5px;
+}
+
+.ml-form-embedWrapper {
+	background-color: inherit !important;
+	color: inherit !important;
+}
+
+.ml-form-embedWrapper input {
+	background-color: #598DF0 !important;
+}
+
+.ml-form-embedWrapper * {
+	color: inherit !important;
+}
+
+.ml-block-form p, .form .description {
+	color: var(--text-color) !important;
+}
 
 /* Footer */
 
@@ -183,12 +202,12 @@ footer {
 	margin-right: 0;
 }
 
-footer > div {
+footer>div {
 	position: relative;
 	top: 11em;
 }
 
-footer > div > * {
+footer>div>* {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 0.2em;
@@ -199,9 +218,9 @@ footer img {
 }
 
 footer svg {
-    display: inline-block;
-    height: 1.25em;
-    width: 1.25em;
+	display: inline-block;
+	height: 1.25em;
+	width: 1.25em;
 	fill: whitesmoke;
 }
 
