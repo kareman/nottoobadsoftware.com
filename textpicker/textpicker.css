@@ -10,8 +10,8 @@
 	--main-background-color: #0F1530;
 	--box-background-color: #171E38;
 	--footer-background-color: #030816;
-	--text-color: #FFFFFF;
-	--heading-text-color: #FFFFFF;
+	--text-color: #AEAEB9;
+	--heading-text-color: #FEFFFF;
 
 }
 
@@ -69,6 +69,7 @@ header img {
 }
 
 
+/* Screenshots */
 
 .columns {
     display: grid;
@@ -85,6 +86,8 @@ header img {
 	margin-bottom: 0.1em;
 }
 
+
+/* Copy text automatically */
 
 .mac-window {
 	text-align: left;
@@ -106,10 +109,19 @@ header img {
 	margin: 2em;
 }
 
+.mac-window ul {
+	padding-left: 1.2em;
+}
+
+.mac-window p {
+	color: var(--heading-text-color);
+}
+
 .label {
 	background-color: #E8445A;
+	color: var(--heading-text-color);
 	border-radius: 15pt;
-	padding: 1pt 5pt 1pt 5pt;
+	padding: 3pt 8pt;
 	margin: 2pt;
 	word-break: keep-all;
 }
@@ -118,6 +130,26 @@ header img {
 	background-color: #67B165;
 }
 
+
+/* What can you use it for */
+
+.boxes {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-gap: 1em;
+}
+
+.boxes > div {
+	background-color: var(--box-background-color);
+	padding: 0 1em;
+	border-radius: 5px;
+}
+
+/* 	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+*/
 
 
 /* Footer */
@@ -169,25 +201,6 @@ main > div:last-child {
 }
 
 
-.boxes {
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 1em;
-	margin-left: 1em;
-	margin-right: 1em;
-	color: #676F7B;
-}
-
-.boxes div {
-	background-color: var(--background-color-light);
-	padding: 0.5em;
-	border-radius: 10px;
-	border: 1pt solid #D9D9D9;
-}
-
-.boxes h2, h3, h4 {
-	color: initial;
-}
 
 
 
