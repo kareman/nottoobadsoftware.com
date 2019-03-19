@@ -92,6 +92,21 @@ header img {
 }
 
 
+/* Button */
+
+button {
+	background-color: #3873ED;
+	color: var(--heading-text-color);
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	padding: 1em 2em;
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
 /* Copy text automatically */
 
 .mac-window {
@@ -209,31 +224,5 @@ main > div:last-child {
 
 
 
-.cta {
-	color: whitesmoke;
-	background-image: linear-gradient(var(--blue), var(--darker-blue));
-}
 
-.cta p {
-	display: inline-block;
-	font-size: 150%;
-}
-
-.cta button {
-	background-color: whitesmoke;
-	color: #323840;
-}
-
-button {
-	background-color: var(--blue);
-	color: whitesmoke;
-	border: none;
-	cursor: pointer;
-	border-radius: 10px;
-	padding: 0.5em 2em;
-	margin: 0em 1em 1em 1em;
-	font-weight: bold;
-	font-size: 120%;
-	border: 1pt solid #D9D9D9;
-}
 **/
