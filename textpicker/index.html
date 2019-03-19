@@ -61,7 +61,6 @@
 			<img src="Company_logo.png" alt="Company logo with the letters 'NotTooBad Software'">
 		</a>
 		<a href="/blog/">Blog</a>
-		<a href="/textsmith/">TextSmith</a>
 	</header>
 
 	<figure id="tplogo">
@@ -119,7 +118,7 @@
 			</div>
 		</div>
 
-		<h2>What is it for</h2>
+		<h2>What can you use it for?</h2>
 		<div>
 			<ul>
 				<li>Handling unknown text data formats</li>
@@ -127,6 +126,7 @@
 				<li>Cleaning of data</li>
 				<li>Enabling non-programmers to automate text tasks</li>
 				<li>Making it easier for programmers to automate text tasks</li>
+				<li>... and a lot more</li>
 			</ul>
 		</div>
 
@@ -157,24 +157,30 @@
 		</div>
 	</main>
 	<footer>
-		<p>&copy; K&aring;re Morst&oslash;l</p>
 		<div>
-			<a href="mailto:web@nottoobadsoftware.com">
-				<svg class="icon" alt="Letter icon (for email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-					<path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" /></svg>
-			</a>
-			{%- if site.twitter_username -%}
-			<a href="https://twitter.com/{{site.twitter_username}}"><img src="Twitter_Logo_WhiteOnImage.png" alt="Twitter icon" /></a>
-			{%- endif -%}
-			{%- if site.facebook_username -%}
-			<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
-			{%- endif -%}
-			{%- if site.github_username -%}
-			<a href="https://github.com/{{site.github_username}}"><img src="GitHub-Mark-Light-64px.png" alt="GitHub icon" /></a>
-			{%- endif -%}
-			{%- if site.linkedin_username -%}
-			<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
-			{%- endif -%}
+			<p>&copy; K&aring;re Morst&oslash;l</p>
+			<div>
+				<a href="mailto:web@nottoobadsoftware.com">
+					<svg alt="Letter icon (for email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" /></svg>
+				</a>
+				{%- if site.twitter_username -%}
+				<a href="https://twitter.com/{{site.twitter_username}}">
+					<img src="Twitter_Logo_WhiteOnImage.png" alt="Twitter icon" />
+				</a>
+				{%- endif -%}
+				{%- if site.facebook_username -%}
+				<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
+				{%- endif -%}
+				{%- if site.github_username -%}
+				<a href="https://github.com/{{site.github_username}}">
+					<img src="GitHub-Mark-Light-64px.png" alt="GitHub icon" />
+				</a>
+				{%- endif -%}
+				{%- if site.linkedin_username -%}
+				<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
+				{%- endif -%}
+			</div>
 		</div>
 	</footer>
 </body>
