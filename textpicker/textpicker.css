@@ -90,7 +90,7 @@ header img {
 
 /* Button */
 
-button {
+.cta button {
 	background-color: var(--form-background-color);
 	color: var(--heading-text-color);
 	cursor: pointer;
@@ -181,14 +181,26 @@ button {
 
 .ml-form-embedWrapper input {
 	background-color: #598DF0 !important;
+	border: none !important;
+}
+
+.ml-form-embedWrapper input::placeholder {
+	color: #BDD6F9 !important;
 }
 
 .ml-form-embedWrapper * {
 	color: inherit !important;
 }
 
+/*
 .ml-block-form p, .form .description {
-	color: var(--text-color) !important;
+	color: #BFD6F8 !important;
+}
+*/
+
+div.ml-form-embedSubmit button.primary {
+	background-color: var(--heading-text-color) !important;
+	color: var(--form-background-color) !important;
 }
 
 /* Footer */
