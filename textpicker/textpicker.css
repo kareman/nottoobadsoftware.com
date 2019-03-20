@@ -205,18 +205,24 @@ div.ml-form-embedSubmit button.primary {
 
 /* Footer */
 
+#bottom-background-behind {
+	height: 30em;
+	width: 100%;
+	margin: 0;
+	background-color: var(--footer-background-color);
+	z-index: -10;
+	position: absolute;
+	bottom: 5em;
+}
+
 footer {
 	background-color: var(--footer-background-color);
 	color: var(--heading-text-color);
-	min-height: 15em;
 	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-footer>div {
+	padding: 2em 0;
+	margin: 0;
+	/* Required for #bottom-background-behind */
 	position: relative;
-	top: 11em;
 }
 
 footer>div>* {
@@ -235,25 +241,3 @@ footer svg {
 	width: 1.25em;
 	fill: whitesmoke;
 }
-
-/*
-
-main > div, header {
-	margin-bottom: 4em;
-}
-
-main > div:last-child {
-	margin-bottom: 0em !important;
-}
-
-
-.close {
-	margin: 0;
-}
-
-
-
-
-
-
-**/
