@@ -80,9 +80,7 @@ header img {
 .columns {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 0em;
-	margin-left: -4vw;
-	margin-right: -4vw;
+	grid-gap: 4vw;
 }
 
 .columns img {
@@ -110,13 +108,16 @@ header img {
 
 /* Copy text automatically */
 
+.window-shadow {
+	box-shadow: rgba(0, 0, 0, 0.54902) 0px 20px 68px 0px;
+}
+
 .mac-window {
 	text-align: left;
 	line-height: 2em;
 	background-color: #1D1D29;
 	border-radius: 5px;
 	border: 1pt solid #242635;
-	box-shadow: rgba(0, 0, 0, 0.54902) 0px 20px 68px 0px;
 }
 
 .mac-window>svg {
