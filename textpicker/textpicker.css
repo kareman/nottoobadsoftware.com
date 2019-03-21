@@ -92,6 +92,21 @@ header img {
 	margin-bottom: 0.1em;
 }
 
+/* Play video */
+
+.play_video {
+	margin: 4em
+}
+
+.play_video p {
+	text-decoration: none;
+	color: var(--heading-text-color);
+}
+
+.play_video img {
+	height: 3.6em;
+}
+
 /* Button */
 
 .cta button {
