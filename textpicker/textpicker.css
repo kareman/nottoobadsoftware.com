@@ -199,7 +199,7 @@ header img {
 /* Form */
 
 .form {
-	margin-top: 5em;
+	margin-top: 10em;
 	color: var(--heading-text-color);
 	border-radius: 5px;
 }
