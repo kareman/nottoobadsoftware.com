@@ -126,8 +126,13 @@ header img {
 	border: none;
 	padding: 1em 2em;
 	margin: 1em;
+	margin-bottom: 0em;
 	font-weight: bold;
 	font-size: 120%;
+}
+
+.cta p {
+	display: inline-block;
 }
 
 /* Copy text automatically */
