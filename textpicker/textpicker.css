@@ -144,7 +144,7 @@ header img {
 .mac-window {
 	text-align: left;
 	line-height: 2em;
-	background-color: #1D1D29;
+	background-image: linear-gradient(#1D1D28, #15141D);
 	border-radius: 5px;
 	border: 1pt solid #242635;
 }
