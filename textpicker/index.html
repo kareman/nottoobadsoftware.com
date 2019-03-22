@@ -23,6 +23,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="description" content="TextPicker; a macOS app for text extraction and automation." />
 	<meta name="keywords" content="mac,text,automation,extract,advanced find, advanced search, Low code / no code" />
+	<link rel="canonical" href="https://nottoobadsoftware.com/textpicker/" />
 	<link rel="icon" sizes="256x256" href="TextPicker-Icon-256x256.png" />
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="textpicker.css" />
@@ -37,112 +38,154 @@
 		}
 	</script>
 	<title>TextPicker</title>
-
-	<!-- MailerLite Universal -->
-	<script>
-		(function (m, a, i, l, e, r) {
-			m['MailerLiteObject'] = e; function f() {
-				var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
-			}
-			f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
-			var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
-			_.parentNode.insertBefore(r, _);
-		})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-
-		var ml_account = ml('accounts', '1342640', 'o8h4f3i7l9', 'load');
-	</script>
-	<!-- End MailerLite Universal -->
 </head>
 
 <body>
 	<header>
-		<a href="/">NotTooBad Software</a>
-		<h1><img src="TextPicker-Icon-256x256.png" alt="TextPicker icon" />
-			TextPicker</h1>
+		<a href="/">
+			<img src="Company_logo.png" alt="Company logo with the letters 'NotTooBad Software'">
+		</a>
+		<a href="/blog/">Blog</a>
 	</header>
+
+	<figure id="tplogo">
+		<img src="TextPicker-Icon-256x256.png" alt="TextPicker logo">
+		<figcaption>TextPicker</figcaption>
+	</figure>
+
 	<main>
+		<h1>Simple and powerful text automation on the Mac</h1>
+
 		<div class="columns">
 			<div>
-				<h1>You</h1>
+				<h2>You</h2>
 				<p class="close">handpick the first two</p>
-				<img src="2_selected.png" alt="Screenshot of TextPicker, where 2 small parts of markdown text have been marked in dark green." />
+				<img class="window-shadow" src="screenshot_2_selected.png" alt="Screenshot of TextPicker, where 2 small parts of markdown text have been marked in dark green." />
 			</div>
 			<div>
-				<h1>TextPicker</h1>
+				<h2>TextPicker</h2>
 				<p class="close">finds the rest</p>
-				<img src="parser_generated.png" alt="Screenshot of TextPicker, where the application has marked in light green other parts of the text that are similar to the ones marked in the previous screenshot." />
+				<img class="window-shadow" src="screenshot_parser_generated.png" alt="Screenshot of TextPicker, where the application has marked in light green other parts of the text that are similar to the ones marked in the previous screenshot." />
 			</div>
 		</div>
-		<div class="cta">
-			<p>Want to hear about it when it is released?</p>
-			<button onclick="ml_account('webforms', '1179818', 'k7y0s5', 'show')" type="button">
-				Subscribe
-			</button>
-		</div>
-		<div>
-			<h2>Copy text automatically</h2>
-			<div class="boxes">
-				<div class="list">
-					<p>If you want to copy out specific information from text files, you have several options:</p>
-					<ul>
-						<li>Copy out everything manually <span class="label">tedious</span></li>
-						<li>Find software that supports the file format, and can export to the format you need <span class="label">time-consuming</span> <span class="label">potentially-costly</span></li>
-						<li>Use the command line <span class="label">complicated</span></li>
-						<li>If you're a developer: create a script <span class="label">complicated</span> <span class="label">time-consuming</span></li>
-					</ul>
-					<p>or</p>
-					<ul>
-						<li>Use TextPicker <span class="label green">quick</span><span class="label green">simple</span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div>
-			<h2>Features</h2>
-			<div class="boxes">
-				<div>
-					<h4>Automate</h4>
-					<p>When TextPicker has discovered a pattern, it can be used as a stand-alone Mac application, from the command line, in an Automator workflow, as a macOS service or a web API.
-					</p>
-				</div>
-				<div>
-					<h4>Develop</h4>
-					<p>You will never have to use regular expressions again!</p>
-					<p>Export a code snippet to use in your own Swift code.</p>
-				</div>
-				<div>
-					<h4>Export</h4>
-					<p>Extract different types of data from the same text, and export as JSON, XML, CSV, spreadsheet or your own custom format.</p>
-				</div>
-			</div>
-		</div>
-		<div>
-			<p>
-				<button onclick="ml_account('webforms', '1179818', 'k7y0s5', 'show')" type="button">
-					Subscribe
-				</button>
-				to learn more.</p>
-		</div>
-	</main>
-	<footer>
-		<p>&copy; Kåre Morstøl</p>
-		<div>
-			<a href="mailto:web@nottoobadsoftware.com">
-				<svg class="icon" alt="Letter icon (for email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-					<path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" /></svg>
+
+		<div class="play_video">
+			<a href="https://www.youtube.com/embed/vA9lK5AzQkc?autoplay=1" class="video-link">
+				<img src="play_video_symbol.png" alt="The standard icon for playing video.">
+				<p>See it in action</p>
 			</a>
-			{%- if site.twitter_username -%}
-			<a href="https://twitter.com/{{site.twitter_username}}"><img src="Twitter_Logo_WhiteOnImage.png" alt="Twitter icon" /></a>
-			{%- endif -%}
-			{%- if site.facebook_username -%}
-			<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
-			{%- endif -%}
-			{%- if site.github_username -%}
-			<a href="https://github.com/{{site.github_username}}"><img src="GitHub-Mark-Light-64px.png" alt="GitHub icon" /></a>
-			{%- endif -%}
-			{%- if site.linkedin_username -%}
-			<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
-			{%- endif -%}
+		</div>
+
+		<div class="cta">
+			<button onclick="document.querySelector('.form-control').focus();" type="button">
+				Notify me
+			</button>
+			<p> when it is released </p>
+
+		</div>
+
+		<h2>Copy text automatically</h2>
+		<div class="mac-window window-shadow">
+			<svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+				<g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+					<circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+					<circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+					<circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+				</g>
+			</svg>
+			<div>
+				<p>If you want to copy out specific information from text files, you have several options:</p>
+				<ul>
+					<li>Copy out everything manually <span class="label">tedious</span></li>
+					<li>Find software that supports the file format, and can export to the format you need <span class="label">time-consuming</span> <span class="label">potentially-costly</span></li>
+					<li>Use the command line <span class="label">complicated</span></li>
+					<li>If you're a developer: create a script or use regular expressions <span class="label">complicated</span> <span class="label">time-consuming</span></li>
+				</ul>
+				<p>or</p>
+				<ul>
+					<li>Use TextPicker <span class="label green">quick</span><span class="label green">simple</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--h2>Use cases</h2>
+		<div class="boxes">
+			<div>
+				<p>Handling unknown text data formats</p>
+			</div>
+			<div>
+				<p>Avoiding mundane manual copy and paste</p>
+			</div>
+			<div>
+				<p>Cleaning of data</p>
+			</div>
+			<div>
+				<p>Enabling non-programmers to automate text tasks</p>
+			</div>
+			<div>
+				<p>Making it easier for programmers to automate text tasks</p>
+			</div>
+			<div>
+				<p>... and a lot more</p>
+			</div>
+		</div-->
+
+		<h2>Other features</h2>
+		<div class="boxes">
+			<div>
+				<h4>Automate</h4>
+				<p>When TextPicker has discovered a pattern, it can be used as a stand-alone Mac application, from the command line, in an Automator workflow, as a macOS service or a web API.
+				</p>
+			</div>
+			<div>
+				<h4>Develop</h4>
+				<p>You will never have to use regular expressions again!</p>
+				<p>Export a code snippet to use in your own Swift code.</p>
+			</div>
+			<div>
+				<h4>Export</h4>
+				<p>Extract different types of data from the same text, and export as JSON, XML, CSV, spreadsheet or your own custom format.</p>
+			</div>
+			<div>
+				<h4>Edit</h4>
+				<p>Teach TextPicker how to change the text; remove and add text, capitalise/uppercase/lowercase and put the altered text back in the original document.</p>
+			</div>
+		</div>
+
+		<div class="form">
+			{% include mailerlite-TextPicker-form.html %}
+		</div>
+
+	</main>
+
+
+	<footer>
+		<div id="bottom-background-behind"></div>
+
+		<div>
+			<p>&copy; K&aring;re Morst&oslash;l</p>
+			<div>
+				<a href="mailto:web@nottoobadsoftware.com">
+					<svg alt="Letter icon (for email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z" /></svg>
+				</a>
+				{%- if site.twitter_username -%}
+				<a href="https://twitter.com/{{site.twitter_username}}">
+					<img src="Twitter_Logo_WhiteOnImage.png" alt="Twitter icon" />
+				</a>
+				{%- endif -%}
+				{%- if site.facebook_username -%}
+				<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
+				{%- endif -%}
+				{%- if site.github_username -%}
+				<a href="https://github.com/{{site.github_username}}">
+					<img src="GitHub-Mark-Light-64px.png" alt="GitHub icon" />
+				</a>
+				{%- endif -%}
+				{%- if site.linkedin_username -%}
+				<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
+				{%- endif -%}
+			</div>
 		</div>
 	</footer>
 </body>

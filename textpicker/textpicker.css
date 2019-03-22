@@ -1,162 +1,282 @@
+/*
+	padding: 0.1em;
+
+	text-rendering: optimizeLegibility;
+*/
+
+/* Defaults */
 
 :root {
-	--blue: #4AA6F8;
-	--darker-blue: #4AA6F8;
-	--background-color: #f2f2f2;
-	--background-color-light: rgba(255, 255, 255, 0.8); 
+	--main-background-color: #0F1530;
+	--box-background-color: #171E38;
+	--footer-background-color: #030816;
+	--form-background-color: #3873ED;
+	--text-color: #AEAEB9;
+	--heading-text-color: #FEFFFF;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-	/* E3E3E4 CFD3D8 */
-	background-color: var(--background-color); 
-	color: #323840;
+	background-color: var(--main-background-color);
+	color: var(--text-color);
 	text-align: center;
-	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	font-family: Camphor, Open Sans, Segoe UI, sans-serif;
 }
 
-main > div, header {
-	margin-bottom: 4em;
+body>* {
+	margin-left: 4vw;
+	margin-right: 4vw;
 }
 
-main > div:last-child {
-	margin-bottom: 0em !important;
+h1 {
+	font-size: 30pt;
 }
 
-
-.list {
-	text-align: left;
-	line-height: 150%;
-	padding-left: 5% !important;
+h2 {
+	margin-top: 4em;
+	margin-bottom: 2em;
 }
 
-.label {
-	background-color: pink;
-	color: initial;
-	border-radius: 15pt;
-	padding: 1pt 5pt 1pt 5pt;
-	margin: 2pt;
-	word-break: keep-all;
+h1, h2, h3, h4 {
+	color: var(--heading-text-color);
 }
 
-.green {
-	background-color: lightgreen;
+main>h2 {
+	font-size: 25pt;
 }
 
+/* Header */
 
 header {
-	padding: 0.1em;
-	color: whitesmoke;
-	background-image: linear-gradient(var(--darker-blue), var(--blue));
-}
-
-header h1 {
-	font-weight: normal;
-	font-size: 2.5em;
-	margin-top: 0.4em;
+	padding: 0.5em 0;
+	text-align: right;
 }
 
 header a {
-	text-align: right;
-	margin: 0.5em 1em 0em 0em;
-	display: block;
-	color: inherit;
+	margin-left: 1em;
+	display: inline-block;
+	color: var(--text-color);
 	text-decoration: none;
+}
+
+header a:first-child {
+	float: left;
+	margin: 0;
 }
 
 header img {
 	max-height: 1.5em;
-	display: inline-block;
-	vertical-align: middle;
 }
 
+/* TextPicker logo */
 
-footer {
-	background-color: var(--darker-blue);
-	color: whitesmoke;
-	min-height: 5em;
+#tplogo {
+	position: relative;
+	top: -2em;
+	text-align: center;
 }
 
-footer * {
-	max-height: 1.5em;
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 0.2em;
+#tplogo img {
+	max-height: 2em;
 }
 
-.icon {
-    display: inline-block;
-    height: 1.25em;
-    width: 1.25em;
-	fill: whitesmoke;
-}
-
-
-.close {
-	margin: 0;
-}
-
-
-.boxes {
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 1em;
-	margin-left: 1em;
-	margin-right: 1em;
-	color: #676F7B;
-}
-
-.boxes div {
-	background-color: var(--background-color-light);
-	padding: 0.5em;
-	border-radius: 10px;
-	border: 1pt solid #D9D9D9;
-}
-
-.boxes h2, h3, h4 {
-	color: initial;
-}
-
+/* Screenshots */
 
 .columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 0em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 4vw;
 }
 
 .columns img {
 	max-width: 100%;
 	margin: 0;
+	margin-top: 1em;
 }
 
 .columns h2, h3, h4 {
 	margin-bottom: 0.1em;
 }
 
+/* Play video */
 
-.cta {
-	color: whitesmoke;
-	background-image: linear-gradient(var(--blue), var(--darker-blue));
+.play_video {
+	margin: 4em
+}
+
+.play_video p {
+	text-decoration: none;
+	color: var(--heading-text-color);
+}
+
+.play_video img {
+	height: 3.6em;
+}
+
+/* Button */
+
+.cta button {
+	background-color: var(--form-background-color);
+	color: var(--heading-text-color);
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	padding: 1em 2em;
+	margin: 1em;
+	margin-bottom: 0em;
+	font-weight: bold;
+	font-size: 120%;
 }
 
 .cta p {
 	display: inline-block;
-	font-size: 150%;
 }
 
-.cta button {
-	background-color: whitesmoke;
-	color: #323840;
+/* Copy text automatically */
+
+.window-shadow {
+	box-shadow: rgba(0, 0, 0, 0.54902) 0px 20px 68px 0px;
 }
 
-button {
-	background-color: var(--blue);
-	color: whitesmoke;
-	border: none;
-	cursor: pointer;
-	border-radius: 10px;
-	padding: 0.5em 2em;
-	margin: 0em 1em 1em 1em;
-	font-weight: bold;
-	font-size: 120%;
-	border: 1pt solid #D9D9D9;
+.mac-window {
+	text-align: left;
+	line-height: 2em;
+	background-image: linear-gradient(#1D1D28, #15141D);
+	border-radius: 5px;
+	border: 1pt solid #242635;
+}
+
+.mac-window>svg {
+	position: relative;
+	top: 0px;
+	left: 7px;
+	z-index: 2;
+}
+
+.mac-window>div {
+	margin: 2em;
+}
+
+.mac-window ul {
+	padding-left: 1.2em;
+}
+
+.mac-window p {
+	color: var(--heading-text-color);
+}
+
+.label {
+	background-color: #E8445A;
+	color: var(--heading-text-color);
+	border-radius: 15pt;
+	padding: 3pt 8pt;
+	margin: 2pt;
+	word-break: keep-all;
+}
+
+.green {
+	background-color: #67B165;
+}
+
+/* What can you use it for */
+
+.boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-gap: 1em;
+}
+
+.boxes>div {
+	background-color: var(--box-background-color);
+	padding: 0 1em;
+	border-radius: 5px;
+}
+
+.boxes p {
+	text-align: left;
+}
+
+/* 	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+*/
+
+/* Form */
+
+.form {
+	margin-top: 10em;
+	color: var(--heading-text-color);
+	border-radius: 5px;
+}
+
+.ml-form-embedWrapper {
+	background-color: var(--form-background-color) !important;
+	color: inherit !important;
+}
+
+.ml-form-embedWrapper input {
+	background-color: #598DF0 !important;
+	border: none !important;
+}
+
+.ml-form-embedWrapper input::placeholder {
+	color: #BDD6F9 !important;
+}
+
+.ml-form-embedWrapper * {
+	color: inherit !important;
+}
+
+/*
+.ml-block-form p, .form .description {
+	color: #BFD6F8 !important;
+}
+*/
+
+div.ml-form-embedSubmit button.primary {
+	background-color: var(--heading-text-color) !important;
+	color: var(--form-background-color) !important;
+}
+
+/* Footer */
+
+#bottom-background-behind {
+	height: 30em;
+	width: 100%;
+	margin: 0;
+	background-color: var(--footer-background-color);
+	z-index: -10;
+	position: absolute;
+	bottom: 5em;
+}
+
+footer {
+	background-color: var(--footer-background-color);
+	color: var(--heading-text-color);
+	width: 100%;
+	padding: 2em 0;
+	margin: 0;
+	/* Required for #bottom-background-behind */
+	position: relative;
+}
+
+footer>div>* {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.2em;
+}
+
+footer img {
+	max-height: 1.5em;
+}
+
+footer svg {
+	display: inline-block;
+	height: 1.25em;
+	width: 1.25em;
+	fill: whitesmoke;
 }
