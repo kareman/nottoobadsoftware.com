@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-7744481-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-7744481-3');
+	</script>
+	<!-- End Google Analytics -->
+
+	<script>var privalytics_id = "PL-915AC5";</script>
+	<script async src="https://cdn.privalytics.io/privalytics.js"></script>
+
+	<title>{{ page.title }} - {{ site.title }}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	{%- if page.description -%}
+	<meta name="description" content="{{ page.description }}" />
+	{%- endif -%}
+	{%- if page.keywords -%}
+	<meta name="keywords" content="{{ page.keywords }}" />
+	{%- endif -%}
+	<link rel="canonical" href="{{page.newUrl | absolute_url}}" />
+	{% feed_meta %}
+	<link rel="stylesheet" href="/assets/normalize.css">
+	<link rel="stylesheet" href="/assets/navigation.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/Company_logo.png" />
+	{% if page.css %}
+	<link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}" />
+	{% endif %}
+
+	<!-- MailerLite Universal -->
+	<script>
+		function showNavMenuOrNot() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "") {
+				x.className = "responsive";
+			} else {
+				x.className = "";
+			}
+		}
+	</script>
+	<title>TextPicker</title>
+</head>
+
+<body>
+
+	<header>
+		<nav id="myTopnav">
+			<a href="/textsmith/" class="active">TextSmith</a>
+			<a href="/blog/">Blog</a>
+			<a href="javascript:void(0);" class="icon" onclick="showNavMenuOrNot()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</a>
+		</nav>
+	</header>
