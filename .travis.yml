@@ -10,4 +10,4 @@ install: bundle install
 script: 
   - bundle exec jekyll build || travis_terminate 1
   - bundle exec htmlproofer --assume-extension --check-html ./_site || travis_terminate 1
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then bundle exec s3_website push; fi
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then java -cp $(bundle show s3_website)/*.jar s3.website.Push; fi
