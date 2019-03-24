@@ -5,29 +5,25 @@ keywords: Mac software, text automation, Swift
 ---
 {% include head.html body=" class='two_columns_grid'" %}
 
-<aside>
-	<h2>Category</h2>
-	<p>Swift</p>
-	<p>SwiftShell</p>
-	<p>Mac programming</p>
+<aside class="categories">
+	<h2 class="box">Categories</h2>
+	<p><a href="/blog/">All</a></p>
+	{%- for category in site.categories -%}
+	<p><a href="/blog/{{ category[0] }}">{{ category[0] }}</a></p>
+	{%- endfor -%}
 </aside>
 
 <main>
-	<div class="close">
-		<p><strong>Welcome to</strong></p>
-		<h1>NotTooBad Software</h1>
-	</div>
-	<p>Hi, my name is Kåre Morstøl and I am an independent software developer living in Ålesund, Norway. I focus mainly on making it simpler for non-developers to automate the more boring parts of their work.</p>
-	<p>&nbsp;</p>
-	<p>You can find me on <a href="https://twitter.com/nottoobadsw">Twitter</a> and <a href="https://github.com/kareman">GitHub</a>. Feel free to contact me at <a href="mailto:kare@nottoobadsoftware.com">kare@nottoobadsoftware.com</a> if you have any questions.</p>
-
-	<figure>
-		<a href="/textpicker/">
-			<img class="software-icon" src="/textpicker/TextPicker-Icon-256x256.png" alt="The TextPicker icon">
-			<h2>TextPicker</h2>
+	{% for post in site.posts %}
+	<article class="box">
+		<a href="{{ post.url }}">
+			<h2>{{ post.title }}</h2>
 		</a>
-		<figcaption>A Mac application for automatically selecting text</figcaption>
-	</figure>
+		<p><time pubdate datetime="{{post.date}}">{{post.date | date_to_string}}</time> | {{post.categories}}</p>
+		{{post.excerpt}}
+	</article>
+	<p>&nbsp;</p>
+	{% endfor %}
 </main>
 
 {% include footer.html %}

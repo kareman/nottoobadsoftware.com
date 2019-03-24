@@ -40,6 +40,10 @@ body.two_columns_grid {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto;
   }
+
+  .categories {
+    display: block !important;
+  }
 }
 
 main {
@@ -52,6 +56,8 @@ main {
 
 aside {
   grid-area: aside;
+  margin-left: var(--page-side-margin);
+  margin-right: var(--page-side-margin);
 }
 
 h1,
@@ -76,6 +82,20 @@ a:visited {
 
 .close :last-child {
   margin-top: 0;
+}
+
+.box {
+  background-color: var(--box-background-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.categories {
+  display: none;
+}
+
+.categories p {
+  padding-left: 20px;
 }
 
 /* Header */
