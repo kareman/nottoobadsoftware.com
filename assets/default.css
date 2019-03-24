@@ -38,6 +38,15 @@ h4 {
   color: var(--heading-text-color);
 }
 
+a {
+  color: #3771e7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7d65f3;
+}
+
 .close :first-child {
   margin-bottom: 0;
 }
@@ -58,8 +67,8 @@ header {
 header a {
   margin-left: 1em;
   display: inline-block;
-  color: var(--text-color);
-  text-decoration: none;
+  color: var(--text-color) !important;
+  text-decoration: none !important;
 }
 
 header a:first-child {
