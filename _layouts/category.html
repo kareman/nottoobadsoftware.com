@@ -1,22 +1,33 @@
-{% include head.html %}
-<!-- Main -->
-<h2 class="title">{{ page.type | capitalize }} '{{ page.title }}'</h2>
+---
+title: Blog
+description: The blog of NotTooBad Software
+keywords: Mac software, text automation, Swift
+---
+{% include head.html body=" class='two_columns_grid'" %}
 
-<section class="wrapper style1">
-	<div class="container">
-		<div id="content">
-			<!-- Blog -->
+<aside>
+	<h2>Category</h2>
+	<p>Swift</p>
+	<p>SwiftShell</p>
+	<p>Mac programming</p>
+</aside>
 
-			{% for post in page.posts %}
-			<section>
-				<div class="box post">
-					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-					<p><em>{{ post.date | date_to_string }}</em></p>
-					{{ post.excerpt }}
-				</div>
-			</section>
-			{% endfor %}
-		</div>
+<main>
+	<div class="close">
+		<p><strong>Welcome to</strong></p>
+		<h1>NotTooBad Software</h1>
 	</div>
-</section>
+	<p>Hi, my name is Kåre Morstøl and I am an independent software developer living in Ålesund, Norway. I focus mainly on making it simpler for non-developers to automate the more boring parts of their work.</p>
+	<p>&nbsp;</p>
+	<p>You can find me on <a href="https://twitter.com/nottoobadsw">Twitter</a> and <a href="https://github.com/kareman">GitHub</a>. Feel free to contact me at <a href="mailto:kare@nottoobadsoftware.com">kare@nottoobadsoftware.com</a> if you have any questions.</p>
+
+	<figure>
+		<a href="/textpicker/">
+			<img class="software-icon" src="/textpicker/TextPicker-Icon-256x256.png" alt="The TextPicker icon">
+			<h2>TextPicker</h2>
+		</a>
+		<figcaption>A Mac application for automatically selecting text</figcaption>
+	</figure>
+</main>
+
 {% include footer.html %}
