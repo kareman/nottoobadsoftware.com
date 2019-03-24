@@ -88,6 +88,12 @@ a:visited {
   background-color: var(--box-background-color);
   padding: 20px;
   border-radius: 5px;
+  /*overflow: hidden;*/
+  overflow-wrap: break-word;
+}
+
+.box + .box {
+  margin-top: 1em;
 }
 
 .categories {
