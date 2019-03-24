@@ -14,7 +14,13 @@ keywords: Mac software, text automation, Swift
 </aside>
 
 <main>
-	{% for post in site.posts %}
+	{%- if page.posts.size > 0 -%}
+	{%- assign posts = page.posts -%}
+	{%- else -%}
+	{%- assign posts = site.posts -%}
+	{%- endif -%}
+
+	{% for post in posts %}
 	<article class="box">
 		<a href="{{ post.url }}">
 			<h2>{{ post.title }}</h2>
