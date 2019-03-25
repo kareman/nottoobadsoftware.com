@@ -7,19 +7,14 @@ keywords: Mac software, text automation, Swift
 
 <aside class="categories">
 	<h2 class="box">Categories</h2>
-	<p><a href="/blog/">All</a></p>
+	<p {% if page.title == "Blog" -%} class="currentCategory" {%- endif -%}><a href="/blog/">All</a></p>
 	{%- for category in site.categories -%}
-	<p><a href="/blog/{{ category[0] | downcase }}">{{ category[0] }}</a></p>
+	<p {% if category[0] == page.title -%} class="currentCategory" {%- endif -%}><a href="/blog/{{ category[0] | downcase }}">{{ category[0] }}</a></p>
 	{%- endfor -%}
 </aside>
 
 <main>
-	{%- if page.posts.size > 0 -%}
-	{%- assign posts = page.posts -%}
-	{%- else -%}
-	{%- assign posts = site.posts -%}
-	{%- endif -%}
-
+	{%- assign posts = page.posts | default: site.posts -%}
 	{% for post in posts %}
 	<article class="box">
 		<a href="{{ post.url }}">

@@ -50,11 +50,11 @@ main {
   grid-area: main;
   margin-left: var(--page-side-margin);
   margin-right: var(--page-side-margin);
-  max-width: 75ch;
+  max-width: 90ch;
   justify-self: center;
 }
 
-aside {
+body > aside {
   grid-area: aside;
   margin-left: var(--page-side-margin);
   margin-right: var(--page-side-margin);
@@ -88,6 +88,7 @@ a:visited {
   background-color: var(--box-background-color);
   padding: 20px;
   border-radius: 5px;
+  margin: 0;
   /*overflow: hidden;*/
   overflow-wrap: break-word;
 }
@@ -102,6 +103,15 @@ a:visited {
 
 .categories p {
   padding-left: 20px;
+}
+
+.categories p a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.categories .currentCategory a {
+  color: var(--heading-text-color);
 }
 
 /* Header */
