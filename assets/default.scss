@@ -138,7 +138,7 @@ body > {
     padding: 1em var(--page-side-margin);
     text-align: right;
     background-color: var(--box-background-color);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 
   header a {
@@ -175,10 +175,10 @@ figure a {
 .columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-  grid-gap: 4vw;
+  grid-gap: var(--page-side-margin);
 }
 
-.columns img {
+img {
   max-width: 100%;
 }
 
