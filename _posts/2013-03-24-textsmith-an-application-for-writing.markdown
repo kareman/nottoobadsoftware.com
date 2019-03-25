@@ -8,7 +8,7 @@ slug: textsmith-an-application-for-writing
 title: TextSmith - an application for writing
 wordpress_id: 615
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - TextSmith
 - word processors

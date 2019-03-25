@@ -8,7 +8,7 @@ slug: adding-an-xcode-project-to-git
 title: Adding an XCode project to Git
 wordpress_id: 691
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - Git
 - tips &amp; tricks

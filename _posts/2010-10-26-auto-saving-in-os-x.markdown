@@ -8,7 +8,7 @@ slug: auto-saving-in-os-x
 title: Auto-saving in OS X
 wordpress_id: 222
 categories:
-- user-interface
+- User-Interface
 tags:
 - os x
 ---

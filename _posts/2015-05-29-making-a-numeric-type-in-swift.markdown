@@ -10,7 +10,7 @@ wordpress_id: 824
 post_format:
 - Link
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - Swift
 ---

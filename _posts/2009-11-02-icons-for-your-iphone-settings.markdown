@@ -8,7 +8,7 @@ slug: icons-for-your-iphone-settings
 title: Icons for your iPhone settings
 wordpress_id: 140
 categories:
-- iphone-development
+- iPhone-Development
 tags:
 - iPhone
 - mySettings

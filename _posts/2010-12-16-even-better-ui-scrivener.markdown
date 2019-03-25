@@ -8,7 +8,7 @@ slug: even-better-ui-scrivener
 title: 'Even better UI: Scrivener'
 wordpress_id: 319
 categories:
-- user-interface
+- User-Interface
 tags:
 - Scrivener
 ---

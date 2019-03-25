@@ -9,7 +9,7 @@ keywords: Mac software, text automation, Swift
 	<h2 class="box">Categories</h2>
 	<p {% if page.title == "Blog" -%} class="currentCategory" {%- endif -%}><a href="/blog/">All</a></p>
 	{%- for category in site.categories -%}
-	<p {% if category[0] == page.title -%} class="currentCategory" {%- endif -%}><a href="/blog/{{ category[0] | downcase }}">{{ category[0] }}</a></p>
+	<p {% if category[0] == page.title -%} class="currentCategory" {%- endif -%}><a href="/blog/{{ category[0] | downcase }}/">{{ category[0] | replace: "-", " " }}</a></p>
 	{%- endfor -%}
 </aside>
 

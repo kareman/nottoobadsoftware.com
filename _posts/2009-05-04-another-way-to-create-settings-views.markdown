@@ -8,7 +8,7 @@ slug: another-way-to-create-settings-views
 title: Another way to create Settings views
 wordpress_id: 58
 categories:
-- iphone-development
+- iPhone-Development
 tags:
 - mySettings
 ---

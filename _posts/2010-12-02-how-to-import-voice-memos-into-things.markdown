@@ -8,7 +8,7 @@ slug: how-to-import-voice-memos-into-things
 title: How to import voice memos into Things
 wordpress_id: 264
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - tips &amp; tricks
 ---
