@@ -39,7 +39,7 @@ NB: has only been tested with less than four wheels.
 
 ... and the implementation:
 
-```obj-c    
+```obj-c
 /*******************************************************************************
 * Copyright (c) 2009 Kåre Morstøl (NotTooBad Software).
 * All rights reserved. This program and the accompanying materials
