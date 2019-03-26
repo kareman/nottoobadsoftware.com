@@ -24,7 +24,9 @@ html {
 body {
   background-color: var(--main-background-color);
   color: var(--text-color);
-  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: Poppins, Camphor, Open Sans, Segoe UI, sans-serif;
+  line-height: 1.4em;
+  font-weight: lighter;
 }
 
 body > aside {
@@ -36,6 +38,7 @@ h2,
 h3,
 h4 {
   color: var(--heading-text-color);
+  font-weight: lighter;
 }
 
 a {
@@ -60,6 +63,11 @@ a:visited {
   padding: 20px;
   border-radius: 5px;
   margin: 0;
+}
+
+main > .box {
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .box + .box {
