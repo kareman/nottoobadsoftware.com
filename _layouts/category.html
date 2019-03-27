@@ -3,14 +3,17 @@ title: Blog
 description: The blog of NotTooBad Software
 keywords: Mac software, text automation, Swift
 ---
-{% include head.html body=" class='two_columns_grid'" %}
+{% include head.html %}
 
-<aside class="categories">
-	<h2 class="box">Categories</h2>
-	<p {% if page.title == "Blog" -%} class="currentCategory" {%- endif -%}><a href="/blog/">All</a></p>
-	{%- for category in site.categories -%}
-	<p {% if category[0] == page.title -%} class="currentCategory" {%- endif -%}><a href="/blog/{{ category[0] | downcase }}/">{{ category[0] | replace: "-", " " }}</a></p>
-	{%- endfor -%}
+<aside>
+	<div class="categories">
+		<h2 class="box">Categories</h2>
+
+		<p {% if page.title == "Blog" -%} class="currentCategory" {%- endif -%}><a href="/blog/">All</a></p>
+		{%- for category in site.categories -%}
+		<p {% if category[0] == page.title -%} class="currentCategory" {%- endif -%}><a href="/blog/{{ category[0] | downcase }}/">{{ category[0] | replace: "-", " " }}</a></p>
+		{%- endfor -%}
+	</div>
 </aside>
 
 <main>
