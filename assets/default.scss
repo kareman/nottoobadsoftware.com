@@ -88,26 +88,22 @@ img {
   max-width: 100%;
 }
 
-.categories p {
-  padding-left: 20px;
+.categories div {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 2em;
 }
 
-.categories p a {
+.categories a {
   color: var(--text-color);
   text-decoration: none;
+  margin-right: 1em;
+  display: inline-block;
+  line-height: 170%;
 }
 
-.categories .currentCategory a {
+.categories a.currentCategory {
   color: var(--heading-text-color);
-}
-
-summary {
-  list-style-image: none;
-}
-
-summary::-webkit-details-marker {
-  background: none;
-  color: transparent;
 }
 
 /* Layout */
@@ -136,6 +132,10 @@ body {
 }
 
 @media screen and (min-width: 75ch) {
+  .categories a {
+    display: block;
+  }
+
   body {
     display: grid;
     grid-template-areas:
