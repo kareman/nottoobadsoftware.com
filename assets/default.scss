@@ -92,6 +92,10 @@ img {
 
 /* Blog posts */
 
+body[data-layout="post"] aside {
+  display: none;
+}
+
 .post-details {
   color: #6c6787;
   font-size: calc(100% - 1pt);
@@ -159,6 +163,10 @@ body {
 }
 
 @media screen and (min-width: 75ch) {
+  body[data-layout="post"] aside {
+    display: block;
+  }
+
   .categories a {
     display: block;
   }
