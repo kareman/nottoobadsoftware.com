@@ -5,17 +5,7 @@ keywords: Mac software, text automation, Swift
 ---
 {% include head.html %}
 
-<aside>
-	<section class="categories">
-		<h3 class="box">Categories</h3>
-		<div>
-			<a {% if page.title == "Blog" -%} class="currentCategory" {%- endif -%} href="/blog/">All</a>
-			{%- for category in site.categories -%}
-			<a {% if category[0] == page.title -%} class="currentCategory" {%- endif -%} href="/blog/{{ category[0] | downcase }}/">{{ category[0] | replace: "-", " " }}</a>
-			{%- endfor -%}
-		</div>
-	</section>
-</aside>
+{%- include categories.html -%}
 
 <main>
 	{%- assign posts = page.posts | default: site.posts -%}

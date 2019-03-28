@@ -1,24 +1,19 @@
+---
+---
 {% include head.html %}
-<!--h2 class="title">{{ page.title }}</h2-->
 
-<!-- Main -->
-<!-- Content -->
-<article>
-	<header>
+{% include categories.html %}
+
+<main>
+	<article>
 		<h2>{{ page.title }}</h2>
-		<p>{{ page.date | date_to_string }}
-			<span style="float: right">
-				{%- for category in page.categories -%}
-				&nbsp;<a href="/blog/{{ category | downcase }}/">{{ category }}</a>
-				{%- endfor -%}
-			</span>
-		</p>
-	</header>
-	{% if page.featured %}
-	<a href="#" class="image left"><img src="{{ site.baseurl }}{{ page.featured }}" alt="" /></a>
-	{% endif %}
-	{{ page.content }}
-</article>
-{%- include comments.html -%}
+		{%- assign post = page -%}
+		{%- include post-details.html -%}
+		{% if page.featured %}
+		<a href="#"><img src="{{ page.featured }}" alt="" /></a>
+		{% endif %}
+		{{ page.content }}
+	</article>
+</main>
 
 {% include footer.html %}
