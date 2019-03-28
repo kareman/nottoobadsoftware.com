@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2009-04-19 20:29:36+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/my-dream-gadget-a-really-big-ipod-touch/
 slug: my-dream-gadget-a-really-big-ipod-touch
 title: 'My Dream Gadget: A Really Big iPod Touch'

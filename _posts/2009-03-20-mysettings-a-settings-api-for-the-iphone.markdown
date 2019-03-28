@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2009-03-20 19:56:35+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/iphone-development/mysettings-a-settings-api-for-the-iphone/
 slug: mysettings-a-settings-api-for-the-iphone
 title: 'mySettings: A Settings API for the iPhone'

@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2016-02-26 12:27:58+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/cross-platform-command-line-arguments-syntax/
 slug: cross-platform-command-line-arguments-syntax
 title: Cross-platform command line arguments syntax

@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2016-05-15 15:46:53+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/swiftshell/combine-markdown-files-and-convert-to-html-in-a-swift-script/
 slug: combine-markdown-files-and-convert-to-html-in-a-swift-script
 title: Combine markdown files and convert to HTML in a Swift script.

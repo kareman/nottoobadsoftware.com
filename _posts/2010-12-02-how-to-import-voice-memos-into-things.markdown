@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2010-12-02 19:15:05+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/how-to-import-voice-memos-into-things/
 slug: how-to-import-voice-memos-into-things
 title: How to import voice memos into Things

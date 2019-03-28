@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2014-05-08 14:38:50+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/accessibility/how-to-use-a-mac-without-hands/
 slug: how-to-use-a-mac-without-hands
 title: How to use a Mac without hands

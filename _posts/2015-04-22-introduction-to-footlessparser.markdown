@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2015-04-22 18:18:49+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/footlessparser/introduction-to-footlessparser/
 slug: introduction-to-footlessparser
 title: Introduction to FootlessParser

@@ -1,8 +1,6 @@
 ---
-author: kare.morstol@mac.com
 comments: true
 date: 2009-09-04 12:07:29+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/iphone-development/finally-released-my-first-app/
 slug: finally-released-my-first-app
 title: Finally released my first App
