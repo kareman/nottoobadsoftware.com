@@ -94,7 +94,7 @@ img {
 
 .post-details {
   color: #6c6787;
-  font-size: var(--font-size);
+  font-size: calc(100% - 1pt);
 }
 
 /* Categories list */
