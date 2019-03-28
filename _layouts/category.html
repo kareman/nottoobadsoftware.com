@@ -24,7 +24,7 @@ keywords: Mac software, text automation, Swift
 		<a href="{{ post.url }}">
 			<h2>{{ post.title }}</h2>
 		</a>
-		<p><time pubdate datetime="{{post.date}}">{{post.date | date_to_string}}</time> | {{post.categories}}</p>
+		{%- include post-details.html -%}
 		{{post.excerpt}}
 	</article>
 	{% endfor %}
