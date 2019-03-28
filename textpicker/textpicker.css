@@ -187,18 +187,33 @@ header img {
 
 .boxes {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
 	grid-gap: 1em;
 }
 
 .boxes>div {
 	background-color: var(--box-background-color);
-	padding: 0 1em;
 	border-radius: 5px;
 }
 
-.boxes p {
+.boxes {
 	text-align: left;
+}
+
+.boxes p {
+	overflow-wrap: break-word;
+}
+
+.boxes.features>div {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding-right: 1em;
+}
+
+.boxes.features img {
+	width: 70px;
+	height: 70px;
+	margin: 1em;
 }
 
 /* 	
