@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2009-05-21 18:32:47+00:00
 old_link: http://blog.nottoobadsoftware.com/iphone-development/customising-a-table-view-with-mysettings/
 slug: customising-a-table-view-with-mysettings

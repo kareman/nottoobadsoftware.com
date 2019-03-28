@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2014-05-08 14:38:50+00:00
 old_link: http://blog.nottoobadsoftware.com/accessibility/how-to-use-a-mac-without-hands/
 slug: how-to-use-a-mac-without-hands

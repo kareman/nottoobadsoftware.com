@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-05-29 22:17:21+00:00
 old_link: http://blog.nottoobadsoftware.com/uncategorized/making-a-numeric-type-in-swift/
 slug: making-a-numeric-type-in-swift

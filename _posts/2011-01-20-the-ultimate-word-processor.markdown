@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2011-01-20 17:18:16+00:00
 old_link: http://blog.nottoobadsoftware.com/user-interface/the-ultimate-word-processor/
 slug: the-ultimate-word-processor

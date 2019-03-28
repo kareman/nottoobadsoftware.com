@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2016-01-18 22:56:53+00:00
 old_link: http://blog.nottoobadsoftware.com/swift/splitting-text-and-collections-lazily-in-swift/
 slug: splitting-text-and-collections-lazily-in-swift

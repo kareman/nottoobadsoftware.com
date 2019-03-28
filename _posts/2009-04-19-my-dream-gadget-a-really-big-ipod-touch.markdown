@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2009-04-19 20:29:36+00:00
 old_link: http://blog.nottoobadsoftware.com/uncategorized/my-dream-gadget-a-really-big-ipod-touch/
 slug: my-dream-gadget-a-really-big-ipod-touch

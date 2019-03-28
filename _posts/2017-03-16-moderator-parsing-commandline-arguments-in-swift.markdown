@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2017-03-16 23:52:40+00:00
 old_link: http://blog.nottoobadsoftware.com/swift/moderator-parsing-commandline-arguments-in-swift/
 slug: moderator-parsing-commandline-arguments-in-swift

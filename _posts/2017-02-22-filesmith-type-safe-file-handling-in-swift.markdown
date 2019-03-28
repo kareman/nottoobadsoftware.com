@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2017-02-22 17:31:31+00:00
 old_link: http://blog.nottoobadsoftware.com/swift/filesmith-type-safe-file-handling-in-swift/
 slug: filesmith-type-safe-file-handling-in-swift

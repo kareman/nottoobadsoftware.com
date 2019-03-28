@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2013-03-24 20:12:51+00:00
 old_link: http://blog.nottoobadsoftware.com/uncategorized/textsmith-an-application-for-writing/
 slug: textsmith-an-application-for-writing

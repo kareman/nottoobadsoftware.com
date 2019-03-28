@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2016-02-03 00:23:55+00:00
 old_link: http://blog.nottoobadsoftware.com/swift/splitting-text-read-piece-by-piece/
 slug: splitting-text-read-piece-by-piece

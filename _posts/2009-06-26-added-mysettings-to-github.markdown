@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2009-06-26 17:14:13+00:00
 old_link: http://blog.nottoobadsoftware.com/iphone-development/added-mysettings-to-github/
 slug: added-mysettings-to-github

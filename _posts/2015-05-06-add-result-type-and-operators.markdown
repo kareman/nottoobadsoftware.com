@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-05-06 23:18:06+00:00
 old_link: http://blog.nottoobadsoftware.com/footlessparser/add-result-type-and-operators/
 slug: add-result-type-and-operators

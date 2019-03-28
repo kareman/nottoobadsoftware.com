@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-06-27 20:05:00+00:00
 old_link: http://blog.nottoobadsoftware.com/uncategorized/new-theme-and-new-host/
 slug: new-theme-and-new-host

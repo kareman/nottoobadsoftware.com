@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2009-03-29 18:55:54+00:00
 old_link: http://blog.nottoobadsoftware.com/iphone-development/a-uipickerview-with-labels/
 slug: a-uipickerview-with-labels

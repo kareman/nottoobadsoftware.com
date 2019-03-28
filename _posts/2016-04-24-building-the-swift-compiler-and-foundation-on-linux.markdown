@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2016-04-24 22:12:12+00:00
 old_link: http://blog.nottoobadsoftware.com/swift/building-the-swift-compiler-and-foundation-on-linux/
 slug: building-the-swift-compiler-and-foundation-on-linux

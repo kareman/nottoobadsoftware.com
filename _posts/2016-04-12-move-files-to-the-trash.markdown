@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2016-04-12 13:03:26+00:00
 old_link: http://blog.nottoobadsoftware.com/swiftshell/move-files-to-the-trash/
 slug: move-files-to-the-trash

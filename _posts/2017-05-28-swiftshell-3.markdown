@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2017-05-28 20:22:27+00:00
 old_link: http://blog.nottoobadsoftware.com/swiftshell/swiftshell-3/
 slug: swiftshell-3

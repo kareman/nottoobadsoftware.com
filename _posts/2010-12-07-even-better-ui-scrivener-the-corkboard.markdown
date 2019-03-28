@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2010-12-07 17:58:55+00:00
 old_link: http://blog.nottoobadsoftware.com/user-interface/even-better-ui-scrivener-the-corkboard/
 slug: even-better-ui-scrivener-the-corkboard

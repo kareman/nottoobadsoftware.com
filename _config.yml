@@ -55,12 +55,12 @@ defaults:
       type: "posts" # a collection in your site, in plural form
     values:
       layout: "post"
+      comments: true
 
 collections:
   posts:
     output: true
     permalink: /blog/:categories/:title/
-    comments: true
 
 jekyll-archives:
   enabled:

@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2009-05-04 19:26:56+00:00
 old_link: http://blog.nottoobadsoftware.com/iphone-development/another-way-to-create-settings-views/
 slug: another-way-to-create-settings-views

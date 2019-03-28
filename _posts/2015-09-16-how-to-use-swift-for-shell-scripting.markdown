@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-09-16 23:48:05+00:00
 old_link: http://blog.nottoobadsoftware.com/swiftshell/how-to-use-swift-for-shell-scripting/
 slug: how-to-use-swift-for-shell-scripting

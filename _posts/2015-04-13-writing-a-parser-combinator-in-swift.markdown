@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-04-13 15:24:20+00:00
 old_link: http://blog.nottoobadsoftware.com/footlessparser/writing-a-parser-combinator-in-swift/
 slug: writing-a-parser-combinator-in-swift

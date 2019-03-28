@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-06-15 00:33:49+00:00
 old_link: http://blog.nottoobadsoftware.com/footlessparser/parser-combinator-operators-in-swift/
 slug: parser-combinator-operators-in-swift

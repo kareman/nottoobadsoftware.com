@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-09-02 17:35:30+00:00
 old_link: http://blog.nottoobadsoftware.com/swiftshell/redesigning-an-api-swift-2-0-style/
 slug: redesigning-an-api-swift-2-0-style

@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2015-06-08 00:25:16+00:00
 old_link: http://blog.nottoobadsoftware.com/footlessparser/footlessparser-updated-documentation-and-readme/
 slug: footlessparser-updated-documentation-and-readme

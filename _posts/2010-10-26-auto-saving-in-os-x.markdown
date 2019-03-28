@@ -1,5 +1,4 @@
 ---
-comments: true
 date: 2010-10-26 14:49:41+00:00
 old_link: http://blog.nottoobadsoftware.com/user-interface/auto-saving-in-os-x/
 slug: auto-saving-in-os-x
