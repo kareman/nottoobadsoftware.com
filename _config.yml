@@ -57,7 +57,7 @@ jekyll-archives:
   enabled:
     - categories
   layouts: 
-    category: category
+    category: post-list
   permalinks:
     category: '/blog/:name/'
 

@@ -1,15 +1,4 @@
 ---
 title: Blog
-layout: category
+layout: post-list
 ---
-
-<!-- Main -->
-<!-- Blog -->
-{% for post in site.posts %}
-<!-- offset: 0 limit: site.paginate -->
-<section class="blog-preview">
-	<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-	<p><em>{{ post.date | date_to_string }}</em></p>
-	{{ post.excerpt }}
-</section>
-{% endfor %}
