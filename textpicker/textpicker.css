@@ -44,6 +44,13 @@ h2 {
 
 h1, h2, h3, h4 {
 	color: var(--heading-text-color);
+	font-weight: normal;
+	font-style: normal;
+}
+
+p, li {
+	font-weight: 200;
+	font-style: normal;
 }
 
 main>h2 {
