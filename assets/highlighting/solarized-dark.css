@@ -18,8 +18,8 @@ green     #859900  operators, other keywords
 
 code.highlighter-rouge { font-family:'Courier New', Courier, monospace }
 
-div .highlighter-rouge div .highlight { 
-	background-color: #002b36; 
+div.highlighter-rouge div.highlight { 
+	background-color: black; 
 	color: #93a1a1; 
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.9em;
