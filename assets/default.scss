@@ -8,7 +8,7 @@
   --box-background-color: #171e38;
   --footer-background-color: #030816;
   --form-background-color: #3873ed;
-  --text-color: #aeaeb9;
+  --text-color: #acaab6;
   --heading-text-color: #feffff;
   --inline-code-text-colour: #e9e9e9;
   --page-side-margin: 4vw;
@@ -47,7 +47,17 @@ a:visited {
 
 code {
   color: var(--inline-code-text-colour);
-  font-family: PTMono, monospace;
+  font-family: PTMono, "Courier New", Courier, monospace;
+}
+
+div.highlighter-rouge div.highlight pre {
+  padding: 1em;
+  font-family: PTMono, "Courier New", Courier, monospace;
+  font-size: var(--font-size) !important;
+  background-color: #1e1e1e;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .close :first-child {
