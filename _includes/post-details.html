@@ -1,1 +1,5 @@
-<p class="post-details"><time pubdate datetime="{{post.date}}">{{post.date | date_to_string}}</time> &VerticalSeparator; {{post.categories}}</p>
+<p class="post-details"><time pubdate datetime="{{post.date}}">{{post.date | date_to_string}}</time> &VerticalSeparator;
+	{% for category in post.categories -%}
+	<a href="/blog/{{ category | downcase }}/">{{ category | replace: "-", " " }}</a>&nbsp;&nbsp;
+	{%- endfor -%}
+</p>
