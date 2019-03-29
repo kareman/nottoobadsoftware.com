@@ -109,17 +109,19 @@ img {
 
 /* Blog posts */
 
-body[data-layout="post"] aside {
-  display: none;
+body[data-layout="post"] {
+  aside {
+    display: none;
+  }
+
+  main > article {
+    margin-bottom: 4em;
+  }
 }
 
 .post-details {
   color: #6c6787;
   font-size: calc(100% - 1pt);
-}
-
-.comments {
-  margin-top: 4em;
 }
 
 summary {
