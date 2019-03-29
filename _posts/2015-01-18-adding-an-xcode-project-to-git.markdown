@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2015-01-18 22:37:27+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/adding-an-xcode-project-to-git/
 slug: adding-an-xcode-project-to-git
 title: Adding an XCode project to Git
 wordpress_id: 691
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - Git
 - tips &amp; tricks

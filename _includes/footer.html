@@ -1,28 +1,27 @@
-		<!-- Footer -->
-		<div id="footer">
+<footer>
+	<div>
+		<p>&copy; K&aring;re Morst&oslash;l</p>
+		<a href="mailto:web@nottoobadsoftware.com">
+			<img src="/assets/images/Icon_Mail.png" alt="Email icon">
+		</a>
+		{%- if site.twitter_username -%}
+		<a href="https://twitter.com/{{site.twitter_username}}">
+			<img src="/assets/images/Icon_Twitter.png" alt="Twitter icon" />
+		</a>
+		{%- endif -%}
+		{%- if site.facebook_username -%}
+		<a href="https://facebook.com/{{site.facebook_username}}">Facebook</a>
+		{%- endif -%}
+		{%- if site.github_username -%}
+		<a href="https://github.com/{{site.github_username}}">
+			<img src="/assets/images/Icon_GitHub.png" alt="GitHub icon" />
+		</a>
+		{%- endif -%}
+		{%- if site.linkedin_username -%}
+		<a href="https://linkedin.com/{{site.linkedin_username}}">LinkedIn</a>
+		{%- endif -%}
+	</div>
+</footer>
+</body>
 
-			<!-- Copyright -->
-			<div class="copyright">
-				<!-- Icons -->
-				<ul class="icons">
-					{%- if site.twitter_username -%}
-					<li><a href="https://twitter.com/{{site.twitter_username}}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					{%- endif -%}
-					{%- if site.facebook_username -%}
-					<li><a href="https://facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					{%- endif -%}
-					{%- if site.github_username -%}
-					<li><a href="https://github.com/{{site.github_username}}" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					{%- endif -%}
-					{%- if site.linkedin_username -%}
-					<li><a href="https://linkedin.com/{{site.linkedin_username}}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					{%- endif -%}
-				</ul>
-				<ul class="menu">
-					<li>&copy; NotTooBad Software. All rights reserved</li>
-					<li>Theme originally designed by <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</div>
-	</body>
 </html>

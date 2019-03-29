@@ -1,8 +1,5 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2015-04-27 17:14:11+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/footlessparser/set-up-an-open-source-xcode-framework-project/
 slug: set-up-an-open-source-xcode-framework-project
 title: Set up an open source Xcode framework project

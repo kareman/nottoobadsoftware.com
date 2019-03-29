@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2010-12-16 23:09:27+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/user-interface/even-better-ui-scrivener/
 slug: even-better-ui-scrivener
 title: 'Even better UI: Scrivener'
 wordpress_id: 319
 categories:
-- user-interface
+- User-Interface
 tags:
 - Scrivener
 ---

@@ -1,8 +1,5 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2017-02-22 17:31:31+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/swift/filesmith-type-safe-file-handling-in-swift/
 slug: filesmith-type-safe-file-handling-in-swift
 title: 'FileSmith: Type-safe file handling in Swift'

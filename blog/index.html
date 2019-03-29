@@ -1,22 +1,4 @@
 ---
 title: Blog
-layout: default
+layout: post-list
 ---
-
-<!-- Main -->
-<section class="wrapper style1">
-	<div class="container">
-		<div id="content">
-			<!-- Blog -->
-				{% for post in site.posts %} <!-- offset: 0 limit: site.paginate -->
-				<section>
-					<div class="box post">
-						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-						<p><em>{{ post.date | date_to_string }}</em></p>
-						{{ post.excerpt }}
-					</div>
-				</section>
-				{% endfor %}
-		</div>
-	</div>
-</section>

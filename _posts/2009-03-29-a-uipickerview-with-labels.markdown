@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2009-03-29 18:55:54+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/iphone-development/a-uipickerview-with-labels/
 slug: a-uipickerview-with-labels
 title: A UIPickerView with labels
 wordpress_id: 22
 categories:
-- iphone-development
+- iPhone-Development
 tags:
 - iPhone
 - mySettings
@@ -39,7 +36,7 @@ NB: has only been tested with less than four wheels.
 
 ... and the implementation:
 
-```obj-c    
+```obj-c
 /*******************************************************************************
 * Copyright (c) 2009 Kåre Morstøl (NotTooBad Software).
 * All rights reserved. This program and the accompanying materials

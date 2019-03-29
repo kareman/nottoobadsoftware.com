@@ -1,8 +1,5 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2016-04-12 13:03:26+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/swiftshell/move-files-to-the-trash/
 slug: move-files-to-the-trash
 title: Move files to the trash with a Swift script

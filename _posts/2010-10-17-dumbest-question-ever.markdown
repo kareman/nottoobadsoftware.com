@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2010-10-17 19:24:31+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/user-interface/dumbest-question-ever/
 slug: dumbest-question-ever
 title: Dumbest question ever
 wordpress_id: 192
 categories:
-- user-interface
+- User-Interface
 tags:
 - os x
 ---

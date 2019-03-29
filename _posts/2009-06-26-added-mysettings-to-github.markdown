@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2009-06-26 17:14:13+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/iphone-development/added-mysettings-to-github/
 slug: added-mysettings-to-github
 title: Added mySettings to GitHub
 wordpress_id: 126
 categories:
-- iphone-development
+- iPhone-Development
 tags:
 - mySettings
 ---

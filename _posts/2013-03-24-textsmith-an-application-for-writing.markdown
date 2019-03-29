@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2013-03-24 20:12:51+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/textsmith-an-application-for-writing/
 slug: textsmith-an-application-for-writing
 title: TextSmith - an application for writing
 wordpress_id: 615
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - TextSmith
 - word processors

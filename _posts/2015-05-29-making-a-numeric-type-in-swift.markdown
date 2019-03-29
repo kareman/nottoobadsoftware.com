@@ -1,8 +1,5 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2015-05-29 22:17:21+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/uncategorized/making-a-numeric-type-in-swift/
 slug: making-a-numeric-type-in-swift
 title: Making a Numeric Type in Swift
@@ -10,7 +7,7 @@ wordpress_id: 824
 post_format:
 - Link
 categories: 
-- uncategorized
+- Uncategorized
 tags:
 - Swift
 ---

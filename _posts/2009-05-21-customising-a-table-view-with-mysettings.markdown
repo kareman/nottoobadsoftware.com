@@ -1,14 +1,11 @@
 ---
-author: kare.morstol@mac.com
-comments: true
 date: 2009-05-21 18:32:47+00:00
-layout: post
 old_link: http://blog.nottoobadsoftware.com/iphone-development/customising-a-table-view-with-mysettings/
 slug: customising-a-table-view-with-mysettings
 title: Customising a table view with mySettings
 wordpress_id: 61
 categories:
-- iphone-development
+- iPhone-Development
 tags:
 - mySettings
 ---
@@ -17,9 +14,11 @@ I've been working on my iPhone app lately (for performing physical exercises lik
 
 As an example, here's the configuration screen for my app:
 
-![Configuration screen](/media/old/untitled.jpg)
+![Configuration screen](/media/old/screenshot-repetitions.png)
 
-<!-- more -->To do this I had to, of course, [install mySettings](http://bitbucket.org/karemorstol/mysettings/wiki/Installation). Then create this plist:
+<!-- more -->
+
+To do this I had to, of course, [install mySettings](http://bitbucket.org/karemorstol/mysettings/wiki/Installation). Then create this plist:
 
 ![Plist configuration file](/media/old/untitled-2.jpg)
 

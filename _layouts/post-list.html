@@ -1,0 +1,24 @@
+---
+title: Blog
+description: The blog of NotTooBad Software
+keywords: Mac software, text automation, Swift
+css: /assets/highlighting/vscode.css
+---
+{% include head.html %}
+
+{%- include categories.html -%}
+
+<main>
+	{%- assign posts = page.posts | default: site.posts -%}
+	{% for post in posts %}
+	<article class="box">
+		<a href="{{ post.url }}">
+			<h2>{{ post.title }}</h2>
+		</a>
+		{%- include post-details.html -%}
+		{{post.excerpt}}
+	</article>
+	{% endfor %}
+</main>
+
+{% include footer.html %}
