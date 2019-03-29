@@ -10,6 +10,7 @@
   --form-background-color: #3873ed;
   --text-color: #aeaeb9;
   --heading-text-color: #feffff;
+  --inline-code-text-colour: #e9e9e9;
   --page-side-margin: 4vw;
   --font-size: 13pt;
 }
@@ -42,6 +43,11 @@ a {
 
 a:visited {
   color: #7d65f3;
+}
+
+code {
+  color: var(--inline-code-text-colour);
+  font-family: PTMono, monospace;
 }
 
 .close :first-child {
