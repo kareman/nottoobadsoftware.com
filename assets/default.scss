@@ -22,10 +22,10 @@ html {
 body {
   background-color: var(--main-background-color);
   color: var(--text-color);
-  font-family: Poppins, Camphor, Open Sans, Segoe UI, sans-serif;
+  font-family: "Quicksand", sans-serif;
+
   font-size: var(--font-size);
   line-height: 1.4em;
-  font-weight: lighter;
 }
 
 h1,
@@ -33,7 +33,6 @@ h2,
 h3,
 h4 {
   color: var(--heading-text-color);
-  font-weight: lighter;
 }
 
 a {
@@ -47,13 +46,12 @@ a:visited {
 
 code {
   color: var(--inline-code-text-colour);
-  font-family: PTMono, "Courier New", Courier, monospace;
+  font-family: Courier, monospace;
 }
 
 div.highlighter-rouge div.highlight pre {
   padding: 1em;
-  font-family: PTMono, "Courier New", Courier, monospace;
-  font-size: var(--font-size) !important;
+  font-family: Courier, monospace;
   background-color: #1e1e1e;
 
   white-space: pre-wrap;
