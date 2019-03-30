@@ -11,7 +11,7 @@ tags:
 - tips &amp; tricks
 ---
 
-### Update:
+## Update:
 
 As of Xcode 7 beta 6, Swift no longer requires variadic parameters to be last in the function definition. Also argument labels are no longer required when combined with parameters with default values. So this all works fine now:
 

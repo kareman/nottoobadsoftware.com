@@ -20,7 +20,7 @@ What I am looking for however has separate types not only for files and folders,
 
 So I made the [FileSmith](https://github.com/kareman/FileSmith) library with FilePath/DirectoryPath, ReadableFile/WritableFile and Directory.
 
-## Paths
+# Paths
 
 Paths are like _potential_ files and directories, addresses to things that already exist and things that soon will, if all goes well. They should be easy to create and combine:
 
@@ -39,7 +39,7 @@ _Note that if you use the + operator with a String you need to define the return
 
 There is also AnyPath for when you don't know or care what type a path is. All the Path types are lightweight immutable value types conforming to the `Path` protocol. They don't access the file system, with a few exceptions like `.exists`.
 
-## Files
+# Files
 
 File and Directory objects on the other hand access the file system when they are created, to verify that the file or directory they represent actually exists (otherwise they throw an error). This doesn't necessarily mean there is still something there when you start reading and writing obviously, but it's at least good to know there very recently was.
 
@@ -58,7 +58,7 @@ let file3_edit = try dir.create(file: "file3.txt", ifExists: .replace)
 
 A `ReadableFile` can only be used for reading from a file, never to change, move or delete it. But you can do whatever you want with a `WritableFile`, including reading and overwriting it.
 
-## Directories
+# Directories
 
 For directories there is just the Directory class for both reading and writing, no WritableDirectory and ReadableDirectory like with files, because it's not really clear what that means. If you have a ReadableDirectory it should not be possible to make any changes with it, but you can still use it to get the paths of the files and directories it contains, turn them into writable files and writable directories and then make changes to them. The separation is much more clear-cut with files because they can't contain other files.
 
@@ -75,6 +75,6 @@ dir1.files("*3.*", recursive: true)
 Directory.current.directories(recursive: true)
 ```
 
-## Safety
+# Safety
 
 By default `Directory.sandbox == true` and you can only change files or create new files and directories if they are under the current working directory. Trying to make changes elsewhere throws an error. I like to know there are at least some limits to how badly I can mess things up with a bug.

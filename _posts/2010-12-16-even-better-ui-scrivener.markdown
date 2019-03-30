@@ -12,14 +12,14 @@ tags:
 
 Continuing from [last week's ideas](/blog/user-interface/even-better-ui-scrivener-the-corkboard/) for [Scrivener](https://www.literatureandlatte.com/scrivener/overview)'s corkboard, here are some suggestions for the rest of the application.
 
-### Preview when configuring a compile
+# Preview when configuring a compile
 
 When it's time to get my writings out of Scrivener, there will often be a lot of back and forth to get the output just the way I want it. It would save a lot of time if there was an instant preview when configuring the compile settings.
 
 <!-- more -->
 	
 
-### Link to media files
+# Link to media files
 
 
 	
@@ -29,7 +29,7 @@ If I drag a movie into the Research folder the entire file is moved into the pro
 
 	
 
-### Export files by drag & drop
+# Export files by drag & drop
 
 
 	
@@ -39,7 +39,7 @@ I have collected a lot of PDF files in the Research folder, but if I drag them o
 
 	
 
-### Automatic syncing
+# Automatic syncing
 
 
 	
@@ -49,7 +49,7 @@ When I open a project that has been synchronised with a folder and there are cha
 
 	
 
-### Enforce format
+# Enforce format
 
 
 	

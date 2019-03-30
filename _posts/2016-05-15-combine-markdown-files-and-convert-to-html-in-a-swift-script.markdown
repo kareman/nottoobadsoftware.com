@@ -16,7 +16,7 @@ Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/script
 
 <!-- more -->
 
-### The shell script
+# The shell script
     
 ```bash
 #!/bin/sh
@@ -45,7 +45,7 @@ It reads all the markdown files in the “chapters” directory, joins them toge
 
 _* except for "%.*" in line 7, which leaves out the file extension_
 
-### SwiftShell
+# SwiftShell
 
 
 

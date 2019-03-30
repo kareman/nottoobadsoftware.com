@@ -39,7 +39,7 @@ iTracker has not been updated in a while, but the developer has informed me that
 
 Having successfully moved the mouse pointer, it would be nice to actually click too. There are several options:
 
-  * A normal mouse/trackpad, preferably a trackpad with separate mouse buttons, that way you won't inadvertently move the pointer before clicking. But dragging only kind of works. You can move windows, but they don't follow along while dragging, they just instantly move to the right spot when you release the button. It's the same when selecting text, the selection only appears after you release the button. Moving files or selected text doesn't work at all, nor resizing windows or table columns etc. 
+* A normal mouse/trackpad, preferably a trackpad with separate mouse buttons, that way you won't inadvertently move the pointer before clicking. But dragging only kind of works. You can move windows, but they don't follow along while dragging, they just instantly move to the right spot when you release the button. It's the same when selecting text, the selection only appears after you release the button. Moving files or selected text doesn't work at all, nor resizing windows or table columns etc. 
 
 * _Dwell clicking_ in iTracker, which automatically clicks once when you hold your head -- and therefore the pointer -- still for a certain amount of time. This way you can control the pointer using only your head. The downside is you have to keep moving your head if you don't want to click, which can get tiresome after a while. Instead of automatically left clicking you can get a _click menu_ with left clicking, right clicking, middle-clicking, double-clicking and dragging.
 

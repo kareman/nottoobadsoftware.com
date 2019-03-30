@@ -14,7 +14,7 @@ _This is part of a [series on FootlessParser](/blog/footlessparser/), a [parser 
 
 * * *
 
-### Add Runes and LlamaKit using Carthage
+# Add Runes and LlamaKit using Carthage
 
 [https://github.com/kareman/FootlessParser/commit/6142452334dae45a5aae65e0f54264f1ea3f533d](https://github.com/kareman/FootlessParser/commit/6142452334dae45a5aae65e0f54264f1ea3f533d)
 
@@ -24,19 +24,19 @@ Each parse returns a `Result`, which has either a tuple containing the output an
 
 <!-- more -->
 
-### Add Runes+Result.swift
+# Add Runes+Result.swift
 
 [https://github.com/kareman/FootlessParser/commit/c49709d9bb17291fac6b82a0fe136d6d10e1bd9f](https://github.com/kareman/FootlessParser/commit/c49709d9bb17291fac6b82a0fe136d6d10e1bd9f)
 
 To implement the operators mentioned above for parsers it is very helpful to first implement them for what parsers return, i.e. `Result`. Gordon Fontenot did just that in this [pull request to Runes](https://github.com/thoughtbot/Runes/pull/8). It was never merged, so it's included here.
 
-### Rename Runes+Result.swift to Result+Operators.swift
+# Rename Runes+Result.swift to Result+Operators.swift
 
 [https://github.com/kareman/FootlessParser/commit/74230bb5148e827debf610c8f3c8259b8b4a77b9](https://github.com/kareman/FootlessParser/commit/74230bb5148e827debf610c8f3c8259b8b4a77b9)
 
 I renamed the file later to make the name more descriptive and not so foreign for those who have not heard about the Runes framework.
 
-### Switch from LlamaKit/LlamaKit to antitypical/Result.
+# Switch from LlamaKit/LlamaKit to antitypical/Result.
 
 [https://github.com/kareman/FootlessParser/commit/f527d9e0e8999479c4627dd4ffdd5871174b7edf](https://github.com/kareman/FootlessParser/commit/f527d9e0e8999479c4627dd4ffdd5871174b7edf)
 

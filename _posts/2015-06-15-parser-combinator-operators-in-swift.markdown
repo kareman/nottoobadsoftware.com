@@ -29,7 +29,7 @@ where `function1` and `parser3` return the same type.
 
 <!-- more -->
 
-## Definitions
+# Definitions
 
 Parser
 : a function which takes some input (a sequence of tokens) and returns either the output and the remaining unparsed part of the input, or an error description if it fails.
@@ -40,13 +40,13 @@ Token
 Parser Input
 : most often text, but can also be an array or really any collection of anything, provided it conforms to CollectionType.
 
-## Parsers
+# Parsers
 
 The general idea is to combine very simple parsers into more complex ones. So `char("a")`  creates a parser which checks if the next token from the input is an “a”. If it is it returns that “a”, otherwise it returns an error. We can then use operators and functions like `zeroOrMore` and `optional` to create ever more complex parsers. For more check out [ FootlessParser's list of functions](http://kareman.github.io/FootlessParser/Functions.html).
 
-## Operators
+# Operators
 
-### <^> (map)
+## <^> (map)
 
 ```swift
 function <^> parser1
@@ -54,7 +54,7 @@ function <^> parser1
 
 creates a new parser which runs parser1. If it succeeds it passes the output to `function` and returns the result.
 
-### <*> (apply)
+## <*> (apply)
 
 ```swift
 function <^> parser1 <*> parser2
@@ -72,15 +72,15 @@ This is because <*> returns the output of 2 parsers and it doesn't know what to 
 
 If there are 3 parsers and 2 <*> the function must take 3 parameters, and so on.
 
-### <*
+## <*
 
 The same as the <*> above, except it discards the result of the parser to its right. Since it only returns one output it doesn't need to be used together with <^> . But you can of course if you want the output converted to something else.
 
-### *>
+## *>
 
 The same as <* , but discards the result of the parser to its left.
 
-### <|>  (choice)
+## <|>  (choice)
 
 ```swift
 parser1 <|> parser2 <|> parser3
@@ -88,7 +88,7 @@ parser1 <|> parser2 <|> parser3
 
 This operator tries all the parsers in order and returns the result of the first one that succeeds.
 
-## Example
+# Example
 
 * [parse a CSV file](https://github.com/kareman/FootlessParser#csv-parser)
 

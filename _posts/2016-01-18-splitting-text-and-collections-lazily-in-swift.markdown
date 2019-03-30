@@ -16,7 +16,7 @@ There are already methods for [splitting collections](http://swiftdoc.org/v2.1/p
 
 <!-- more -->
 
-## The original
+# The original
 
 This is how the CollectionType.split method in the Standard Library splits strings over ",":
 
@@ -55,7 +55,7 @@ I want our split method to behave in exactly the same way.
 
 The results when allowing empty slices may seem a bit strange, but think of it as text split on the newline character into separate lines, and consider there may be several empty lines in a row plus they may be at the beginning and/or the end.
 
-## The first step
+# The first step
 
 So what is the simplest operation needed here, and will it be useful on its own? When splitting collections into smaller pieces the smallest possible operation is to split the collection once into 2 pieces. And yes I believe that operation will be useful on its own:
 
@@ -78,7 +78,7 @@ extension CollectionType where Generator.Element: Equatable {
 
 Pretty straightforward, just find the first separator and return everything before it and everything after it.
 
-## The output
+# The output
 
 This functionality naturally belongs in LazyCollectionType. We will be following [Apple's guidelines for extending it](http://swiftdoc.org/v2.1/protocol/LazySequenceType/) (they are the same as for LazySequenceType), except we will use the same struct for the sequence and generator because I don't want to write this monster of a generic `where` clause more often than strictly necessary:
 
@@ -118,7 +118,7 @@ In the initialiser we set `remaining` to a subsequence of the entire collection.
 
 You may have noticed this sequence does not have a ‘generate’ method even though it is a required part of the protocol. That is because of this [clever little extension](https://github.com/apple/swift/blob/31f17e212ce3bea62a9525454f7f5ed35d7c4a03/stdlib/public/core/Sequence.swift#L204-L211) in the standard library, which automatically generates one for us.
 
-## The actual method
+# The actual method
 
 Then all that remains is the method itself, where we meet the monstrous generic `where` clause again:
 

@@ -22,7 +22,7 @@ Both scripts start at the same time. The left one uses the functionality impleme
 
 <!-- more -->
 
-## The problem
+# The problem
 
 This functionality can be used to split any collection over any Equatable element, but it is easier to visualise it if we think of it as splitting text over the newline character:
 
@@ -34,7 +34,7 @@ I struggled with coming up with a nice and clean implementation for this. When e
 
 The end result is a bit messy, but fairly simple. Though I'm not really satisfied with any code which feels like it needs comments to be comprehensible.
 
-## The code
+# The code
     
 ```swift
 public struct PartialSourceLazySplitSequence <Base: CollectionType where 

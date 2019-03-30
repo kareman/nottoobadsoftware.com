@@ -25,7 +25,7 @@ where `parser` will pass the input to `parser1` followed by `parser2`, pass thei
 
 <!-- more -->
 
-### Terms
+# Terms
 
 Parser
 : a function which takes some input (a sequence of tokens) and returns either the output and the remaining unparsed part of the input, or an error description if it fails.
@@ -36,7 +36,7 @@ Token
 Parser Input
 : most often text, but can also be an array or really any collection of anything, provided it conforms to CollectionType.
 
-### First version
+# First version
 
 Initially FootlessParser will be the simplest possible implementation of a parser combinator in Swift. It will:
 
@@ -45,7 +45,7 @@ Initially FootlessParser will be the simplest possible implementation of a parse
 * not handle left recursion. Like most parser combinators.
 * probably be slow. It's going to be very interesting to see how slow.
 
-### Future improvements
+# Future improvements
 
 * Memoization, should help with speed.
 * Left recursion.
