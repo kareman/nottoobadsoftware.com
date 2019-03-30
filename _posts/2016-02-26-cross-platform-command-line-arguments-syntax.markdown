@@ -41,7 +41,7 @@ _* but not `swift build`._
 ### Option names should not begin with a number
 
 <blockquote>
-  Each option name should be a single alphanumeric character (the alnum character classification) from the portable character set.
+Each option name should be a single alphanumeric character (the alnum character classification) from the portable character set.
 </blockquote>
 
 This means that `-4` is a valid option name. But what if the application also takes negative numbers as one of its arguments? This could get confusing, not necessarily for the argument parser, but for us humans. Also I don't think any programming language allows identifiers to begin with a number.

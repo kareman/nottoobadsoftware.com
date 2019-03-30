@@ -63,6 +63,6 @@ The bottom section has custom cells, but the top one uses the standard cells fro
 
 which is called right after the cell has been initialised.
 
-### The tricky bit
+## The tricky bit
 
 Sadly the difficult part is still left; the user needs to be able to add, remove and reorder the cells in the bottom section, and I have not been able to find a way to customise the reorder control. The built-in one looks completely out of place here. Not to mention the red minus sign for removing cells.

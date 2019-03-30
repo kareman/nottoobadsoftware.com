@@ -11,7 +11,9 @@ tags:
 - tips &amp; tricks
 ---
 
-As I have mentioned before I'm not a big fan of MacSpeech Dictate. So I use Dragon NaturallySpeaking in Windows XP running under Parallels Desktop 4 when I need to dictate something. It's working very well, but it is of course very tedious to have to copy and paste everything I dictate from Windows back into my Mac applications. Luckily Tim Harper has made [tightvnc-dns](http://github.com/timcharper/tightvnc-dns), a Windows application that reroutes the generated keystrokes from Dragon NaturallySpeaking back to the Mac side. You can't use Dragon to edit the text you dictate this way, but for shorter pieces of text it is very practical.<!-- more -->
+As I have mentioned before I'm not a big fan of MacSpeech Dictate. So I use Dragon NaturallySpeaking in Windows XP running under Parallels Desktop 4 when I need to dictate something. It's working very well, but it is of course very tedious to have to copy and paste everything I dictate from Windows back into my Mac applications. Luckily Tim Harper has made [tightvnc-dns](http://github.com/timcharper/tightvnc-dns), a Windows application that reroutes the generated keystrokes from Dragon NaturallySpeaking back to the Mac side. You can't use Dragon to edit the text you dictate this way, but for shorter pieces of text it is very practical.
+
+<!-- more -->
 
 It is very easy to set up, just follow these simple steps:
 

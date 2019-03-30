@@ -34,7 +34,7 @@ Enough said.
 
 So I would much rather use Swift, as the syntax is nice, very nice indeed. But the things that bash shell scripts actually _are_ good at, like running shell commands and accessing the shell environment, are not that straightforward in Swift. Here's how you can perform the various tasks using only the Swift Standard Library and Foundation:
 
-#### Run shell commands
+# Run shell commands
 
 
 
@@ -47,7 +47,7 @@ NSTask ([Apple](https://developer.apple.com/library/mac/documentation/Cocoa/Refe
 
 There is also the `system` function (which has been deprecated) and [`posix_spawn`](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/posix_spawn.2.html) which is a C API with lots of inout parameters. Again; enough said.
 
-#### Read input and provide output
+# Read input and provide output
 
 Swift's [`readLine`](http://swiftdoc.org/swift-2/func/readLine/) function reads standard input line by line. And [`print`](http://swiftdoc.org/swift-2/func/print/) (previously known as `println`) prints to standard output.
 
@@ -66,7 +66,7 @@ let output: NSData = ...
 stdout.writeData(output)
 ```
 
-#### Use environment variables
+# Use environment variables
 
 
 
@@ -75,7 +75,7 @@ let env = NSProcessInfo.processInfo().environment as [String: String]
 let path = env["PATH"]!
 ```
 
-#### Access arguments
+# Access arguments
 
 
 
@@ -85,7 +85,7 @@ let arguments: [String] = Process.arguments.count <= 1 ? [] : Array(Process.argu
 
 The first element is discarded because it, as is the custom in shell scripting, contains the path to the script file itself.
 
-#### Read and write files
+# Read and write files
 
 
 

@@ -14,23 +14,23 @@ I usually write new ideas into the [Things](http://culturedcode.com/things/) app
 
 <!-- more -->
     
-  1. Add the folder /Users/<your username>/Music/iTunes/iTunes Music/Voice Memos to [Hazel](http://www.noodlesoft.com/hazel.php).
+1. Add the folder /Users/<your username>/Music/iTunes/iTunes Music/Voice Memos to [Hazel](http://www.noodlesoft.com/hazel.php).
 
     
-  2. Enter these settings:
-[![Screenshot of settings in Hazel](/media/old/system-preferences.png)](/media/old/system-preferences.png)
+2. Enter these settings:
+
+  [![Screenshot of settings in Hazel](/media/old/system-preferences.png)](/media/old/system-preferences.png)
 
 Here is the script:
 
     
-    
-    tell application "Things"
-       set props to {name:"Voice memo"}
-       set newToDo to make new to do with properties props
-       set notes of newToDo to "[filepath=" & POSIX path of theFile & "]TITLE[/filepath]"
-    
-    end tell
-    
+```applescript
+tell application "Things"
+   set props to {name:"Voice memo"}
+   set newToDo to make new to do with properties props
+   set notes of newToDo to "[filepath=" & POSIX path of theFile & "]TITLE[/filepath]"
+end tell
+```
 
 Now, every time you make a voice memo on the iPhone and connect it to your computer a note titled “voice memo” with a link to the sound file will be added to the inbox in Things.
 

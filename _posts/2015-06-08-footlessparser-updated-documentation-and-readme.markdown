@@ -20,7 +20,7 @@ Also check out [a series of blog posts about the development](/blog/footlesspars
 
 <!-- more -->
 
-## Introduction
+# Introduction
 
 In short, FootlessParser lets you define parsers like this:
    
@@ -32,9 +32,9 @@ let parser = function1 <^> parser1 <*> parser2 <|> parser3
 
 `parser` will pass the input to `parser1` followed by `parser2`, pass their results to `function1` and return its result. If that fails it will pass the original input to `parser3` and return its result.
 
-## Example
+# Example
 
-#### [CSV](http://www.computerhope.com/jargon/c/csv.htm) parser
+## [CSV](http://www.computerhope.com/jargon/c/csv.htm) parser
 
 
     
@@ -72,9 +72,9 @@ if let output = result.value {
 
 The `parse` function returns a [Result](https://github.com/antitypical/Result) which if successful contains the output from the parser, or in case of failure contains the error.
 
-## Installation
+# Installation
 
-#### Using [Carthage](https://github.com/Carthage/Carthage)
+## Using [Carthage](https://github.com/Carthage/Carthage)
 
  ```
  github "kareman/FootlessParser"

@@ -16,7 +16,7 @@ SwiftShell: An OS X Framework for command line scripting in Swift.
 
 <!-- more -->
 
-## Usage
+# Usage
 
 Put this at the beginning of each script file:
 
@@ -28,9 +28,9 @@ Put this at the beginning of each script file:
 import SwiftShell
 ```
 
-### Run commands
+## Run commands
 
-#### Print output
+### Print output
 
 
 
@@ -44,7 +44,7 @@ _The name may seem a bit cumbersome, but it explains exactly what it does. Swift
 
 <!-- more -->
 
-#### In-line
+### In-line
 
 
 
@@ -55,7 +55,7 @@ print("Today's date in UTC is " + date)
 
 Similar to `$(cmd)` in bash, this just returns the output from the command as a string, ignoring any errors.
 
-#### Asynchronous
+### Asynchronous
 
 
 
@@ -73,7 +73,7 @@ Launch a command and continue before it's finished. You can process standard out
 
 If you read all of command.stderror or command.stdout it will automatically wait for the command to finish running. You can still call `finish()` to check for errors.
 
-#### Parameters
+### Parameters
 
 The 3 `run` functions above take 2 different types of parameters:
 
@@ -98,7 +98,7 @@ run("echo", array, array.count + 2, "arguments")
 
 These are the commands you normally use in the Terminal. You can use pipes and redirection and all that good stuff. Support for other shell interpreters can easily be added.
 
-### Output
+## Output
 
 `main.stdout` is for normal output and `main.stderror` for errors:
 
@@ -110,7 +110,7 @@ main.stdout.writeln("...")
 main.stderror.write("something went wrong ...")
 ```
 
-### Input
+## Input
 
 Use `main.stdin` to read from standard input:
 
@@ -120,7 +120,7 @@ Use `main.stdin` to read from standard input:
 let input: String = main.stdin.read()
 ```
 
-### Main
+## Main
 
 So what else can `main` do? It is the only global value in SwiftShell and contains all the contextual information about the outside world:
 
@@ -143,9 +143,9 @@ lazy var name: String
 
 Everything is mutable, so you can set e.g. the text encoding or reroute standard error to a file.
 
-## Examples
+# Examples
 
-### Print line numbers
+## Print line numbers
 
 
 
@@ -166,7 +166,7 @@ do {
 
 Launched with e.g. `cat long.txt | print_linenumbers.swift` or `print_linenumbers.swift long.txt` this will print the line number at the beginning of each line.
 
-## Installation
+# Installation
 
 * In the Terminal, go to where you want to download SwiftShell.
 * Run

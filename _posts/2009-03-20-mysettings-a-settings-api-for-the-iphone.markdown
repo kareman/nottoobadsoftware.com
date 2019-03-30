@@ -25,7 +25,7 @@ and turns it into this:
 
 ![iPhone](http://bitbucket.org/karemorstol/mysettings/wiki/iPhone.jpg)
 
-### Features
+# Features
 
 	
   * Text fields, on/off switch button, integers and time intervals (with maximum/minimum values and custom format string for the integers).

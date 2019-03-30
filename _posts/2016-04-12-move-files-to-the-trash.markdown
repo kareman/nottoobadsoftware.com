@@ -62,8 +62,7 @@ The script is based on [this gist](https://gist.github.com/brentdax/4a48a5024dd0
 
 We call `removeDuplicates` on the arguments list to avoid an error message if we try to trash the same file item twice. Then in the callback from `recycleURLs` we check for errors – if there are any we print the names of the file items that could not be trashed, and then the error.
 
-&nbsp;
+## Updates
 
-* _Updated 2016–10–09: converted to Swift 3._
-* _Updated 2017-04-28: updated to SwiftShell 3.0._
-
+* 2016–10–09: converted to Swift 3.
+* 2017-04-28: updated to SwiftShell 3.0.

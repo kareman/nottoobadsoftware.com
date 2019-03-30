@@ -28,16 +28,13 @@ where `parser` will pass the input to `parser1` followed by `parser2`, pass thei
 ### Terms
 
 Parser
-
-    a function which takes some input (a sequence of tokens) and returns either the output and the remaining unparsed part of the input, or an error description if it fails.
+: a function which takes some input (a sequence of tokens) and returns either the output and the remaining unparsed part of the input, or an error description if it fails.
 
 Token
-
-    a single item from the input. Like a character from a string, an element from an array or a string from a sequence of command line arguments.
+: a single item from the input. Like a character from a string, an element from an array or a string from a sequence of command line arguments.
 
 Parser Input
-
-    most often text, but can also be an array or really any collection of anything, provided it conforms to CollectionType.
+: most often text, but can also be an array or really any collection of anything, provided it conforms to CollectionType.
 
 ### First version
 
