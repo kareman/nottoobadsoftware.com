@@ -62,23 +62,23 @@ function <^> parser1 <*> parser2
 
 creates a new parser which first runs parser1. If it succeeds it runs parser2. If that also succeeds it passes both outputs to `function` and returns the result.
 
-The <*> operator requires its left parser to return a function and is normally used together with <^>. `function` must take 2 parameters of the correct types, and it must be [curried](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID363), like this:
+The `<*>` operator requires its left parser to return a function and is normally used together with `<^>`. `function` must take 2 parameters of the correct types, and it must be [curried](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID363), like this:
 
 ```swift
 func function (a:A)(b:B) -> C 
 ```
 
-This is because <*> returns the output of 2 parsers and it doesn't know what to do with them. If you want them returned in a tuple, an array or e.g. added together you can do so in the function before <^> .
+This is because `<*>` returns the output of 2 parsers and it doesn't know what to do with them. If you want them returned in a tuple, an array or e.g. added together you can do so in the function before `<^>` .
 
-If there are 3 parsers and 2 <*> the function must take 3 parameters, and so on.
+If there are 3 parsers and 2 `<*>` the function must take 3 parameters, and so on.
 
 ## <*
 
-The same as the <*> above, except it discards the result of the parser to its right. Since it only returns one output it doesn't need to be used together with <^> . But you can of course if you want the output converted to something else.
+The same as the `<*>` above, except it discards the result of the parser to its right. Since it only returns one output it doesn't need to be used together with `<^>` . But you can of course if you want the output converted to something else.
 
 ## *>
 
-The same as <* , but discards the result of the parser to its left.
+The same as `<*` , but discards the result of the parser to its left.
 
 ## <|>  (choice)
 
