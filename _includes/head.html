@@ -19,11 +19,13 @@
 	<title>{{ page.title }} - {{ site.title }}</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	{% if page.description -%}
-	<meta name="description" content="{{ page.description }}" />
+	{%- assign description = description | default: page.description | default: layout.description -%}
+	{% if description %}
+	<meta name="description" content="{{ description }}" />
 	{%- endif -%}
-	{%- if page.keywords %}
-	<meta name="keywords" content="{{ page.keywords }}" />
+	{%- assign keywords = page.keywords | default: layout.keywords -%}
+	{% if keywords %}
+	<meta name="keywords" content="{{ keywords }}" />
 	{%- endif %}
 	<link rel="canonical" href="{{page.url | absolute_url}}" />
 
@@ -43,7 +45,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400&amp;subset=latin-ext" />
 	{%- if layout.css %}
 	<link rel="stylesheet" href="{{ layout.css }}" />
-	{% endif %}
+	{%- endif %}
 </head>
 
 <body data-layout="{{ page.layout }}" {{ include.body }}>

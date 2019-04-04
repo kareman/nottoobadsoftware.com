@@ -1,9 +1,9 @@
 ---
-title: Blog
-description: The blog of NotTooBad Software
-keywords: Mac software, text automation, Swift
 css: /assets/highlighting/vscode.css
 ---
+{%- if page.description == undefined -%}
+{%- capture description -%}All posts of category '{{page.title | replace: "-", " " }}'{%- endcapture -%}
+{%- endif -%}
 {% include head.html %}
 
 {%- include categories.html -%}
