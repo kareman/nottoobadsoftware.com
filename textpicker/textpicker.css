@@ -7,12 +7,12 @@
 /* Defaults */
 
 :root {
-	--main-background-color: #0F1530;
-	--box-background-color: #171E38;
+	--main-background-color: #0f1530;
+	--box-background-color: #171e38;
 	--footer-background-color: #030816;
-	--form-background-color: #3873ED;
-	--text-color: #AEAEB9;
-	--heading-text-color: #FEFFFF;
+	--form-background-color: #3873ed;
+	--text-color: #aeaeb9;
+	--heading-text-color: #feffff;
 }
 
 html {
@@ -28,7 +28,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-body>* {
+body > * {
 	margin-left: 4vw;
 	margin-right: 4vw;
 }
@@ -42,18 +42,22 @@ h2 {
 	margin-bottom: 2em;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
 	color: var(--heading-text-color);
 	font-weight: normal;
 	font-style: normal;
 }
 
-p, li {
+p,
+li {
 	font-weight: 200;
 	font-style: normal;
 }
 
-main>h2 {
+main > h2 {
 	font-size: 25pt;
 }
 
@@ -106,14 +110,16 @@ header img {
 	margin-top: 1em;
 }
 
-.columns h2, h3, h4 {
+.columns h2,
+h3,
+h4 {
 	margin-bottom: 0.1em;
 }
 
 /* Play video */
 
 .play_video {
-	margin: 4em
+	margin: 4em;
 }
 
 .play_video p {
@@ -153,19 +159,19 @@ header img {
 .mac-window {
 	text-align: left;
 	line-height: 2em;
-	background-image: linear-gradient(#1D1D28, #15141D);
+	background-image: linear-gradient(#1d1d28, #15141d);
 	border-radius: 5px;
 	border: 1pt solid #242635;
 }
 
-.mac-window>svg {
+.mac-window > svg {
 	position: relative;
 	top: 0px;
 	left: 7px;
 	z-index: 2;
 }
 
-.mac-window>div {
+.mac-window > div {
 	margin: 2em;
 }
 
@@ -178,7 +184,7 @@ header img {
 }
 
 .label {
-	background-color: #E8445A;
+	background-color: #e8445a;
 	color: var(--heading-text-color);
 	border-radius: 15pt;
 	padding: 3pt 8pt;
@@ -187,7 +193,7 @@ header img {
 }
 
 .green {
-	background-color: #67B165;
+	background-color: #67b165;
 }
 
 /* What can you use it for */
@@ -198,7 +204,7 @@ header img {
 	grid-gap: 1em;
 }
 
-.boxes>div {
+.boxes > div {
 	background-color: var(--box-background-color);
 	border-radius: 5px;
 }
@@ -211,7 +217,7 @@ header img {
 	overflow-wrap: break-word;
 }
 
-.boxes.features>div {
+.boxes.features > div {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	padding-right: 1em;
@@ -243,12 +249,12 @@ header img {
 }
 
 .ml-form-embedWrapper input {
-	background-color: #598DF0 !important;
+	background-color: #598df0 !important;
 	border: none !important;
 }
 
 .ml-form-embedWrapper input::placeholder {
-	color: #BDD6F9 !important;
+	color: #bdd6f9 !important;
 }
 
 .ml-form-embedWrapper * {
