@@ -4,12 +4,15 @@ css: /assets/highlighting/vscode.css
 {%- if page.description == undefined -%}
 {%- capture description -%}All posts of category '{{page.title | replace: "-", " " }}'{%- endcapture -%}
 {%- endif -%}
+
+{%- assign posts = page.posts | default: site.posts -%}
+{%- assign keywords = posts | map: "tags" | uniq | join: ", " -%}
+
 {% include head.html %}
 
 {%- include categories.html -%}
 
 <main>
-	{%- assign posts = page.posts | default: site.posts -%}
 	{% for post in posts %}
 	<article class="box">
 		<a href="{{ post.url }}">
