@@ -280,7 +280,7 @@ div.ml-form-embedSubmit button.primary {
 
 footer {
 	background-color: var(--footer-background-color);
-	color: var(--heading-text-color);
+	color: #abaab5;
 	width: 100%;
 	padding: 2em 0;
 	margin: 0;
@@ -288,10 +288,11 @@ footer {
 	position: relative;
 }
 
-footer>div>* {
+footer > div > a {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 0.2em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 footer img {
