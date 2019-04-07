@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "NotTooBad Software",
+    "short_name": "NotTooBad SW",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#171e38",
+    "background_color": "#0f1530",
     "display": "standalone"
 }
