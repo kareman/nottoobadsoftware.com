@@ -173,4 +173,4 @@ I would love to see TextSmith developed, but that won’t be easy, fast or cheap
 # Update:
 
 
-A more thorough introduction to this still-hypothetical application can be found [here](/textsmith/).
+Here is [a more thorough introduction](/textsmith/) to this still-hypothetical application.

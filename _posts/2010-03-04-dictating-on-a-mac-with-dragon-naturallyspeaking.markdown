@@ -22,10 +22,10 @@ It is very easy to set up, just follow these simple steps:
 ![Screenshot of macOS sharing preferences](/media/old/sharing.png)  
 Note your IP address (circled in red).
 3. Click "Computer Settings". Enter a password, otherwise tightvnc-dns may not be able to connect.
-4. In your Windows virtual machine, download and unzip tightvnc-dns from [here](http://github.com/downloads/timcharper/tightvnc-dns/vncviewer.zip).
+4. In your Windows virtual machine, download and unzip [tightvnc-dns](http://github.com/downloads/timcharper/tightvnc-dns/vncviewer.zip).
 5. Double-click vncviewer.exe:  
 ![Screenshot of vncviewer opening UI](/media/old/parallels-desktop.jpg)  
-Enter the IP address from step 2 (not necessarily 192.168.4.4 :)).
+  Enter the IP address from step 2 (not necessarily 192.168.4.4 :)).
 6. Click "Options":  
 ![Screenshot of vncviewer settings](/media/old/parallels-desktop-21.jpg)  
 Click "Disable clipboard transfer".  And reduce the scale if you want a smaller window.

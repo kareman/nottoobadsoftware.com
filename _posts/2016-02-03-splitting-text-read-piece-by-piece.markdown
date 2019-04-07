@@ -80,4 +80,4 @@ If `g` is empty, get the next LazySplitSequence from `gs`. If `gs` is empty then
 
 If there is no remaining part of the current LazySplitSequence to split further, but there is more left in `gs`, then split off the first part of the next LazySplitSequence and join it with the current head, which is the last part of the current LazySplitSequence.
 
-[Here](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShell/General/Lazy-split.swift) is the complete code including LazySplitSequence, with [unit test](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShellTests/General/Collection_Tests.swift#L79).
+[Here is the complete code](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShell/General/Lazy-split.swift) including LazySplitSequence, with [unit test](https://github.com/kareman/SwiftShell/blob/d6045d1485ed0f24094ba2da8da6aebe17edc63f/SwiftShellTests/General/Collection_Tests.swift#L79).
