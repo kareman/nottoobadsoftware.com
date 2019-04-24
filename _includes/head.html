@@ -25,7 +25,7 @@
 	{%- endif -%}
 	{%- assign keywords = keywords | default: page.keywords | default: layout.keywords -%}
 	{% if keywords %}
-	<meta name="keywords" content="{{ keywords }}" />
+	<meta name="keywords" content="{{ keywords | join: ', ' }}" />
 	{%- endif %}
 	<link rel="canonical" href="{{page.url | absolute_url}}" />
 
