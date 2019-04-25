@@ -46,6 +46,27 @@ a:visited {
 	color: #7d65f3;
 }
 
+.subscribe {
+	margin-top: 2em;
+	text-align: center;
+
+	> * {
+		display: inline-block;
+	}
+
+	button {
+		background-color: var(--form-background-color);
+		color: var(--heading-text-color);
+		cursor: pointer;
+		border-radius: 5px;
+		border: none;
+		padding: 0.5em 1em;
+		margin: 0em 1em;
+		font-weight: bold;
+		font-size: 120%;
+	}
+}
+
 code {
 	color: var(--inline-code-text-colour);
 	font-family: Courier, monospace;

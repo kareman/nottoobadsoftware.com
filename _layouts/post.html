@@ -17,8 +17,11 @@ css: /assets/highlighting/vscode.css
 		{% endif %}
 		{{ page.content }}
 	</article>
-	<a href="https://github.com/kareman/nottoobadsoftware.com/edit/master/{{ page.path }}">Suggest changes to post.</a>
-	{%- include comments.html -%}
+	<p><a href="https://github.com/kareman/nottoobadsoftware.com/edit/master/{{ page.path }}">Suggest changes to post.</a></p>
+	<section class="box">
+		{%- include comments.html -%}
+	</section>
+	{%- include subscribe-blog.html -%}
 </main>
 
 {% include footer.html %}
