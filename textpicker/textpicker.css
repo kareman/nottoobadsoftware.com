@@ -81,7 +81,7 @@ header a:first-child {
 }
 
 header img {
-	max-height: 1.5em;
+	max-height: 2em;
 }
 
 /* TextPicker logo */
@@ -92,8 +92,12 @@ header img {
 	text-align: center;
 }
 
+#tplogo figcaption {
+	font-size: 2em;
+}
+
 #tplogo img {
-	max-height: 2em;
+	max-height: 6em;
 }
 
 /* Screenshots */
