@@ -7,4 +7,25 @@
 <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-0.1.0-alpha.4.zip" sparkle:version="719" sparkle:shortVersionString="0.1.0-alpha.4" length="7038477" type="application/octet-stream" sparkle:edSignature="0al9TjTiHW7wwyFLbootnUFPJ1m9SSdMf8azZW+1ZdxR3eRFj8JqCIXXniTbo8FM/GCUHfHDNB7nU5c94s/dDA=="/>
 </item>
+<item>
+<title>0.1.0-alpha.5</title>
+<pubDate>Mon, 10 Jun 2019 23:13:49 +0200</pubDate>
+<description><![CDATA[<ul>
+	<li>Show welcome text on first launch.</li>
+</ul>
+
+]]></description>
+<sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-0.1.0-alpha.5.zip" sparkle:version="736" sparkle:shortVersionString="0.1.0-alpha.5" length="7040818" type="application/octet-stream" sparkle:edSignature="7dRMViKau1PF6W5Y3CmnA1M7Edu1r+pbcgDJVeezEodQraVcuJpSiOXTAvhrVZ08iVsuT26MIOS+w2Fgt+n6Bw=="/>
+<sparkle:deltas>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker736-716.delta" sparkle:version="736" sparkle:shortVersionString="0.1.0-alpha.5" sparkle:deltaFrom="716" length="96793" type="application/octet-stream" sparkle:edSignature="4UYFf2SLFxwjYGK21/xFf4NmBQTuctC0wvtxSU0WNayRdfoIxQpMwF9JcSLGHlQB/HvkClc0DIu6HM9eS6zHBw=="/></sparkle:deltas>
+</item>
+
+<item>
+<title>0.1.0-alpha.3</title>
+<pubDate>Sat, 08 Jun 2019 20:09:16 +0200</pubDate>
+<sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-0.1.0-alpha.4.zip" sparkle:version="716" sparkle:shortVersionString="0.1.0-alpha.3" length="7038477" type="application/octet-stream" sparkle:edSignature="0al9TjTiHW7wwyFLbootnUFPJ1m9SSdMf8azZW+1ZdxR3eRFj8JqCIXXniTbo8FM/GCUHfHDNB7nU5c94s/dDA=="/>
+</item>
+
 </channel></rss>
