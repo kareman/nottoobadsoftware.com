@@ -4,6 +4,7 @@ phases:
   install:
     runtime-versions:
       ruby: 2.6
+      java: 8
     commands:
       - bundle install
   build:
