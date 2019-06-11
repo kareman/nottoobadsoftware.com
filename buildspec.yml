@@ -10,6 +10,7 @@ phases:
     commands:
       - JEKYLL_ENV=production bundle exec jekyll build
       - bundle exec htmlproofer --assume-extension --check-html --internal-domains nottoobadsoftware.com  ./_site
+      - bundle exec s3_website push
 artifacts:
   base-directory: '_site'
   files:
