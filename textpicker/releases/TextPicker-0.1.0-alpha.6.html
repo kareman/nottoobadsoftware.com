@@ -1,0 +1,16 @@
+<h3 id="features">Features</h3>
+
+<ul>
+<li><p>Wait 300 ms, then return the simplest successful parser so far.</p>
+
+<p>If nothing so far, return the next successful parser.</p></li>
+<li><p>Find capitalised words and other combined patterns.</p>
+
+<p>By continuing to append patterns even if the first part is a success.</p></li>
+</ul>
+
+<h3 id="bug_fixes">Bug fixes</h3>
+
+<ul>
+<li>Fix crashing bug in release builds in success queue due to asynchronously using released creator in deinit</li>
+</ul>

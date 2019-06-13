@@ -27,5 +27,32 @@
 <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-0.1.0-alpha.4.zip" sparkle:version="716" sparkle:shortVersionString="0.1.0-alpha.3" length="7038477" type="application/octet-stream" sparkle:edSignature="0al9TjTiHW7wwyFLbootnUFPJ1m9SSdMf8azZW+1ZdxR3eRFj8JqCIXXniTbo8FM/GCUHfHDNB7nU5c94s/dDA=="/>
 </item>
+<item>
+<title>0.1.0-alpha.6</title>
+<pubDate>Thu, 13 Jun 2019 23:19:05 +0200</pubDate>
+<description><![CDATA[<h3 id="features">Features</h3>
+
+<ul>
+<li><p>Wait 300 ms, then return the simplest successful parser so far.</p>
+
+<p>If nothing so far, return the next successful parser.</p></li>
+<li><p>Find capitalised words and other combined patterns.</p>
+
+<p>By continuing to append patterns even if the first part is a success.</p></li>
+</ul>
+
+<h3 id="bug_fixes">Bug fixes</h3>
+
+<ul>
+<li>Fix crashing bug in release builds in success queue due to asynchronously using released creator in deinit</li>
+</ul>
+]]></description>
+<sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-0.1.0-alpha.6.zip" sparkle:version="756" sparkle:shortVersionString="0.1.0-alpha.6" length="7049962" type="application/octet-stream" sparkle:edSignature="Ys/VfJh+agqZ3RA4EgUpvPxUO4XYDdE8s6jQisuWxbr0WlupZ0OVSM0UznrJHeyvsxcHsehgyQl9PHm6R+nFBg=="/>
+<sparkle:deltas>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker756-736.delta" sparkle:version="756" sparkle:shortVersionString="0.1.0-alpha.6" sparkle:deltaFrom="736" length="124109" type="application/octet-stream" sparkle:edSignature="FmfTB+WVFeWTh8RTW5kPE9Dl57cyMr0GrPIovg+xVNmxIEtav6VvBAF4mLxW68SFw9cPuizHez4GIhdrtM3bCA=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker756-716.delta" sparkle:version="756" sparkle:shortVersionString="0.1.0-alpha.6" sparkle:deltaFrom="716" length="149979" type="application/octet-stream" sparkle:edSignature="98wM56AZfoa8H0v1EeDBFVC7QZ39ldlzHjUiK4fjQ4YlE8pKAISD0Bk6YG56L/JMfzOLyaFHr8CjSJtmSrmtAw=="/></sparkle:deltas>
+</item>
+
 
 </channel></rss>
