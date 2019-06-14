@@ -53,6 +53,28 @@
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker756-736.delta" sparkle:version="756" sparkle:shortVersionString="0.1.0-alpha.6" sparkle:deltaFrom="736" length="124109" type="application/octet-stream" sparkle:edSignature="FmfTB+WVFeWTh8RTW5kPE9Dl57cyMr0GrPIovg+xVNmxIEtav6VvBAF4mLxW68SFw9cPuizHez4GIhdrtM3bCA=="/>
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker756-716.delta" sparkle:version="756" sparkle:shortVersionString="0.1.0-alpha.6" sparkle:deltaFrom="716" length="149979" type="application/octet-stream" sparkle:edSignature="98wM56AZfoa8H0v1EeDBFVC7QZ39ldlzHjUiK4fjQ4YlE8pKAISD0Bk6YG56L/JMfzOLyaFHr8CjSJtmSrmtAw=="/></sparkle:deltas>
 </item>
+<item>
+<title>1.0.0-beta.1</title>
+<pubDate>Fri, 14 Jun 2019 22:45:10 +0200</pubDate>
+<description><![CDATA[<h3 id="bug_fixes">Bug fixes</h3>
+
+<ul>
+<li><p>Capitalised &#8220;Show Generated Pattern&#8221; menu item</p></li>
+<li><p>Fixed a bug where text marking popover disappears forever when text in the first line is selected and the help button popover is programmatically opened.</p></li>
+<li><p>Removed flickering of text marking popover when clicking inside it.</p></li>
+<li><p>Always use white for the font colour in the text marking popover.</p>
+
+<p>Otherwise the text disappears in macOS light mode.</p></li>
+</ul>
+]]></description>
+<sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-1.0.0-beta.1.zip" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" length="7049609" type="application/octet-stream" sparkle:edSignature="YWl4jeNUwZblMm8k1TA0yhikFScqNbn4xhMfAlDV9SS7wAIQKBUURbEGcQL9i9JrLpAuzj2jlnQI+2Li8oH1Bg=="/>
+<sparkle:deltas>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker764-756.delta" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" sparkle:deltaFrom="756" length="89210" type="application/octet-stream" sparkle:edSignature="OIZu1w8ZOc0dDVc79lSCvUD4hXWkDOfGnZY/g4vdvfwiDIMp4Ox8Oqcu5u/elLh29XHgsLcmw+yGUH2e3FQfCw=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker764-736.delta" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" sparkle:deltaFrom="736" length="145139" type="application/octet-stream" sparkle:edSignature="pSU3Xpc70wr+nMtV5bzbgpauZ2TkHg2Y+LJtonbM9Piqv+sdQFIM5ywjkaugQonBSGv6qPN9B+bi+twygwDrCg=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker764-716.delta" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" sparkle:deltaFrom="716" length="175554" type="application/octet-stream" sparkle:edSignature="7KiaoCpcskexvzB9Pb2GuXCEGJSG/+uiRYmbWvvOsPMmrlvi21VJwvHXLC6CwtE//gIZiR5pQi/zuZWIQoZQBQ=="/></sparkle:deltas>
+</item>
+
 
 
 </channel></rss>
