@@ -47,6 +47,10 @@
 	<link rel="stylesheet" href="{{ layout.css }}" />
 	{%- endif %}
 
+	{% if layout.head_include -%}
+	{{ layout.head_include | flatify }}
+	{%- endif %}
+
 	<!-- MailerLite Universal -->
 	<script>
 		(function (m, a, i, l, e, r) {
