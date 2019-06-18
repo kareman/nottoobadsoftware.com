@@ -1,7 +1,9 @@
 ---
 layout: default
-head_include: "<meta http-equiv='refresh' content='0; url={{ page.downloadUrl }}' />"
 ---
 <main>
-	<p>If the download doesn't start automatically, click <a href="{{ page.downloadUrl }}">this link</a>.</p>
+	<div class="center">
+		<h3>{{ page.message }}</h3>
+		<p><a href="{{ page.downloadUrl }}">Download {{ page.downloadUrl }}</a></p>
+	</div>
 </main>
