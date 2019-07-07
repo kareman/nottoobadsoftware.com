@@ -74,6 +74,33 @@
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker764-736.delta" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" sparkle:deltaFrom="736" length="145139" type="application/octet-stream" sparkle:edSignature="pSU3Xpc70wr+nMtV5bzbgpauZ2TkHg2Y+LJtonbM9Piqv+sdQFIM5ywjkaugQonBSGv6qPN9B+bi+twygwDrCg=="/>
 <enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker764-716.delta" sparkle:version="764" sparkle:shortVersionString="1.0.0-beta.1" sparkle:deltaFrom="716" length="175554" type="application/octet-stream" sparkle:edSignature="7KiaoCpcskexvzB9Pb2GuXCEGJSG/+uiRYmbWvvOsPMmrlvi21VJwvHXLC6CwtE//gIZiR5pQi/zuZWIQoZQBQ=="/></sparkle:deltas>
 </item>
+<item>
+<title>1.0.0-beta.2</title>
+<pubDate>Sun, 07 Jul 2019 19:51:23 +0200</pubDate>
+<description><![CDATA[<ul>
+<li><p>Remove outer border from UI</p>
+
+<p>Make divider thin as well</p></li>
+<li><p>Disable clipboard button when there&#8217;s nothing in the list</p></li>
+<li><p>Support uppercase and lowercase words, amongst other stuff</p>
+
+<p>By generating optional patterns</p></li>
+<li><p>Improve description of patterns (visible when &#8220;Show Generated Pattern” in the View menu is enabled)</p></li>
+<li><p>Performance improvements</p></li>
+<li><p>Detect word boundaries (the beginning or end of words)</p></li>
+<li><p>Fix typo in first launch introduction text</p></li>
+<li><p>Add “cancel” button to help view</p></li>
+</ul>
+]]></description>
+<sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker-1.0.0-beta.2.zip" sparkle:version="816" sparkle:shortVersionString="1.0.0-beta.2" length="7084371" type="application/octet-stream" sparkle:edSignature="K13j/BMOOg/ftFR0//Ugcf5tLhvde9L4S1a29GGx6GMRGc4cOGgLoA8iZq/EYoNPxpHUTddGhDJhYU/e9WxUAw=="/>
+<sparkle:deltas>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker816-764.delta" sparkle:version="816" sparkle:shortVersionString="1.0.0-beta.2" sparkle:deltaFrom="764" length="229132" type="application/octet-stream" sparkle:edSignature="+NUgGa107mI1WFg7VAWkIprtbasKx/CYwLKnGFfhcYuMDgmYnz76bcSKSUCpQcQ+vI5SrgIQN7QLspCzh167DA=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker816-756.delta" sparkle:version="816" sparkle:shortVersionString="1.0.0-beta.2" sparkle:deltaFrom="756" length="227250" type="application/octet-stream" sparkle:edSignature="2d7/V6Wr8SvF6JJAgFgFb6djfP8Rl/7Khv+XNfB7fmQY03B6J039auH97r7vib3pFdlRWuzFpQRbmu6AhuhZBg=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker816-736.delta" sparkle:version="816" sparkle:shortVersionString="1.0.0-beta.2" sparkle:deltaFrom="736" length="248552" type="application/octet-stream" sparkle:edSignature="2cAILwVLBLkKb6o+YgXIAuLDDovYBvHoqzvQq/LHV1vx3RP8/wWfYEUXDtNYO1pbuCHEIghtXOuKSDJ2STbDBw=="/>
+<enclosure url="https://nottoobadsoftware.com/textpicker/releases/TextPicker816-716.delta" sparkle:version="816" sparkle:shortVersionString="1.0.0-beta.2" sparkle:deltaFrom="716" length="253446" type="application/octet-stream" sparkle:edSignature="psd6fKqERngz1RSAbWC2pY13vb1MLMGhazBHFKa5giVoWl/5gOnrk1TB3Cs6cVWtaZsmE+epwsOMGPtSAgyJCg=="/></sparkle:deltas>
+</item>
+
 
 
 
