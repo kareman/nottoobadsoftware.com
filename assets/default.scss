@@ -10,7 +10,7 @@
 	--form-background-color: #3873ed;
 	--text-color: #bfbec9;
 	--heading-text-color: #dddddd;
-	--inline-code-text-colour: #dddddd;
+	--inline-code-text-colour: #c2bfbf;
 	--page-side-margin: 4vw;
 	--font-size: 13pt;
 }
@@ -67,15 +67,21 @@ a:visited {
 	}
 }
 
-code {
+p code,
+li code {
+	padding-left: 3pt;
+	padding-right: 3pt;
+	//padding: 3px;
 	color: var(--inline-code-text-colour);
+	//text-decoration: none;
+	background-color: rgba($color: white, $alpha: 0.1);
 	font-family: Courier, monospace;
 }
 
 div.highlighter-rouge div.highlight pre {
 	padding: 1em;
 	font-family: Courier, monospace;
-	background-color: #1e1e1e;
+	background-color: #1a1919;
 
 	white-space: pre-wrap;
 	overflow-wrap: break-word;
