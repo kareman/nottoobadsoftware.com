@@ -12,7 +12,7 @@ tags:
 
 _Swift 3_
 
-Sam Burnstone [recently wrote about](https://www.shinobicontrols.com/blog/scripting-in-swift) how to convert a simple shell script to Swift. Here's the same shell script rewritten using [SwiftShell](https://github.com/kareman/SwiftShell) and [FileSmith](https://github.com/kareman/FileSmith).
+Sam Burnstone recently wrote about how to convert a simple shell script to Swift. Here's the same shell script rewritten using [SwiftShell](https://github.com/kareman/SwiftShell) and [FileSmith](https://github.com/kareman/FileSmith).
 
 <!-- more -->
 
@@ -78,6 +78,5 @@ I think this is more readable and more explicit about what is going on, though a
 Note that top-level Swift code which can throw does not need to be enclosed in a "do ... catch" clause, but the resulting error messages printed to standard error are quite ugly and hard to read. The exit method from SwiftShell makes them prettier.
 
 * _2016-11-02: updated to Swift 3._
-* _2017_04_28: updated to SwiftShell 3.0 and added [FileSmith](https://github.com/kareman/FileSmith)_.
-
-
+* _2017-04-28: updated to SwiftShell 3.0 and added [FileSmith](https://github.com/kareman/FileSmith)_.
+* _2020-03-17: removed dead link to https://www.shinobicontrols.com/blog/scripting-in-swift_.
