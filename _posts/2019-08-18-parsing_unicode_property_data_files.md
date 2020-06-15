@@ -36,45 +36,45 @@ So we have some text, and we want to get a series of ranges and their correspond
 
 
 ```swift
-func unicodeProperty(fromDataFile text: String) -> [(range: ClosedRange<UInt32>, property: Substring)] {
+typealias RangesAndProperties = [(range: ClosedRange<UInt32>, property: Substring)]
+
+func unicodeProperty(fromDataFile text: String) -> RangesAndProperties {
 ```
 We will be using the Patterns framework itself for the text processing. It serves the same purpose as regex'es, except it might actually be readable for people who haven't used it before. That's the general idea, anyway.
 
 We begin by defining a hexadecimal number. Thankfully a pattern for hexadecimal digits is already provided by Patterns:
 
 ```swift
-let hexNumber = Capture(name: "hexNumber", hexDigit.repeat(1...))
+let hexNumber = Capture(name: "hexNumber", hexDigit+)
 ```
 
 Here we repeat the hexadecimal digit one or more times to get a number. `Capture` means this is a part of the text we want to extract, and we can retrieve it later using the name "hexNumber".
 
 ```swift
-let hexRange = Patterns("\(hexNumber)..\(hexNumber)") || hexNumber
+let hexRange = hexNumber • ".." • hexNumber / hexNumber
 ```
 
-`Patterns` matches a sequence of other patterns, and here we define it using string interpolation.  `Patterns("\(hexNumber)..\(hexNumber)")` is the same as `Patterns(hexNumber, Literal(".."), hexNumber)`. `||` provides a choice between 2 other patterns; if the pattern to its left fails, it tries the one to its right.
+The `•` operator joins together a sequence of patterns. `/` provides a choice between 2 other patterns; if the pattern to its left fails, it tries the one to its right.
 
 ```swift
-let rangeAndProperty: Patterns = "\n\(hexRange, Skip()); \(Capture(name: "property", Skip())) "
+let rangeAndProperty = Line.start • hexRange • Skip() • "; " • Capture(name: "property", Skip()) • " "
 ```
 
 This puts it all together. We start at the beginning of a line, match the 1 or 2 numbers in `hexRange`, skip everything until "`; `", and then capture everything until the next space.
 
 
 ```swift
-return rangeAndProperty.matches(in: text).map { match in
+return try! Parser(search: rangeAndProperty).matches(in: text).map { match in
 	let propertyName = text[match[one: "property"]!]
-	let oneOrTwoNumbers = match[multiple: "hexNumber"].map { 
-		UInt32(text[$0], radix: 16)! 
-	}
+	let oneOrTwoNumbers = match[multiple: "hexNumber"].map { UInt32(text[$0], radix: 16)! }
 	let range = oneOrTwoNumbers.first! ... oneOrTwoNumbers.last!
 	return (range, propertyName)
 }
 ```
 
-`rangeAndProperty.matches(in: text)` returns a lazy sequence of matches, so it doesn't start the actual text processing until you start reading elements from it. Each `Match` instance contains a `fullRange` index range of the part of the text the entire pattern matched, and using subscripting we can get hold of the index ranges within `fullRange` matched by `Capture` patterns.
+`rangeAndProperty.matches(in: text)` returns a lazy sequence of matches, so it doesn't start the actual text processing until you start reading elements from it. Using subscripting we can get hold of the index ranges matched by `Capture` patterns.
 
-You can find all the code in the ["unicode_property"](https://github.com/kareman/Patterns/blob/952e46c6a236eea0dfa37dbbd59cc97aeb54ff54/Sources/unicode_properties/main.swift#L6) commandline application in the Patterns framework.
+You can find all the code in the ["unicode_property"](https://github.com/kareman/Patterns/blob/master/Sources/unicode_properties/main.swift#L6) commandline application in the Patterns framework.
 
 
 ## Graphically 
