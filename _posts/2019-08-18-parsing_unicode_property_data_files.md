@@ -10,7 +10,7 @@ tags:
 - Unicode property data file
 ---
 
-When developing the [word boundary recogniser](https://github.com/kareman/Patterns/blob/master/Sources/Patterns/WordBoundaries.swift) for the [Patterns](https://github.com/kareman/Patterns) framework, I needed to access data in Unicode property data files from Swift. These files look something like this:
+When developing the [word boundary recogniser](https://github.com/kareman/Patterns/blob/master/Sources/Patterns/Atomic%20Patterns/Word.swift) for the [Patterns](https://github.com/kareman/Patterns) framework, I needed to access data in Unicode property data files from Swift. These files look something like this:
 
 ```text
 
