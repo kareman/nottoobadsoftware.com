@@ -5,6 +5,7 @@ environment_variables:
     LC_ALL: C.UTF-8
     ENV LANG: en_US.UTF-8
     ENV LANGUAGE: en_US.UTF-8
+    JEKYLL_ENV: production
 
 phases:
   install:
@@ -15,6 +16,5 @@ phases:
       - bundle install
   build:
     commands:
-      - JEKYLL_ENV=production bundle exec jekyll build
-      - bundle exec htmlproofer --assume-extension --check-html --internal-domains nottoobadsoftware.com  ./_site
+      - ./_test.sh
       - bundle exec s3_website push
