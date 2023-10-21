@@ -3,33 +3,52 @@
 	// for the documentation about the tasks.json format
 	"version": "2.0.0",
 	"tasks": [
-	  {
-		"label": "Serve",
-		"type": "shell",
-		"command": "bundle exec jekyll serve --livereload -H 0.0.0.0",
-		"group": {
-		  "kind": "test",
-		  "isDefault": true
+		{
+			"label": "Serve",
+			"type": "shell",
+			"command": "bundle exec jekyll serve --livereload -H 0.0.0.0",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"isBackground": true,
+			"problemMatcher": [
+				"$jekyll-error-watch",
+				"$jekyll-warning-watch"
+			]
 		},
-		"isBackground": true,
-		"problemMatcher": ["$jekyll-error-watch", "$jekyll-warning-watch"]
-	  },
-	  {
-		"label": "Build",
-		"type": "shell",
-		"command": "bundle exec jekyll build",
-		"problemMatcher": ["$jekyll-error", "$jekyll-warning"],
-		"group": {
-		  "kind": "build",
-		  "isDefault": true
+		{
+			"label": "Build",
+			"type": "shell",
+			"command": "bundle exec jekyll build",
+			"problemMatcher": [
+				"$jekyll-error",
+				"$jekyll-warning"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "Setup",
+			"type": "shell",
+			"command": "bundle install",
+			"problemMatcher": [
+				"$jekyll-error",
+				"$jekyll-warning"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Docker",
+			"type": "shell",
+			"command": "docker run --rm --volume=\"$PWD:/srv/jekyll\" --volume=\"$PWD/vendor/bundle:/usr/local/bundle\" --privileged -it -p 8080:4000 -p 35729:35729 jekyll/jekyll:3.8.5 bash",
+			"problemMatcher": [
+				"$jekyll-error",
+				"$jekyll-warning"
+			],
+			"group": "build"
 		}
-	  },
-	  {
-		"label": "Setup",
-		"type": "shell",
-		"command": "bundle install",
-		"problemMatcher": ["$jekyll-error", "$jekyll-warning"],
-		"group": "build"
-	  }
 	]
-  }
+}
