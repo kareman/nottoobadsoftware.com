@@ -10,7 +10,11 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.5"
 gem "s3_website"
-gem "html-proofer"
+gem "html-proofer", ">= 5.0"
+
+# Required on Ruby 3.3+ since these are no longer in stdlib
+gem "rexml"
+gem "base64"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.0"
