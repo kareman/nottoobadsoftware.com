@@ -10,7 +10,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.5"
 gem "s3_website"
-gem "html-proofer", ">= 5.0"
 
 # Required on Ruby 3.3+ since these are no longer in stdlib
 gem "rexml"
