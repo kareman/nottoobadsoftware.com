@@ -27,6 +27,8 @@ github_username:  kareman
 markdown: kramdown
 kramdown:
   header_offset: 1
+sass:
+  sourcemap: never
 
 
 plugins:
